@@ -1,0 +1,23 @@
+# settings.toml: Configuration for the Gemini Code Assist mirror
+
+# Documentation lives under developers.google.com, not cloud.google.com.
+default_host = "developers.google.com"
+
+seeds = [
+    "https://developers.google.com/gemini-code-assist/docs/overview",
+    "https://developers.google.com/gemini-code-assist/docs",
+]
+
+# Path prefixes (path-only prefixes are matched under default_host).
+prefixes = [
+    "developers.google.com/gemini-code-assist/",
+]
+
+# Recursive discovery from Markdown content
+recursive = true
+
+# Rate limiting: requests per minute (default: 50.0)
+# qpm = 50.0
+
+# Wait duration when quota is exceeded (default: 1m10s)
+# qw = "1m10s"
