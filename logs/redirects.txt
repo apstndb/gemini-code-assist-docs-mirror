@@ -1,0 +1,3 @@
+https://developers.google.com/gemini-code-assist https://codeassist.google/products/business
+https://developers.google.com/gemini-code-assist/docs https://developers.google.com/gemini-code-assist/docs/overview
+https://developers.google.com/gemini-code-assist/docs/data-governance https://docs.cloud.google.com/gemini/docs/discover/data-governance
