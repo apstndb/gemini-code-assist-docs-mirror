@@ -5,8 +5,6 @@ https://developers.google.com/gemini-code-assist/docs/chat-overview	2026-05-20T1
 https://developers.google.com/gemini-code-assist/docs/code-overview	2026-05-20T15:32:24Z
 https://developers.google.com/gemini-code-assist/docs/code-review-style-guide	2026-05-20T15:32:24Z
 https://developers.google.com/gemini-code-assist/docs/configure-local-codebase-awareness	2026-05-20T15:32:24Z
-https://developers.google.com/gemini-code-assist/docs/configure-logging	2026-05-20T15:32:24Z
-https://developers.google.com/gemini-code-assist/docs/configure-vpc-service-controls	2026-05-20T15:32:24Z
 https://developers.google.com/gemini-code-assist/docs/create-aiexclude-file	2026-05-20T15:32:24Z
 https://developers.google.com/gemini-code-assist/docs/customize-repo-review	2026-05-20T15:32:24Z
 https://developers.google.com/gemini-code-assist/docs/deprecations	2026-05-20T15:32:24Z
@@ -21,8 +19,6 @@ https://developers.google.com/gemini-code-assist/docs/review-repo-code	2026-05-2
 https://developers.google.com/gemini-code-assist/docs/set-up-code-assist-github	2026-05-20T16:35:42Z
 https://developers.google.com/gemini-code-assist/docs/set-up-gemini	2026-05-20T15:32:24Z
 https://developers.google.com/gemini-code-assist/docs/supported-languages	2026-05-20T15:32:24Z
-https://developers.google.com/gemini-code-assist/docs/troubleshoot-code-assist	2026-05-20T15:32:24Z
-https://developers.google.com/gemini-code-assist/docs/turn-off-gemini	2026-05-20T15:32:24Z
 https://developers.google.com/gemini-code-assist/docs/use-agentic-chat-pair-programmer	2026-05-20T15:32:24Z
 https://developers.google.com/gemini-code-assist/docs/use-code-assist-github	2026-05-20T15:32:24Z
 https://developers.google.com/gemini-code-assist/docs/use-gemini-code-assist-chat	2026-05-20T15:32:24Z
