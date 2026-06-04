@@ -27,4 +27,4 @@ https://developers.google.com/gemini-code-assist/resources/plugin-license	2026-0
 https://developers.google.com/gemini-code-assist/resources/privacy-notice-gemini-code-assist-individuals	2026-05-27T20:02:08Z
 https://developers.google.com/gemini-code-assist/resources/privacy-notices	2026-05-27T20:02:08Z
 https://developers.google.com/gemini-code-assist/resources/quotas	2026-05-27T20:02:08Z
-https://developers.google.com/gemini-code-assist/resources/release-notes	2026-05-27T20:02:08Z
+https://developers.google.com/gemini-code-assist/resources/release-notes	2026-06-03T10:37:02Z
