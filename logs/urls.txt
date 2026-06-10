@@ -8,7 +8,7 @@ https://developers.google.com/gemini-code-assist/docs/create-aiexclude-file	2026
 https://developers.google.com/gemini-code-assist/docs/deprecations	2026-05-27T20:05:49Z
 https://developers.google.com/gemini-code-assist/docs/deprecations/consumer-code-review	2026-05-27T20:05:49Z
 https://developers.google.com/gemini-code-assist/docs/feedback	2026-05-27T20:02:08Z
-https://developers.google.com/gemini-code-assist/docs/gemini-3	2026-05-27T20:02:08Z
+https://developers.google.com/gemini-code-assist/docs/gemini-3	2026-06-08T14:35:40Z
 https://developers.google.com/gemini-code-assist/docs/gemini-cli	2026-05-27T20:02:08Z
 https://developers.google.com/gemini-code-assist/docs/keyboard-shortcuts	2026-05-27T20:02:13Z
 https://developers.google.com/gemini-code-assist/docs/network-access	2026-05-27T20:02:08Z
@@ -27,4 +27,4 @@ https://developers.google.com/gemini-code-assist/resources/plugin-license	2026-0
 https://developers.google.com/gemini-code-assist/resources/privacy-notice-gemini-code-assist-individuals	2026-05-27T20:02:08Z
 https://developers.google.com/gemini-code-assist/resources/privacy-notices	2026-05-27T20:02:08Z
 https://developers.google.com/gemini-code-assist/resources/quotas	2026-05-27T20:02:08Z
-https://developers.google.com/gemini-code-assist/resources/release-notes	2026-06-03T18:11:45Z
+https://developers.google.com/gemini-code-assist/resources/release-notes	2026-06-09T19:23:37Z
