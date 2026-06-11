@@ -1,18 +1,16 @@
 ---
 name: documents/developers.google.com/gemini-code-assist/docs/feedback
 uri: https://developers.google.com/gemini-code-assist/docs/feedback
-title: Provide Gemini for Google Cloud feedback
+title: Provide Gemini Code Assist feedback
 description: Provide feedback about Gemini
 data_source: developers.google.com
 ---
 
-> **Important:** This page is only about feedback options for Gemini in Google Cloud. If you want to send feedback about Gemini in your iPhone or Android phone, see [Send feedback or report a problem with Gemini Apps](https://support.google.com/gemini/answer/13275746) .
+> **Important:** This page is only about feedback options for Gemini Code Assist. If you want to send feedback about Gemini in your iPhone or Android phone, see [Send feedback or report a problem with Gemini Apps](https://support.google.com/gemini/answer/13275746) .
 
-Google welcomes feedback about Gemini for Google Cloud to help make the product better. To provide feedback, do one of the following:
+Google welcomes feedback about Gemini Code Assist to help make the product better. To provide feedback, do one of the following:
 
-  - You can submit feedback by filling out the [Gemini for Google Cloud survey](https://google.qualtrics.com/jfe/form/SV_3Uhk1BDQCUeerEW) . This survey lets you submit feedback about the quality of the answers that you get from a prompt, and also about the prompt itself to help us improve the response. The survey takes about five minutes to complete.
-
-<!-- end list -->
+  - You can submit feedback about Gemini Code Assist (and other Gemini for Google Cloud products) by filling out the [Gemini for Google Cloud survey](https://google.qualtrics.com/jfe/form/SV_3Uhk1BDQCUeerEW) . This survey lets you submit feedback about the quality of the answers that you get from a prompt, and also about the prompt itself to help us improve the response. The survey takes about five minutes to complete.
 
   - If you're using the Gemini Code Assist in VS Code or IntelliJ plugins, you can submit feedback directly in your IDE using these steps:
     
@@ -47,4 +45,28 @@ Google welcomes feedback about Gemini for Google Cloud to help make the product 
     
     5.  Click **Submit Feedback** .
 
-The preceding feedback options are submitted anonymously and used only to improve Gemini for Google Cloud.
+## Download Gemini Code Assist logs for support
+
+The following steps describe how to retrieve your Gemini Code Assist log files to share for support, which you can download directly from your IDE:
+
+### VS Code
+
+1.  Open the **Command Palette** (press `Ctrl` / `Command` + `Shift` + `P` on Windows and Linux, or `Cmd` / `Command` + `Shift` + `P` on macOS).
+
+2.  Select **Gemini Code Assist: Download logs for support** .
+
+3.  In the warning dialog that explains the logs might contain sensitive data from your session, click **Continue** .
+    
+    Note that clicking **Continue** only compiles your logs into a local ZIP file. The plugin does not automatically send this ZIP file to Google. You can open and review the files in the ZIP folder on your machine to remove any sensitive information before you share it with support.
+
+4.  Select a location on your machine to save the ZIP file, and then click **Save** .
+
+### IntelliJ
+
+To locate the debug logs on your local file system:
+
+1.  From the top menu of your JetBrains IDE, select **Help** \> **Show Log in Explorer** (on Windows and Linux) or **Help** \> **Show Log in Finder** (on macOS).
+
+2.  In your file explorer, locate the active log files (such as `idea.log` ) to share for support.
+
+The preceding feedback options are submitted anonymously and used only to improve Gemini Code Assist.
