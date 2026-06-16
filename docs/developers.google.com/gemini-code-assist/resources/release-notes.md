@@ -12,6 +12,16 @@ This page contains release notes for features and updates to Gemini Code Assist.
 
 To get the latest product updates delivered to you, add the URL of this page to your [feed reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators) , or add the feed URL directly: `https://developers.google.com/feeds/gemini-code-assist-free-release-notes.xml` .
 
+## June 15, 2026
+
+**VS Code Gemini Code Assist 2.86.0**
+
+Other
+
+### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
+
 ## June 09, 2026
 
 **VS Code Gemini Code Assist 2.85.0**
