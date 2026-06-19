@@ -2,15 +2,13 @@
 name: documents/developers.google.com/gemini-code-assist/docs/overview
 uri: https://developers.google.com/gemini-code-assist/docs/overview
 title: Gemini Code Assist overview
-description: Provides an overview of the features available in Gemini Code Assist for individuals, Standard, and Enterprise.
+description: Provides an overview of the features available in Gemini Code Assist Standard and Enterprise.
 data_source: developers.google.com
 ---
 
 > **Note:** If you're at a business or would like more team-level benefits, consider [Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) .
 
 Gemini Code Assist offers AI-powered assistance to help your development team build, deploy, and operate applications throughout the software development lifecycle. Gemini Code Assist is available in the following editions:
-
-  - [Gemini Code Assist for individuals](https://developers.google.com/gemini-code-assist/docs/overview#supported-features-gca) , available at no cost.
 
   - [Gemini Code Assist Standard](https://developers.google.com/gemini-code-assist/docs/overview#supported-features) , a product in the [Gemini for Google Cloud](https://docs.cloud.google.com/gemini/docs/overview) portfolio.
 
@@ -23,41 +21,10 @@ Gemini Code Assist provides contextualized responses to your prompts, including 
 The Gemini large language models (LLMs) that are used by Gemini Code Assist are trained on datasets of publicly available code, Google Cloud-specific material, and other relevant technical information in addition to the datasets used to train the Gemini [foundation models](https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf) . Models are trained so that Gemini Code Assist responses are as useful to Gemini Code Assist users as possible.
 
   - [Learn how and when Gemini Code Assist Standard and Enterprise use your data](https://developers.google.com/gemini-code-assist/docs/data-governance) .
-  - [Learn how and when Gemini Code Assist for individuals uses your data](https://developers.google.com/gemini-code-assist/resources/privacy-notice-gemini-code-assist-individuals) .
 
 As an early-stage technology, Gemini Code Assist can generate output that seems plausible but is factually incorrect. We recommend that you validate all output from Gemini Code Assist before you use it. For more information, see [Gemini Code Assist and responsible AI](https://developers.google.com/gemini-code-assist/docs/responsible-ai) .
 
 Gemini Code Assist provides citation information when it directly quotes at length from another source, such as existing open source code. For more information, see [How and when Gemini cites sources](https://developers.google.com/gemini-code-assist/docs/works#how-when-gemini-cites-sources) .
-
-## Supported features for Gemini Code Assist for individuals
-
-The following table shows the types of generative AI assistance that are available in [supported IDEs](https://developers.google.com/gemini-code-assist/docs/supported-languages#supported_ides) at no cost:
-
-AI coding assistance
-
-Code completion and generation in your IDE project in the following IDEs:
-
-  - [VS Code, JetBrains IDEs (such as IntelliJ and PyCharm)](https://developers.google.com/gemini-code-assist/docs/write-code-gemini#get_code_completions) , and [Android Studio](https://developer.android.com/studio/gemini/overview)
-
-Conversational assistant in your IDE [using your opened files' context](https://developers.google.com/gemini-code-assist/docs/works#gemini-code-assist)
-
-Multi-IDE support (VS Code, [JetBrains IDEs such as IntelliJ and PyCharm](https://developers.google.com/gemini-code-assist/docs/supported-languages#supported_ides) , and [Android Studio](https://developer.android.com/studio/gemini/overview) )
-
-Agentic chat
-
-Prompt Gemini to complete complex, multi-step tasks that use system tools and Model Context Protocol (MCP) servers. For more information, see [Use the Gemini Code Assist agent mode](https://developers.google.com/gemini-code-assist/docs/use-agentic-chat-pair-programmer) .
-
-Gemini CLI quota
-
-[Quota](https://developers.google.com/gemini-code-assist/resources/quotas) for using [Gemini CLI](https://developers.google.com/gemini-code-assist/docs/gemini-cli) .
-
-Smart actions and commands
-
-Initiate smart actions by right-clicking selected code ( [VS Code](https://developers.google.com/gemini-code-assist/docs/write-code-gemini#use_smart_actions) , [JetBrains IDEs such as IntelliJ and PyCharm](https://developers.google.com/gemini-code-assist/docs/write-code-gemini#use_smart_actions) , and [Android Studio](https://developer.android.com/studio/gemini/overview) ). Initiate smart commands with the slash `/` on the quick pick bar either with or without selected code ( [VS Code](https://developers.google.com/gemini-code-assist/docs/write-code-gemini#generate_code_with_prompts) ).
-
-Intellectual property and compliance
-
-[Source citations in your IDE](https://developers.google.com/gemini-code-assist/docs/works)
 
 ## Gemini Code Assist Standard and Enterprise editions overview
 
@@ -258,14 +225,11 @@ Use project and application context to guide conversational assistance, troubles
 
 ## Set up Gemini Code Assist
 
-For detailed setup steps, see:
-
-  - [Set up Gemini Code Assist for individuals](https://developers.google.com/gemini-code-assist/docs/set-up-gemini) .
-  - [Set up Gemini Code Assist Standard and Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) .
+For detailed setup steps, see [Set up Gemini Code Assist Standard and Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) .
 
 ## Interact with Gemini Code Assist in your IDE
 
-After you [set up Gemini Code Assist for individuals](https://developers.google.com/gemini-code-assist/docs/set-up-gemini) , or [Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) and install the Gemini Code Assist extension in your IDE ( [VS Code](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode) or [supported JetBrains IDE](https://plugins.jetbrains.com/plugin/24198-gemini-code-assist) ), you can ask for assistance in the following ways:
+After you [set up Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) and install the Gemini Code Assist extension in your IDE ( [VS Code](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode) or [supported JetBrains IDE](https://plugins.jetbrains.com/plugin/24198-gemini-code-assist) ), you can ask for assistance in the following ways:
 
   - Receive code completions or generate code directly in the code editor.
 

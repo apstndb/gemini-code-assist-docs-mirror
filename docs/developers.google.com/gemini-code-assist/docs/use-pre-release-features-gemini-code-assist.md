@@ -12,10 +12,7 @@ Pre-release builds can include bug fixes and features still in development that 
 
 ## Before you begin
 
-Set up the edition of Gemini Code Assist you want to use in your IDE:
-
-  - [Gemini Code Assist for individuals](https://developers.google.com/gemini-code-assist/docs/set-up-gemini)
-  - [Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise)
+[Set up Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) .
 
 ## Use the insiders build
 

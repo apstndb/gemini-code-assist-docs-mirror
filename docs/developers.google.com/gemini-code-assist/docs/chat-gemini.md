@@ -23,7 +23,7 @@ This document is intended for developers of all skill levels. It assumes you hav
 
 ### VS Code
 
-1.  [Set up Gemini Code Assist for individuals](https://developers.google.com/gemini-code-assist/docs/set-up-gemini) , [Gemini Code Assist Standard](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) , or [Gemini Code Assist Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) if you haven't already.
+1.  [Set up Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) if you haven't already.
 
 2.  Before testing Gemini Code Assist capabilities in your code file, make sure your file's coding language is supported. For more information on supported coding languages, see [Supported coding languages](https://developers.google.com/gemini-code-assist/docs/supported-languages#coding-languages) .
 
@@ -31,7 +31,7 @@ This document is intended for developers of all skill levels. It assumes you hav
 
 ### IntelliJ
 
-1.  [Set up Gemini Code Assist for individuals](https://developers.google.com/gemini-code-assist/docs/set-up-gemini) , [Gemini Code Assist Standard](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) , or [Gemini Code Assist Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) if you haven't already.
+1.  [Set up Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) if you haven't already.
 
 2.  Before testing Gemini Code Assist capabilities in your code file, make sure your file's coding language is supported. For more information on supported coding languages, see [Supported coding languages](https://developers.google.com/gemini-code-assist/docs/supported-languages#coding-languages) .
 
@@ -137,7 +137,7 @@ You can stop an in-progress chat response by pressing stop **Stop** :
 
 ### Select the model
 
-If you use [Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/overview) , or if you have a Google AI Pro or Ultra subscription, you can select the model that Gemini Code Assist uses when processing your prompts.
+If you use [Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/overview) , you can select the model that Gemini Code Assist uses when processing your prompts.
 
 ### VS Code
 

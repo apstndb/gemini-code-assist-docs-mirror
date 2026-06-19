@@ -29,8 +29,6 @@ Recitation is not available in agent mode. While in agent mode, Gemini doesn't [
 
 ## Before you begin
 
-> **Note:** As of June 18, 2026, Gemini Code Assist for individuals is no longer available, including agent mode for these users. To use agent mode, you need to set up [Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) .
-
 1.  Set up [Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) in your IDE.
 
 ## Use agent mode

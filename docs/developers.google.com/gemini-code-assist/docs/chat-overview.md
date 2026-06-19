@@ -9,7 +9,6 @@ data_source: developers.google.com
 This document outlines the chat features that Gemini Code Assist supports.
 
   - [Learn how and when Gemini Code Assist Standard and Enterprise use your data](https://developers.google.com/gemini-code-assist/docs/data-governance) .
-  - [Learn how and when Gemini Code Assist for individuals uses your data](https://developers.google.com/gemini-code-assist/resources/privacy-notice-gemini-code-assist-individuals) .
 
 To help you comply with any license requirements for your code, Gemini Code Assist provides source citations when its suggestions directly quote at length from a specific source. To learn more about how and when Gemini cites sources, see [How Gemini helps you generate code and cites sources](https://developers.google.com/gemini-code-assist/docs/works#how-when-gemini-cites-sources) .
 
@@ -37,7 +36,7 @@ You can perform the following chat actions with Gemini Code Assist in any of the
 
 ## What's next
 
-  - [Set up Gemini Code Assist for individuals](https://developers.google.com/gemini-code-assist/docs/set-up-gemini) , [Gemini Code Assist Standard](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) , or [Gemini Code Assist Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) if you haven't already.
+  - [Set up Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) if you haven't already.
 
 <!-- end list -->
 

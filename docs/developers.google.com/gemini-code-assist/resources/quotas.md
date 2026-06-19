@@ -2,7 +2,7 @@
 name: documents/developers.google.com/gemini-code-assist/resources/quotas
 uri: https://developers.google.com/gemini-code-assist/resources/quotas
 title: Quotas and limits
-description: Review quotas and limits for Gemini Code Assist for individuals.
+description: Review quotas and limits for Gemini Code Assist.
 data_source: developers.google.com
 ---
 
@@ -35,24 +35,6 @@ Way(s) to purchase
 Value
 
 Maximum requests per user per day
-
-For individuals (free)
-
-N/A
-
-1000
-
-Gemini Code Assist using Google AI Pro
-
-[Google AI Pro](https://one.google.com/ai?utm_source=GEMINI_CODE_ASSIST&g1_landing_page=75)
-
-1500
-
-Gemini Code Assist using Google AI Ultra
-
-[Google AI Ultra](https://one.google.com/ai?utm_source=GEMINI_CODE_ASSIST&g1_landing_page=75)
-
-2000
 
 Standard
 

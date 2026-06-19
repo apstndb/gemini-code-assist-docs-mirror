@@ -112,6 +112,6 @@ Gemini Code Assist can offer assistance with the following infrastructure as cod
 
 ## What's next
 
-  - Learn how to [set up Gemini Code Assist](https://developers.google.com/gemini-code-assist/docs/set-up-gemini) at no cost, or if you prefer to get started with Gemini Code Assist Standard or Enterprise, see [Set up Gemini Code Assist (Standard and Enterprise)](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) .
+  - Learn how to [set up Gemini Code Assist Standard and Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) .
   - Learn [how Gemini for Google Cloud uses your data](https://developers.google.com/gemini-code-assist/docs/data-governance) .
   - Learn more about [Google Cloud compliance](https://cloud.google.com/compliance) .

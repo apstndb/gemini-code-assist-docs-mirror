@@ -6,10 +6,6 @@ description: Lists the Terms of Service and Privacy Policies pages for Gemini Co
 data_source: developers.google.com
 ---
 
-  - Gemini Code Assist for individuals: [Terms of Service](https://policies.google.com/terms) and [Privacy Notice](https://developers.google.com/gemini-code-assist/resources/privacy-notice-gemini-code-assist-individuals)
-
-  - Gemini Code Assist using a Google AI Pro or Ultra subscription: [Terms of Service](https://policies.google.com/terms) , [Google One Additional Terms of Service](https://one.google.com/terms-of-service) and [Privacy Policy](https://policies.google.com/privacy)
-
   - Gemini Code Assist Standard and Enterprise editions: [Terms of Service](https://cloud.google.com/terms) and [Privacy Notice](https://cloud.google.com/terms/cloud-privacy-notice)
 
   - Cloud Code and Gemini Code Assist: [Terms of Service and Privacy Notice](https://docs.cloud.google.com/code/docs/cloud-code-gemini-code-assist-data-governance)
