@@ -6,7 +6,7 @@ description: Gemini Code Assist deprecation for consumer accounts
 data_source: developers.google.com
 ---
 
-Starting June 18, 2026, Gemini Code Assist IDE extensions will stop serving requests for the Gemini Code Assist for individuals, Google AI Pro, and Google AI Ultra tiers. This timeline also applies to usage of Gemini CLI. As part of the deprecation, you can no longer use the **Login with Google** option to access the IDE extensions or Gemini CLI. For more information, see the [Google I/O announcement](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli#important-timeline-for-consumers) .
+Starting June 18, 2026, Gemini Code Assist IDE extensions stopped serving requests for the Gemini Code Assist for individuals, Google AI Pro, and Google AI Ultra tiers. This also applies to usage of Gemini CLI. As part of the deprecation, you can no longer use the **Login with Google** option to access the IDE extensions or Gemini CLI. For more information, see the [Google I/O announcement](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli#important-timeline-for-consumers) .
 
 Users of Gemini Code Assist consumer accounts on both Gemini Code Assist IDE extensions and Gemini CLI can migrate to the [Antigravity family of products](https://antigravity.google/product) . For Antigravity quota and subscription information, see [Antigravity pricing](https://antigravity.google/pricing) .
 

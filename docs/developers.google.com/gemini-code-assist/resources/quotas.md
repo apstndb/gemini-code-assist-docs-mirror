@@ -6,7 +6,7 @@ description: Review quotas and limits for Gemini Code Assist.
 data_source: developers.google.com
 ---
 
-> **Note:** We are unifying our tools into a single, multi-agent platform called Antigravity, with Antigravity CLI now available. Gemini Code Assist IDE Extensions and Gemini CLI will stop serving requests for Gemini Code Assist for individuals, Google AI Pro, and Google AI Ultra tiers starting June 18, 2026. Migrate to Antigravity and Antigravity CLI before this date to avoid disruption to your workflows. To learn more, see [Antigravity documentation](https://antigravity.google/docs/getting-started) .
+> **Note:** We have unified our tools into a single, multi-agent platform called Antigravity, with Antigravity CLI now available. Starting June 18, 2026, Gemini Code Assist IDE Extensions and Gemini CLI stopped serving requests for the Gemini Code Assist for individuals, Google AI Pro, and Google AI Ultra tiers. Affected users should migrate to Antigravity and Antigravity CLI. To learn more, see the [deprecation page](https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals) .
 
 This document lists the quotas and system limits that apply to your combined use of Gemini Code Assist and Gemini CLI.
 

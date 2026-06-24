@@ -6,9 +6,7 @@ description: How to use Gemini Code Assist in an IDE.
 data_source: developers.google.com
 ---
 
-> **Note:** If you're at a business or would like more team-level benefits, consider [Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) .
-
-> **Note:** We are unifying our tools into a single, multi-agent platform called Antigravity, with Antigravity CLI now available. Gemini Code Assist IDE Extensions and Gemini CLI will stop serving requests for Gemini Code Assist for individuals, Google AI Pro, and Google AI Ultra tiers starting June 18, 2026. Migrate to Antigravity and Antigravity CLI before this date to avoid disruption to your workflows. To learn more, see [Antigravity documentation](https://antigravity.google/docs/getting-started) .
+> **Note:** We have unified our tools into a single, multi-agent platform called Antigravity, with Antigravity CLI now available. Starting June 18, 2026, Gemini Code Assist IDE Extensions and Gemini CLI stopped serving requests for the Gemini Code Assist for individuals, Google AI Pro, and Google AI Ultra tiers. Affected users should migrate to Antigravity and Antigravity CLI. To learn more, see the [deprecation page](https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals) .
 
 This document describes how you can use [Gemini Code Assist](https://developers.google.com/gemini-code-assist/docs/overview) , an AI-powered collaborator in your IDE, to help you do the following in VS Code or IntelliJ and other [supported JetBrains IDEs](https://developers.google.com/gemini-code-assist/docs/supported-languages#supported_ides) :
 

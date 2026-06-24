@@ -6,8 +6,6 @@ description: Provides an overview of the features available in Gemini Code Assis
 data_source: developers.google.com
 ---
 
-> **Note:** If you're at a business or would like more team-level benefits, consider [Gemini Code Assist Standard or Enterprise](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise) .
-
 Gemini Code Assist offers AI-powered assistance to help your development team build, deploy, and operate applications throughout the software development lifecycle. Gemini Code Assist is available in the following editions:
 
   - [Gemini Code Assist Standard](https://developers.google.com/gemini-code-assist/docs/overview#supported-features) , a product in the [Gemini for Google Cloud](https://docs.cloud.google.com/gemini/docs/overview) portfolio.

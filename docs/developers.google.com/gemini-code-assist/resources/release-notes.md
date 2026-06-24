@@ -8,7 +8,7 @@ data_source: developers.google.com
 
 This page contains release notes for features and updates to Gemini Code Assist. Check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
-> **Note:** We are unifying our tools into a single, multi-agent platform called Antigravity, with Antigravity CLI now available. Gemini Code Assist IDE Extensions and Gemini CLI will stop serving requests for Gemini Code Assist for individuals, Google AI Pro, and Google AI Ultra tiers starting June 18, 2026. Migrate to Antigravity and Antigravity CLI before this date to avoid disruption to your workflows. To learn more, see [Antigravity documentation](https://antigravity.google/docs/getting-started) .
+> **Note:** We have unified our tools into a single, multi-agent platform called Antigravity, with Antigravity CLI now available. Starting June 18, 2026, Gemini Code Assist IDE Extensions and Gemini CLI stopped serving requests for the Gemini Code Assist for individuals, Google AI Pro, and Google AI Ultra tiers. Affected users should migrate to Antigravity and Antigravity CLI. To learn more, see the [deprecation page](https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals) .
 
 To get the latest product updates delivered to you, add the URL of this page to your [feed reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators) , or add the feed URL directly: `https://developers.google.com/feeds/gemini-code-assist-free-release-notes.xml` .
 
