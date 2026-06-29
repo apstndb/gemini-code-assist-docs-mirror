@@ -12,9 +12,9 @@ This page contains release notes for features and updates to Gemini Code Assist.
 
 To get the latest product updates delivered to you, add the URL of this page to your [feed reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators) , or add the feed URL directly: `https://developers.google.com/feeds/gemini-code-assist-free-release-notes.xml` .
 
-## June 15, 2026
+## June 19, 2026
 
-**VS Code Gemini Code Assist 2.86.0**
+**VS Code Gemini Code Assist 2.87.0**
 
 Other
 
@@ -22,9 +22,19 @@ Other
 
 Various bug fixes and minor product enhancements.
 
-## June 09, 2026
+## June 18, 2026
 
-**VS Code Gemini Code Assist 2.85.0**
+**IntelliJ Gemini Code Assist 1.54.1**
+
+Other
+
+### Bug fixes in IntelliJ
+
+Various bug fixes and minor product enhancements.
+
+## June 11, 2026
+
+**VS Code Gemini Code Assist 2.86.0**
 
 Other
 
@@ -41,6 +51,16 @@ Announcement
 ### Gemini 3.5 Flash is generally available
 
 [Gemini 3.5 Flash](https://developers.google.com/gemini-code-assist/docs/gemini-3) is now generally available to Gemini Code Assist users in VS Code and IntelliJ. You can use this model for [agent mode](https://developers.google.com/gemini-code-assist/docs/agent-mode) , [chat](https://developers.google.com/gemini-code-assist/docs/chat-gemini) , and [code generation](https://developers.google.com/gemini-code-assist/docs/write-code-gemini#generate_code_with_prompts) .
+
+## June 04, 2026
+
+**VS Code Gemini Code Assist 2.85.0**
+
+Other
+
+### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
 
 ## June 03, 2026
 
