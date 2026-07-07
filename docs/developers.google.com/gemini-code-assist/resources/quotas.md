@@ -38,7 +38,7 @@ Maximum requests per user per day
 
 Standard
 
-[Google Developer Program premium](https://developers.google.com/program/plans-and-pricing) or [Google Cloud console](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise)
+[Google Cloud console](https://developers.google.com/gemini-code-assist/docs/set-up-gemini-standard-enterprise)
 
 1500
 
@@ -59,9 +59,3 @@ Usage of [Gemini Code Assist on GitHub](https://developers.google.com/gemini-cod
       - The exact number of pull request reviews depends on the codebase and how many model calls are required to complete each code review. Because of this, in some cases the quota can be significantly greater than 100.
 
 Gemini Code Assist on GitHub quotas reset in alignment with resets for [Google Cloud quotas](https://docs.cloud.google.com/docs/quotas/overview#running_out) .
-
-## How to obtain higher daily model request limits
-
-To adjust agent mode and Gemini CLI quotas, individual developers can purchase [the Google Developer Program premium](https://developers.google.com/program/plans-and-pricing) , [Google AI Pro or Google AI Ultra](https://gemini.google/subscriptions/) .
-
-If you are at a business or organization, we recommend [purchasing the Standard or Enterprise edition of Gemini Code Assist](https://cloud.google.com/gemini/docs/codeassist/set-up-gemini#purchase-subscription) . For more information about how to manage quotas within Gemini Code Assist Standard or Enterprise, see [View and manage quotas](https://cloud.google.com/docs/quotas/view-manage) .
