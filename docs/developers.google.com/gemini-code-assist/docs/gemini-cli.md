@@ -6,7 +6,7 @@ description: Learn about the Gemini CLI
 data_source: developers.google.com
 ---
 
-The [Gemini command line interface (CLI)](https://geminicli.com/docs/) is an open source AI agent that provides access to Gemini directly in your terminal. The Gemini CLI uses a reason and act (ReAct) loop with your built-in tools and local or remote MCP servers to complete complex use cases like fixing bugs, creating new features, and improving test coverage. While the Gemini CLI excels at coding, it's also a versatile local utility that you can use for a wide range of tasks, from content generation and problem solving to deep research and task management.
+The [Gemini command line interface (CLI)](https://geminicli.com/docs/) is an open source AI agent that provides access to Gemini directly in your local or Cloud Shell terminal. The Gemini CLI uses a reason and act (ReAct) loop with your built-in tools and local or remote MCP servers to complete complex use cases like fixing bugs, creating new features, and improving test coverage. While the Gemini CLI excels at coding, it's also a versatile local utility that you can use for a wide range of tasks, from content generation and problem solving to deep research and task management.
 
 Each [Gemini Code Assist edition](https://developers.google.com/gemini-code-assist/docs/overview) provides [quotas](https://geminicli.com/docs/quota-and-pricing/) for using the Gemini CLI. Note that these quotas are shared between Gemini CLI and [Gemini Code Assist agent mode](https://developers.google.com/gemini-code-assist/docs/agent-mode) . Gemini CLI also supports using a Gemini API key to [pay as you go](https://geminicli.com/docs/quota-and-pricing/#pay-as-you-go) .
 
