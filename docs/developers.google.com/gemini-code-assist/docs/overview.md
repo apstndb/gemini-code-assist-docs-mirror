@@ -20,7 +20,7 @@ The Gemini large language models (LLMs) that are used by Gemini Code Assist are 
 
   - [Learn how and when Gemini Code Assist Standard and Enterprise use your data](https://developers.google.com/gemini-code-assist/docs/data-governance) .
 
-As an early-stage technology, Gemini Code Assist can generate output that seems plausible but is factually incorrect. We recommend that you validate all output from Gemini Code Assist before you use it. For more information, see [Gemini Code Assist and responsible AI](https://developers.google.com/gemini-code-assist/docs/responsible-ai) .
+As an early-stage technology, Gemini Code Assist can generate output that seems plausible but is factually incorrect. We recommend that you validate all output from Gemini Code Assist before you use it. For more information, see [Gemini Code Assist and responsible AI](https://docs.cloud.google.com/gemini/docs/discover/responsible-ai) .
 
 Gemini Code Assist provides citation information when it directly quotes at length from another source, such as existing open source code. For more information, see [How and when Gemini cites sources](https://developers.google.com/gemini-code-assist/docs/works#how-when-gemini-cites-sources) .
 
@@ -101,7 +101,7 @@ Code completion and generation in your IDE project in the following IDEs:
 
 Conversational assistant in your IDE [using your opened files' context](https://developers.google.com/gemini-code-assist/docs/works#gemini-code-assist)
 
-Multi-IDE support (VS Code, [JetBrains IDEs such as IntelliJ and PyCharm](https://developers.google.com/gemini-code-assist/docs/supported-languages#supported_ides) , and [Android Studio](https://developer.android.com/studio/gemini/overview) )
+Multi-IDE support (VS Code, [JetBrains IDEs such as IntelliJ and PyCharm](https://docs.cloud.google.com/gemini/docs/codeassist/supported-languages#supported_ides) , and [Android Studio](https://developer.android.com/studio/gemini/overview) )
 
 Agentic chat
 

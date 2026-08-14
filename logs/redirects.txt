@@ -1,3 +1,2 @@
 https://developers.google.com/gemini-code-assist https://codeassist.google/products/business
 https://developers.google.com/gemini-code-assist/docs https://developers.google.com/gemini-code-assist/docs/overview
-https://developers.google.com/gemini-code-assist/docs/use-gemini-code-assist-chat https://docs.cloud.google.com/gemini/docs/codeassist/use-gemini-code-assist-chat

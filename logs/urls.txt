@@ -1,11 +1,6 @@
 https://developers.google.com/gemini-code-assist/docs/deprecations	2026-07-08T17:47:08Z
 https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals	2026-06-23T22:18:35Z
 https://developers.google.com/gemini-code-assist/docs/deprecations/consumer-code-review	2026-05-27T20:05:49Z
-https://developers.google.com/gemini-code-assist/docs/feedback	2026-06-10T20:48:08Z
-https://developers.google.com/gemini-code-assist/docs/gemini-3	2026-06-18T17:45:20Z
-https://developers.google.com/gemini-code-assist/docs/overview	2026-06-23T22:18:35Z
-https://developers.google.com/gemini-code-assist/docs/responsible-ai	2026-05-27T20:02:08Z
-https://developers.google.com/gemini-code-assist/docs/supported-languages	2026-06-23T16:09:35Z
-https://developers.google.com/gemini-code-assist/docs/works	2026-05-27T20:02:08Z
+https://developers.google.com/gemini-code-assist/docs/overview	2026-08-13T17:36:08Z
 https://developers.google.com/gemini-code-assist/resources/plugin-license	2026-05-27T20:02:08Z
 https://developers.google.com/gemini-code-assist/resources/privacy-notices	2026-07-17T16:18:52Z
