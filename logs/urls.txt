@@ -1,6 +1,6 @@
 https://developers.google.com/gemini-code-assist/docs/deprecations	2026-07-08T17:47:08Z
 https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals	2026-06-23T22:18:35Z
 https://developers.google.com/gemini-code-assist/docs/deprecations/consumer-code-review	2026-05-27T20:05:49Z
-https://developers.google.com/gemini-code-assist/docs/overview	2026-08-13T17:36:08Z
+https://developers.google.com/gemini-code-assist/docs/overview	2026-08-19T16:34:14Z
 https://developers.google.com/gemini-code-assist/resources/plugin-license	2026-05-27T20:02:08Z
 https://developers.google.com/gemini-code-assist/resources/privacy-notices	2026-07-17T16:18:52Z
