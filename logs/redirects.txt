@@ -1,2 +1,2 @@
-https://developers.google.com/gemini-code-assist https://codeassist.google/products/business
+https://developers.google.com/gemini-code-assist https://codeassist.google/
 https://developers.google.com/gemini-code-assist/docs https://developers.google.com/gemini-code-assist/docs/overview
