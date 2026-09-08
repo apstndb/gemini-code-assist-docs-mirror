@@ -1,1 +1,2 @@
-
+200 https://cloud.google.com/products/gemini/code-assist
+200 https://docs.cloud.google.com/gemini/docs/codeassist/troubleshoot

@@ -1,0 +1,77 @@
+---
+name: documents/docs.cloud.google.com/sdk/gcloud/reference/gemini/code-repository-indexes/delete
+uri: https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-repository-indexes/delete
+title: gcloud gemini code-repository-indexes delete
+description: Offers tools and libraries that allow you to create and manage resources across Google Cloud.
+data_source: docs.cloud.google.com
+---
+
+NAME
+
+gcloud gemini code-repository-indexes delete - delete a code repository index instance
+
+SYNOPSIS
+
+`gcloud gemini code-repository-indexes delete` ( `  CODE_REPOSITORY_INDEX  ` : `  --location  ` = `  LOCATION  ` ) \[ `  --async  ` \] \[ `  --force  ` \] \[ `  --request-id  ` = `  REQUEST_ID  ` \] \[ `  GCLOUD_WIDE_FLAG …  ` \]
+
+DESCRIPTION
+
+Delete a code repository index instance.
+
+EXAMPLES
+
+To delete code repository index instance `my-instance` in project `my-project` and location `us-central1` , run:
+
+    gcloud gemini code-repository-indexes delete my-instance --project=my-project --location=us-central1
+
+POSITIONAL ARGUMENTS
+
+CodeRepositoryIndex resource - Name of the resource The arguments in this group can be used to specify the attributes of this resource. (NOTE) Some attributes are not given arguments in this group but can be set in other ways.
+
+To set the `project` attribute:
+
+  - provide the argument `code_repository_index` on the command line with a fully specified name;
+  - provide the argument `--project` on the command line;
+  - set the property `core/project` .
+
+This must be specified.
+
+  - `  CODE_REPOSITORY_INDEX  `  
+    ID of the codeRepositoryIndex or fully qualified identifier for the codeRepositoryIndex.
+    
+    To set the `code_repository_index` attribute:
+    
+      - provide the argument `code_repository_index` on the command line.
+    
+    This positional argument must be specified if any of the other arguments in this group are specified.
+
+  - `--location` = `  LOCATION  `  
+    The location id of the codeRepositoryIndex resource.
+    
+    To set the `location` attribute:
+    
+      - provide the argument `code_repository_index` on the command line with a fully specified name;
+      - provide the argument `--location` on the command line.
+
+FLAGS
+
+  - `--async`  
+    Return immediately, without waiting for the operation in progress to complete.
+
+  - `--force`  
+    If set to true, any RepositoryGroups from this CodeRepositoryIndex will also be deleted. (Otherwise, the request will only work if the CodeRepositoryIndex has no RepositoryGroups.)
+
+  - `--request-id` = `  REQUEST_ID  `  
+    An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. The server will guarantee that for at least 60 minutes after the first request.
+    
+    The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+
+GCLOUD WIDE FLAGS
+
+These flags are available to all commands: `  --access-token-file  ` , `  --account  ` , `  --billing-project  ` , `  --configuration  ` , `  --flags-file  ` , `  --flatten  ` , `  --format  ` , `  --help  ` , `  --impersonate-service-account  ` , `  --log-http  ` , `  --project  ` , `  --quiet  ` , `  --trace-token  ` , `  --user-output-enabled  ` , `  --verbosity  ` .
+
+Run ` $ gcloud help  ` for details.
+
+API REFERENCE
+
+This command uses the `cloudaicompanion/v1` API. The full documentation for this API can be found at: <https://cloud.google.com/gemini>

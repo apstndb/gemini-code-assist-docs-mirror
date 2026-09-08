@@ -1,0 +1,54 @@
+---
+name: documents/docs.cloud.google.com/sdk/gcloud/reference/gemini
+uri: https://docs.cloud.google.com/sdk/gcloud/reference/gemini
+title: gcloud gemini
+description: Offers tools and libraries that allow you to create and manage resources across Google Cloud.
+data_source: docs.cloud.google.com
+---
+
+NAME
+
+gcloud gemini - manage resources associated with Gemini Code Assist and Gemini Cloud Assist
+
+SYNOPSIS
+
+`gcloud gemini` `  GROUP  ` \[ `  GCLOUD_WIDE_FLAG …  ` \]
+
+DESCRIPTION
+
+gcloud gemini commands are not associated with [Gemini CLI](https://github.com/google-gemini/gemini-cli) .
+
+GCLOUD WIDE FLAGS
+
+These flags are available to all commands: `  --help  ` .
+
+Run ` $ gcloud help  ` for details.
+
+GROUPS
+
+`  GROUP  ` is one of the following:
+
+  - `  code-repository-indexes  `  
+    Manage Code Repository Index resources.
+  - `  code-tools-settings  `  
+    Manage Code Tools Setting resources.
+  - `  data-sharing-with-google-settings  `  
+    Manage Data Sharing With Google Setting resources.
+  - `  gda-observability-settings  `  
+    Manage Gda Observability Setting resources.
+  - `  gemini-gcp-enablement-settings  `  
+    Manage Gemini Gcp Enablement Setting resources.
+  - `  gibq-observability-settings  `  
+    Manage Gibq Observability Setting resources.
+  - `  logging-settings  `  
+    Manage Logging Setting resources.
+  - `  operations  `  
+    Manage Operation resources.
+  - `  release-channel-settings  `  
+    Manage Release Channel Setting resources.
+
+NOTES
+
+This variant is also available:
+
+    gcloud beta gemini

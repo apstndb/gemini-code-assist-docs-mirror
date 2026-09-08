@@ -1,0 +1,47 @@
+---
+name: documents/docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings
+uri: https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings
+title: gcloud gemini release-channel-settings
+description: Offers tools and libraries that allow you to create and manage resources across Google Cloud.
+data_source: docs.cloud.google.com
+---
+
+NAME
+
+gcloud gemini release-channel-settings - manage Release Channel Setting resources
+
+SYNOPSIS
+
+`gcloud gemini release-channel-settings` `  GROUP  ` | `  COMMAND  ` \[ `  GCLOUD_WIDE_FLAG …  ` \]
+
+DESCRIPTION
+
+Manage Release Channel Setting resources.
+
+GCLOUD WIDE FLAGS
+
+These flags are available to all commands: `  --help  ` .
+
+Run ` $ gcloud help  ` for details.
+
+GROUPS
+
+`  GROUP  ` is one of the following:
+
+  - `  setting-bindings  `  
+    Manage Setting Binding resources.
+
+COMMANDS
+
+`  COMMAND  ` is one of the following:
+
+  - `  create  `  
+    Create releaseChannelSettings.
+  - `  delete  `  
+    Delete releaseChannelSettings.
+  - `  describe  `  
+    Describe releaseChannelSettings.
+  - `  list  `  
+    List releaseChannelSettings.
+  - `  update  `  
+    Update releaseChannelSettings.
