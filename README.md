@@ -1,9 +1,18 @@
 # Gemini Code Assist Documentation Mirror
 
-A local Markdown mirror of the [Gemini Code Assist](https://developers.google.com/gemini-code-assist/docs/overview) documentation, automatically updated via GitHub Actions.
+A local Markdown mirror of Gemini Code Assist documentation, automatically updated via GitHub Actions.
 
-> [!NOTE]
-> Gemini Code Assist documentation lives under `developers.google.com`, not `cloud.google.com`. The mirror tool's `default_host` is set accordingly in `settings.toml`.
+This mirror covers:
+
+- **Individual / consumer** docs under [`developers.google.com/gemini-code-assist/`](https://developers.google.com/gemini-code-assist/docs/overview)
+- **Standard / Enterprise** docs under [`docs.cloud.google.com/gemini/docs/codeassist/`](https://docs.cloud.google.com/gemini/docs/codeassist/overview), plus the [product page](https://cloud.google.com/products/gemini/code-assist)
+- **gcloud CLI** for Code Assist management: [`gcloud gemini`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini) (GA only; `gcloud beta gemini` is Cloud Assist-only and is not mirrored)
+
+The Developer Knowledge API treats `developers.google.com`, `docs.cloud.google.com`, and `cloud.google.com` as distinct corpora. This mirror stores pages under their original hostnames. The individual corpus uses relative links, so `default_host` stays `developers.google.com`; Cloud docs are included with host-scoped prefixes.
+
+Gemini Enterprise Agent Platform is a separate product and is not mirrored here.
+
+The product-page seed requires `gcp-docs-mirror-tools` v0.3.0 or newer and is active in the workflow.
 
 ## Setup Instructions
 
@@ -37,6 +46,6 @@ This mirror system is powered by [gcp-docs-mirror-tools](https://github.com/apst
 
 ## License
 
-The documentation content collected in this repository is mirrored from Google Developers documentation according to the [Google Developers Site Policies](https://developers.google.com/terms/site-policies).
+The documentation content collected in this repository is mirrored from Google Developers and Google Cloud documentation according to the [Google Developers Site Policies](https://developers.google.com/terms/site-policies).
 - Documentation content is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 - Code samples are licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).

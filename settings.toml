@@ -1,16 +1,36 @@
 # settings.toml: Configuration for the Gemini Code Assist mirror
 
-# Documentation lives under developers.google.com, not cloud.google.com.
+# Relative links under the individual/consumer corpus resolve against this host.
+# Cloud docs use host-scoped prefixes below (the tool default is docs.cloud.google.com).
 default_host = "developers.google.com"
 
 seeds = [
+    # Individual / consumer docs (developers.google.com)
     "https://developers.google.com/gemini-code-assist/docs/overview",
     "https://developers.google.com/gemini-code-assist/docs",
+    # Standard / Enterprise docs (Google Cloud)
+    "https://docs.cloud.google.com/gemini/docs/codeassist/overview",
+    "https://docs.cloud.google.com/gemini/docs/codeassist",
+    # Subscription admin lives outside the codeassist/ tree but is Code Assist-only.
+    "https://docs.cloud.google.com/gemini/docs/admin",
+    "https://cloud.google.com/products/gemini/code-assist",
+    # gcloud gemini manages Code Assist (and shared Gemini for Google Cloud) resources.
+    "https://docs.cloud.google.com/sdk/gcloud/reference/gemini",
 ]
 
 # Path prefixes (path-only prefixes are matched under default_host).
+# Use host-scoped prefixes when covering more than one corpus host.
 prefixes = [
     "developers.google.com/gemini-code-assist/",
+    "docs.cloud.google.com/gemini/docs/codeassist/",
+    # GA gcloud gemini: code-repository-indexes, code-tools-settings, release
+    # channels, and related Gemini for Google Cloud admin settings used by
+    # Code Assist. Alpha does not exist. Beta is Cloud Assist-only (investigations)
+    # and is omitted to keep Cloud Assist surface out of this mirror.
+    "docs.cloud.google.com/sdk/gcloud/reference/gemini/",
+    # Legacy documentation links are retained narrowly for redirect recovery.
+    "cloud.google.com/gemini/docs/codeassist/",
+    "cloud.google.com/sdk/gcloud/reference/gemini/",
 ]
 
 # Recursive discovery from Markdown content
