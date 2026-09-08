@@ -6,6 +6,7 @@ This mirror covers:
 
 - **Individual / consumer** docs under [`developers.google.com/gemini-code-assist/`](https://developers.google.com/gemini-code-assist/docs/overview)
 - **Standard / Enterprise** docs under [`docs.cloud.google.com/gemini/docs/codeassist/`](https://docs.cloud.google.com/gemini/docs/codeassist/overview), plus the [product page](https://cloud.google.com/products/gemini/code-assist)
+- **gcloud CLI** for Code Assist management: [`gcloud gemini`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini) (GA only; `gcloud beta gemini` is Cloud Assist-only and is not mirrored)
 
 The Developer Knowledge API treats `developers.google.com`, `docs.cloud.google.com`, and `cloud.google.com` as distinct corpora. This mirror stores pages under their original hostnames. The individual corpus uses relative links, so `default_host` stays `developers.google.com`; Cloud docs are included with host-scoped prefixes.
 

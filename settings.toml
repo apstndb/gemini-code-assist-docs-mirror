@@ -14,6 +14,8 @@ seeds = [
     # Subscription admin lives outside the codeassist/ tree but is Code Assist-only.
     "https://docs.cloud.google.com/gemini/docs/admin",
     "https://cloud.google.com/products/gemini/code-assist",
+    # gcloud gemini manages Code Assist (and shared Gemini for Google Cloud) resources.
+    "https://docs.cloud.google.com/sdk/gcloud/reference/gemini",
 ]
 
 # Path prefixes (path-only prefixes are matched under default_host).
@@ -21,8 +23,14 @@ seeds = [
 prefixes = [
     "developers.google.com/gemini-code-assist/",
     "docs.cloud.google.com/gemini/docs/codeassist/",
+    # GA gcloud gemini: code-repository-indexes, code-tools-settings, release
+    # channels, and related Gemini for Google Cloud admin settings used by
+    # Code Assist. Alpha does not exist. Beta is Cloud Assist-only (investigations)
+    # and is omitted to keep Cloud Assist surface out of this mirror.
+    "docs.cloud.google.com/sdk/gcloud/reference/gemini/",
     # Legacy documentation links are retained narrowly for redirect recovery.
     "cloud.google.com/gemini/docs/codeassist/",
+    "cloud.google.com/sdk/gcloud/reference/gemini/",
 ]
 
 # Recursive discovery from Markdown content
