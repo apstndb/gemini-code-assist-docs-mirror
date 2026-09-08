@@ -1,16 +1,28 @@
 # settings.toml: Configuration for the Gemini Code Assist mirror
 
-# Documentation lives under developers.google.com, not cloud.google.com.
+# Relative links under the individual/consumer corpus resolve against this host.
+# Cloud docs use host-scoped prefixes below (the tool default is docs.cloud.google.com).
 default_host = "developers.google.com"
 
 seeds = [
+    # Individual / consumer docs (developers.google.com)
     "https://developers.google.com/gemini-code-assist/docs/overview",
     "https://developers.google.com/gemini-code-assist/docs",
+    # Standard / Enterprise docs (Google Cloud)
+    "https://docs.cloud.google.com/gemini/docs/codeassist/overview",
+    "https://docs.cloud.google.com/gemini/docs/codeassist",
+    # Subscription admin lives outside the codeassist/ tree but is Code Assist-only.
+    "https://docs.cloud.google.com/gemini/docs/admin",
+    "https://cloud.google.com/products/gemini/code-assist",
 ]
 
 # Path prefixes (path-only prefixes are matched under default_host).
+# Use host-scoped prefixes when covering more than one corpus host.
 prefixes = [
     "developers.google.com/gemini-code-assist/",
+    "docs.cloud.google.com/gemini/docs/codeassist/",
+    # Legacy documentation links are retained narrowly for redirect recovery.
+    "cloud.google.com/gemini/docs/codeassist/",
 ]
 
 # Recursive discovery from Markdown content
