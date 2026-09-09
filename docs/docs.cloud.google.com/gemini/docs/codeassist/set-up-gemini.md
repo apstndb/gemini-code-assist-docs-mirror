@@ -36,7 +36,7 @@ Before you can use services available to users with [Gemini Code Assist](https:/
 
 To purchase a new Gemini Code Assist subscription, [contact Google Cloud sales](https://cloud.google.com/contact) . For a list of features available in each Gemini Code Assist edition, see [Supported features](https://docs.cloud.google.com/gemini/docs/codeassist/overview#supported-features) .
 
-If you have an existing Gemini Code Assist subscription, you can [manage and renew it through the Google Cloud console](https://docs.cloud.google.com/gemini/docs/codeassist/admin) .
+If you have an existing Gemini Code Assist subscription, you can [manage and renew it through the Google Cloud console](https://docs.cloud.google.com/gemini/docs/admin) .
 
 ## Assign licenses
 
