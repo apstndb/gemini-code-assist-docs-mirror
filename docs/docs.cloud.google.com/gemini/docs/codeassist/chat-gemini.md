@@ -663,67 +663,7 @@ For example, you can create a rule such as "Always give me concise responses in 
 
 ## Known issues
 
-This section outlines the known issues of Gemini Code Assist:
-
-### VS Code
-
-  - **Chat responses may be truncated when they include an updated version of a large open file**
-    
-    To work around this issue, select a smaller section of code and include an additional directive in the chat prompt, such as `only output the selected code.`
-
-  - **Vim: Cannot accept or dismiss code generation suggestions unless in insert mode**
-    
-    When using the Vim plugin in normal mode, you can't accept or dismiss code suggestions.
-    
-    To work around this issue, press i to enter insert mode, and then press Tab to accept the suggestion.
-
-  - **Vim: Inconsistent behavior when pressing Esc to dismiss suggestions**
-    
-    When you press Esc , both the IDE and Gemini Code Assist suggestions are dismissed. This behavior is different from the non-Vim behavior where pressing Esc re-triggers Gemini Code Assist.
-
-  - **Sign-in attempts keep timing out**
-    
-    If your sign-in attempts keep timing out, try adding the `cloudcode.beta.forceOobLogin` setting to your `settings.json` file:
-    
-    ``` 
-     "cloudcode.beta.forceOobLogin": true
-    ```
-
-  - **License recitation warnings don't persist across sessions**
-    
-    If license recitation warnings don't persist across sessions, refer to the persistent logs:
-    
-    1.  Click **View** \> **Output** .
-    
-    2.  Select **Gemini Code Assist - Citations** .
-
-  - **Connectivity issues in the Gemini Code Assist output window**
-    
-    If you see a connection error or other connectivity problems in the Gemini Code Assist output window, try the following:
-    
-      - Configure your firewall to allow access to `oauth2.googleapis.com` and `cloudaicompanion.googleapis.com` .
-    
-      - Configure your firewall to allow communication over HTTP/2, which gRPC uses.
-    
-    You can use the `grpc-health-probe` tool to test connectivity. A successful check results in the following output:
-    
-    `$ grpc-health-probe -addr cloudaicompanion.googleapis.com:443 -tls error: this server does not implement the grpc health protocol (grpc.health.v1.Health): GRPC target method can't be resolved`
-    
-    An unsuccessful check results in the following output:
-    
-    `timeout: failed to connect service "cloudaicompanion.googleapis.com:443" within 1s`
-    
-    To obtain more details, run the following before `grpc-health-probe` :
-    
-        export GRPC_GO_LOG_SEVERITY_LEVEL=info
-
-### IntelliJ
-
-There are no known issues for Gemini Code Assist for IntelliJ and other supported JetBrains IDEs.
-
-## Leave feedback
-
-To leave feedback of your experience, see [Provide Gemini Code Assist feedback](https://docs.cloud.google.com/gemini/docs/support/feedback) .
+For a list of known issues with Gemini Code Assist in your IDE, see [known issues](https://docs.cloud.google.com/gemini/docs/codeassist/code-overview#known-issues) .
 
 ## What's next
 

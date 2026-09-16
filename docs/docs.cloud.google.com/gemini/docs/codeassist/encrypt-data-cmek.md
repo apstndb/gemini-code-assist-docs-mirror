@@ -15,11 +15,11 @@ In this document, you do the following:
   - Create a code repository index with a CMEK.
   - Remove access to a CMEK repository.
 
-By default, Gemini for Google Cloud encrypts customer content at rest. Gemini handles encryption for you without any additional actions on your part. This option is called *Google default encryption* .
+By default, code customization for Gemini Code Assist encrypts customer content at rest. code customization handles encryption for you without any additional actions on your part. This option is called *Google default encryption* .
 
-If you want to control your encryption keys, then you can use customer-managed encryption keys (CMEKs) in [Cloud KMS](https://docs.cloud.google.com/kms/docs) with CMEK-integrated services including Gemini. Using Cloud KMS keys gives you control over their protection level, location, rotation schedule, usage and access permissions, and cryptographic boundaries. Using Cloud KMS also lets you view audit logs and control key lifecycles. Instead of Google owning and managing the symmetric [key encryption keys (KEKs)](https://docs.cloud.google.com/kms/docs/envelope-encryption#key_encryption_keys) that protect your data, you control and manage these keys in Cloud KMS.
+If you want to control your encryption keys, then you can use customer-managed encryption keys (CMEKs) in [Cloud KMS](https://docs.cloud.google.com/kms/docs) with CMEK-integrated services including code customization. Using Cloud KMS keys gives you control over their protection level, location, rotation schedule, usage and access permissions, and cryptographic boundaries. Using Cloud KMS also lets you view audit logs and control key lifecycles. Instead of Google owning and managing the symmetric [key encryption keys (KEKs)](https://docs.cloud.google.com/kms/docs/envelope-encryption#key_encryption_keys) that protect your data, you control and manage these keys in Cloud KMS.
 
-After you set up your resources with CMEKs, the experience of accessing your Gemini resources is similar to using Google default encryption. For more information about your encryption options, see [Customer-managed encryption keys (CMEK)](https://docs.cloud.google.com/kms/docs/cmek) .
+After you set up your resources with CMEKs, the experience of accessing your code customization resources is similar to using Google default encryption. For more information about your encryption options, see [Customer-managed encryption keys (CMEK)](https://docs.cloud.google.com/kms/docs/cmek) .
 
 ## Before you begin
 

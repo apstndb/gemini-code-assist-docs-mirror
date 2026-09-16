@@ -30,28 +30,7 @@ You can assign licenses to any users that have access to a project linked to the
 
 ## Change the number of Gemini Code Assist Standard and Enterprise licenses in a subscription
 
-You can add or remove the number of Gemini Code Assist licenses directly through the Google Cloud console, or through your Google account representative or an authorized reseller.
-
-To change the number of licenses in a subscription, follow these steps:
-
-1.  Verify that you have the following Identity and Access Management (IAM) permissions on the billing account that owns the subscription:
-    
-      - `billing.accounts.get`
-      - `consumerprocurement.orders.get`
-      - `consumerprocurement.orders.modify`
-      - `resourcemanager.projects.get`
-
-2.  In the Google Cloud console, go to the **Admin for Gemini** page.
-
-3.  Choose the subscription that you want to change, and then select **Modify Subscription** .
-
-4.  Enter the number of licenses that you want to have. The following information is displayed:
-    
-      - Number of total licenses after purchase.
-      - Number of licenses available for assignment after purchase.
-      - New subscription price per term. The additional amount for the added licenses is prorated based on how much time remains in the current term.
-
-5.  Select **Save** .
+You can add or remove the number of Gemini Code Assist licenses [directly through the Google Cloud console](https://docs.cloud.google.com/gemini/docs/admin#edit-subscription) , or through your Google account representative or an authorized reseller.
 
 ## View Gemini Code Assist Standard and Enterprise license assignments
 
@@ -321,17 +300,15 @@ Gemini Code Assist Standard and Enterprise licenses cannot be transferred direct
 
 Gemini Code Assist Standard and Enterprise licenses are assigned to individual users, not organizations or projects, allowing individual users to use Gemini Code Assist Standard and Enterprise across multiple organizations.
 
-Any [logs generated from Gemini Code Assist](https://docs.cloud.google.com/gemini/docs/log-gemini) usage sit with the project in which the usage occurred, and not with the licensee. Additionally, any customization or configuration of Gemini Code Assist (such as [code customization](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization) ) is done on the project, not at the license or subscription level.
+Any [logs generated from Gemini Code Assist](https://docs.cloud.google.com/gemini/docs/log-gemini) usage are stored within the project in which the usage occurred and not with the licensee. Additionally, any customization or configuration of Gemini Code Assist (such as [code customization](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization) ) is done on the project, not at the license or subscription level.
 
-To further prevent cross-organization usage of Gemini Code Assist Standard and Enterprise in a project, you can do one of the following:
+Some large organizations might want to prevent developers in their organization from using Gemini Code Assist Standard or Enterprise in certain projects in their organization, such as when certain projects have different billing accounts or when different projects are associated with different customers with different tenancies and tools.
 
-  - Disable the Gemini for Google Cloud API in the project.
-  - Use permissions to deny user access to the project.
+In these cases, to help prevent cross-organization usage of Gemini Code Assist Standard and Enterprise in a project, you can do one of the following:
+
+  - [Disable the Gemini for Google Cloud API on a project](https://docs.cloud.google.com/gemini/docs/turn-off-gemini#companion-api) .
+  - Use Identity and Access Management (IAM) [denial policies](https://docs.cloud.google.com/iam/docs/deny-overview) to deny specific users access to the project.
 
 ## Limitations
 
   - Gemini Code Assist license management does not support [Workforce Identity Federation](https://docs.cloud.google.com/iam/docs/federated-identity-supported-services) .
-
-## What's next
-
-  - Learn how to [help prevent cross-organization license usage](https://docs.cloud.google.com/gemini/docs/codeassist/cross-org-license-usage) .
