@@ -23,31 +23,9 @@ These roles contain the permissions required to modify Gemini Code Assist subscr
   - `consumerprocurement.orders.place`
   - `billing.billingAccountPrices.list`
 
-## Access Gemini Code Assist administrator controls in the Google Cloud console
-
-To access Gemini Code Assist administrator controls in the Google Cloud console, select **Admin for Gemini** in the navigation menu.
-
-### Pick a billing account
-
-To edit or purchase a Gemini Code Assist subscription, you must pick a billing account. Your Gemini Code Assist subscription is tied to a billing account and can be used with any project. You can only have one Gemini Code Assist subscription per billing account.
-
-The following list shows possible ways to pick a billing account:
-
-  - **Manage subscriptions with project access** .
-    
-      - If you don't have a subscription yet, click **Get Gemini Code Assist** to purchase one. Note that you must [set up a billing account](https://docs.cloud.google.com/billing/docs/how-to/create-billing-account) first.
-    
-      - If you have a subscription already but it's not associated with this billing account, click **Manage subscriptions** and then select a different billing account where you want to manage the subscription.
-    
-      - If you already have a subscription associated with your current billing account, click **Manage Gemini Code Assist** to navigate to the settings page. Then, click **Manage Subscriptions** to select and manage existing subscriptions.
-
-  - **Manage subscriptions without project access** . If you have permission to manage subscriptions, select the product you want to edit or purchase. Then, select **Manage Subscription** and select a billing account.
-
-  - **Manage subscriptions for projects in a folder** . If you start from a folder, you must select a billing account before you purchase a subscription, since billing accounts can't be directly associated with a folder.
-
 ## Edit a Gemini Code Assist subscription
 
-> **Important:** Changes to a subscription that decrease the number of licenses, downgrade the edition, or reduce the subscription period don't take effect immediately; instead, they take effect at the end of the current subscription term. Similarly, you can't cancel a subscription during its term. If you want to end your subscription, make sure that you have auto-renewal disabled. For more information, see [Turn off Gemini Code Assist](https://docs.cloud.google.com/gemini/docs/codeassist/turn-off) .
+> **Important:** To purchase a new Gemini Code Assist subscription, you must [contact Google Cloud sales](https://cloud.google.com/contact) .
 
 1.  In the Google Cloud console, go to the **Admin for Gemini** page.
     
@@ -78,6 +56,8 @@ The following list shows possible ways to pick a billing account:
           - Change from Enterprise edition to Standard edition
 
 6.  Select **Continue** , and then select **Confirm changes** .
+
+> **Note:** Changes to a subscription that decrease the number of licenses, downgrade the edition, or reduce the subscription period don't take effect immediately; instead, they take effect at the end of the current subscription term. Similarly, you can't cancel a subscription during its term. If you want to end your subscription, make sure that you have auto-renewal disabled. For more information, see [Turn off Gemini Code Assist](https://docs.cloud.google.com/gemini/docs/codeassist/turn-off) .
 
 ## What's next
 
