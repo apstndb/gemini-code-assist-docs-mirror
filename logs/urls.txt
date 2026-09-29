@@ -6,7 +6,7 @@ https://developers.google.com/gemini-code-assist/resources/plugin-license	2026-0
 https://developers.google.com/gemini-code-assist/resources/privacy-notices	2026-09-02T15:39:36Z
 https://docs.cloud.google.com/gemini/docs/admin	2026-09-25T07:47:02Z
 https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode	2026-09-25T07:47:02Z
-https://docs.cloud.google.com/gemini/docs/codeassist/business-audit-logging	2026-09-25T07:47:02Z
+https://docs.cloud.google.com/gemini/docs/codeassist/business-audit-logging	2026-09-28T14:43:56Z
 https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini	2026-09-25T07:47:02Z
 https://docs.cloud.google.com/gemini/docs/codeassist/chat-overview	2026-09-25T07:47:02Z
 https://docs.cloud.google.com/gemini/docs/codeassist/code-customization	2026-09-25T07:47:27Z

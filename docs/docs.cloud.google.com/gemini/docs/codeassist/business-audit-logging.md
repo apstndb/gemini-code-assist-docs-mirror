@@ -47,15 +47,27 @@ API methods in the following list that are marked with (LRO) are long-running op
 <tbody>
 <tr class="odd">
 <td><code dir="ltr" translate="no">DATA_READ</code></td>
-<td><code dir="ltr" translate="no">google.cloud.businessaicode.v1alpha.PredictionService.GenerateContent</code><br />
+<td><code dir="ltr" translate="no">google.cloud.businessaicode.v1alpha.ManagementService.FetchConfig</code><br />
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1alpha.PredictionService.FetchQuotaStatus</code><br />
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1alpha.PredictionService.GenerateContent</code><br />
 <code dir="ltr" translate="no">google.cloud.businessaicode.v1alpha.PredictionService.QueryConfig</code><br />
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1alpha.PredictionService.StreamGenerateContent</code><br />
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1beta.ManagementService.FetchConfig</code><br />
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1beta.PredictionService.FetchQuotaStatus</code><br />
 <code dir="ltr" translate="no">google.cloud.businessaicode.v1beta.PredictionService.GenerateContent</code><br />
-<code dir="ltr" translate="no">google.cloud.businessaicode.v1beta.PredictionService.QueryConfig</code></td>
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1beta.PredictionService.QueryConfig</code><br />
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1beta.PredictionService.StreamGenerateContent</code><br />
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1main.PredictionService.QueryConfig</code></td>
 </tr>
 <tr class="even">
 <td><code dir="ltr" translate="no">DATA_WRITE</code></td>
-<td><code dir="ltr" translate="no">google.cloud.businessaicode.v1alpha.PredictionService.SendTelemetry</code><br />
-<code dir="ltr" translate="no">google.cloud.businessaicode.v1beta.PredictionService.SendTelemetry</code></td>
+<td><code dir="ltr" translate="no">google.cloud.businessaicode.v1alpha.ManagementService.SelfAssignLicense</code><br />
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1alpha.PredictionService.SendTelemetry</code><br />
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1alpha.TelemetryService.SendTelemetry</code><br />
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1beta.ManagementService.SelfAssignLicense</code><br />
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1beta.PredictionService.SendTelemetry</code><br />
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1beta.TelemetryService.SendTelemetry</code><br />
+<code dir="ltr" translate="no">google.cloud.businessaicode.v1main.PredictionService.SendTelemetry</code></td>
 </tr>
 </tbody>
 </table>
@@ -64,9 +76,40 @@ API methods in the following list that are marked with (LRO) are long-running op
 
 For information about how and which permissions are evaluated for each method, see the Identity and Access Management documentation for Business AI Code.
 
+### `google.cloud.businessaicode.v1alpha.ManagementService`
+
+The following audit logs are associated with methods belonging to `google.cloud.businessaicode.v1alpha.ManagementService` .
+
+#### `FetchConfig`
+
+  - **Method** : `google.cloud.businessaicode.v1alpha.ManagementService.FetchConfig`  
+  - **Audit log type** : [Data access](https://docs.cloud.google.com/logging/docs/audit#data-access)  
+  - **Permissions** :
+      - `businessaicode.locations.queryConfiguration - DATA_READ`
+  - **Method is a long-running or streaming operation** : No.  
+  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1alpha.ManagementService.FetchConfig"`  
+
+#### `SelfAssignLicense`
+
+  - **Method** : `google.cloud.businessaicode.v1alpha.ManagementService.SelfAssignLicense`  
+  - **Audit log type** : [Data access](https://docs.cloud.google.com/logging/docs/audit#data-access)  
+  - **Permissions** :
+      - `businessaicode.locations.selfAssignLicense - DATA_WRITE`
+  - **Method is a long-running or streaming operation** : No.  
+  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1alpha.ManagementService.SelfAssignLicense"`  
+
 ### `google.cloud.businessaicode.v1alpha.PredictionService`
 
 The following audit logs are associated with methods belonging to `google.cloud.businessaicode.v1alpha.PredictionService` .
+
+#### `FetchQuotaStatus`
+
+  - **Method** : `google.cloud.businessaicode.v1alpha.PredictionService.FetchQuotaStatus`  
+  - **Audit log type** : [Data access](https://docs.cloud.google.com/logging/docs/audit#data-access)  
+  - **Permissions** :
+      - `businessaicode.locations.fetchQuotaStatus - DATA_READ`
+  - **Method is a long-running or streaming operation** : No.  
+  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1alpha.PredictionService.FetchQuotaStatus"`  
 
 #### `GenerateContent`
 
@@ -95,9 +138,62 @@ The following audit logs are associated with methods belonging to `google.cloud.
   - **Method is a long-running or streaming operation** : No.  
   - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1alpha.PredictionService.SendTelemetry"`  
 
+#### `StreamGenerateContent`
+
+  - **Method** : `google.cloud.businessaicode.v1alpha.PredictionService.StreamGenerateContent`  
+  - **Audit log type** : [Data access](https://docs.cloud.google.com/logging/docs/audit#data-access)  
+  - **Permissions** :
+      - `businessaicode.locations.generateContent - DATA_READ`
+  - **Method is a long-running or streaming operation** : [**Streaming RPC**](https://docs.cloud.google.com/logging/docs/audit/understanding-audit-logs#streaming)  
+  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1alpha.PredictionService.StreamGenerateContent"`  
+
+### `google.cloud.businessaicode.v1alpha.TelemetryService`
+
+The following audit logs are associated with methods belonging to `google.cloud.businessaicode.v1alpha.TelemetryService` .
+
+#### `SendTelemetry`
+
+  - **Method** : `google.cloud.businessaicode.v1alpha.TelemetryService.SendTelemetry`  
+  - **Audit log type** : [Data access](https://docs.cloud.google.com/logging/docs/audit#data-access)  
+  - **Permissions** :
+      - `businessaicode.locations.sendTelemetry - DATA_WRITE`
+  - **Method is a long-running or streaming operation** : No.  
+  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1alpha.TelemetryService.SendTelemetry"`  
+
+### `google.cloud.businessaicode.v1beta.ManagementService`
+
+The following audit logs are associated with methods belonging to `google.cloud.businessaicode.v1beta.ManagementService` .
+
+#### `FetchConfig`
+
+  - **Method** : `google.cloud.businessaicode.v1beta.ManagementService.FetchConfig`  
+  - **Audit log type** : [Data access](https://docs.cloud.google.com/logging/docs/audit#data-access)  
+  - **Permissions** :
+      - `businessaicode.locations.queryConfiguration - DATA_READ`
+  - **Method is a long-running or streaming operation** : No.  
+  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1beta.ManagementService.FetchConfig"`  
+
+#### `SelfAssignLicense`
+
+  - **Method** : `google.cloud.businessaicode.v1beta.ManagementService.SelfAssignLicense`  
+  - **Audit log type** : [Data access](https://docs.cloud.google.com/logging/docs/audit#data-access)  
+  - **Permissions** :
+      - `businessaicode.locations.selfAssignLicense - DATA_WRITE`
+  - **Method is a long-running or streaming operation** : No.  
+  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1beta.ManagementService.SelfAssignLicense"`  
+
 ### `google.cloud.businessaicode.v1beta.PredictionService`
 
 The following audit logs are associated with methods belonging to `google.cloud.businessaicode.v1beta.PredictionService` .
+
+#### `FetchQuotaStatus`
+
+  - **Method** : `google.cloud.businessaicode.v1beta.PredictionService.FetchQuotaStatus`  
+  - **Audit log type** : [Data access](https://docs.cloud.google.com/logging/docs/audit#data-access)  
+  - **Permissions** :
+      - `businessaicode.locations.fetchQuotaStatus - DATA_READ`
+  - **Method is a long-running or streaming operation** : No.  
+  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1beta.PredictionService.FetchQuotaStatus"`  
 
 #### `GenerateContent`
 
@@ -124,4 +220,61 @@ The following audit logs are associated with methods belonging to `google.cloud.
   - **Permissions** :
       - `businessaicode.locations.sendTelemetry - DATA_WRITE`
   - **Method is a long-running or streaming operation** : No.  
-  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1beta.PredictionService.SendTelemetry"`
+  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1beta.PredictionService.SendTelemetry"`  
+
+#### `StreamGenerateContent`
+
+  - **Method** : `google.cloud.businessaicode.v1beta.PredictionService.StreamGenerateContent`  
+  - **Audit log type** : [Data access](https://docs.cloud.google.com/logging/docs/audit#data-access)  
+  - **Permissions** :
+      - `businessaicode.locations.generateContent - DATA_READ`
+  - **Method is a long-running or streaming operation** : [**Streaming RPC**](https://docs.cloud.google.com/logging/docs/audit/understanding-audit-logs#streaming)  
+  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1beta.PredictionService.StreamGenerateContent"`  
+
+### `google.cloud.businessaicode.v1beta.TelemetryService`
+
+The following audit logs are associated with methods belonging to `google.cloud.businessaicode.v1beta.TelemetryService` .
+
+#### `SendTelemetry`
+
+  - **Method** : `google.cloud.businessaicode.v1beta.TelemetryService.SendTelemetry`  
+  - **Audit log type** : [Data access](https://docs.cloud.google.com/logging/docs/audit#data-access)  
+  - **Permissions** :
+      - `businessaicode.locations.sendTelemetry - DATA_WRITE`
+  - **Method is a long-running or streaming operation** : No.  
+  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1beta.TelemetryService.SendTelemetry"`  
+
+### `google.cloud.businessaicode.v1main.PredictionService`
+
+The following audit logs are associated with methods belonging to `google.cloud.businessaicode.v1main.PredictionService` .
+
+#### `QueryConfig`
+
+  - **Method** : `google.cloud.businessaicode.v1main.PredictionService.QueryConfig`  
+  - **Audit log type** : [Data access](https://docs.cloud.google.com/logging/docs/audit#data-access)  
+  - **Permissions** :
+      - `businessaicode.locations.queryConfiguration - DATA_READ`
+  - **Method is a long-running or streaming operation** : No.  
+  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1main.PredictionService.QueryConfig"`  
+
+#### `SendTelemetry`
+
+  - **Method** : `google.cloud.businessaicode.v1main.PredictionService.SendTelemetry`  
+  - **Audit log type** : [Data access](https://docs.cloud.google.com/logging/docs/audit#data-access)  
+  - **Permissions** :
+      - `businessaicode.locations.sendTelemetry - DATA_WRITE`
+  - **Method is a long-running or streaming operation** : No.  
+  - **Filter for this method** : `protoPayload.methodName="google.cloud.businessaicode.v1main.PredictionService.SendTelemetry"`  
+
+## Methods that don't produce audit logs
+
+A method might not produce audit logs for one or more of the following reasons:
+
+  - It is a high volume method involving significant log generation and storage costs.
+  - It has low auditing value.
+  - Another audit or platform log already provides method coverage.
+
+The following methods don't produce audit logs:
+
+  - `google.cloud.businessaicode.v1alpha.ManagementService.FetchLicenses`
+  - `google.cloud.businessaicode.v1beta.ManagementService.FetchLicenses`
