@@ -12,7 +12,7 @@ gcloud gemini code-repository-indexes delete - delete a code repository index in
 
 SYNOPSIS
 
-`gcloud gemini code-repository-indexes delete` ( `  CODE_REPOSITORY_INDEX  ` : `  --location  ` = `  LOCATION  ` ) \[ `  --async  ` \] \[ `  --force  ` \] \[ `  --request-id  ` = `  REQUEST_ID  ` \] \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini code-repository-indexes delete` ( [`CODE_REPOSITORY_INDEX`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-repository-indexes/delete#CODE_REPOSITORY_INDEX) : [`--location`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-repository-indexes/delete#--location) = `LOCATION` ) \[ [`--async`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-repository-indexes/delete#--async) \] \[ [`--force`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-repository-indexes/delete#--force) \] \[ [`--request-id`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-repository-indexes/delete#--request-id) = `REQUEST_ID` \] \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-repository-indexes/delete#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -22,7 +22,9 @@ EXAMPLES
 
 To delete code repository index instance `my-instance` in project `my-project` and location `us-central1` , run:
 
-    gcloud gemini code-repository-indexes delete my-instance --project=my-project --location=us-central1
+```
+gcloud gemini code-repository-indexes delete my-instance --project=my-project --location=us-central1
+```
 
 POSITIONAL ARGUMENTS
 
@@ -30,47 +32,47 @@ CodeRepositoryIndex resource - Name of the resource The arguments in this group 
 
 To set the `project` attribute:
 
-  - provide the argument `code_repository_index` on the command line with a fully specified name;
-  - provide the argument `--project` on the command line;
-  - set the property `core/project` .
+- provide the argument `code_repository_index` on the command line with a fully specified name;
+- provide the argument `--project` on the command line;
+- set the property `core/project` .
 
 This must be specified.
 
-  - `  CODE_REPOSITORY_INDEX  `  
-    ID of the codeRepositoryIndex or fully qualified identifier for the codeRepositoryIndex.
-    
-    To set the `code_repository_index` attribute:
-    
-      - provide the argument `code_repository_index` on the command line.
-    
-    This positional argument must be specified if any of the other arguments in this group are specified.
+`CODE_REPOSITORY_INDEX`  
+ID of the codeRepositoryIndex or fully qualified identifier for the codeRepositoryIndex.
 
-  - `--location` = `  LOCATION  `  
-    The location id of the codeRepositoryIndex resource.
-    
-    To set the `location` attribute:
-    
-      - provide the argument `code_repository_index` on the command line with a fully specified name;
-      - provide the argument `--location` on the command line.
+To set the `code_repository_index` attribute:
+
+- provide the argument `code_repository_index` on the command line.
+
+This positional argument must be specified if any of the other arguments in this group are specified.
+
+`--location` = `LOCATION`  
+The location id of the codeRepositoryIndex resource.
+
+To set the `location` attribute:
+
+- provide the argument `code_repository_index` on the command line with a fully specified name;
+- provide the argument `--location` on the command line.
 
 FLAGS
 
-  - `--async`  
-    Return immediately, without waiting for the operation in progress to complete.
+`--async`  
+Return immediately, without waiting for the operation in progress to complete.
 
-  - `--force`  
-    If set to true, any RepositoryGroups from this CodeRepositoryIndex will also be deleted. (Otherwise, the request will only work if the CodeRepositoryIndex has no RepositoryGroups.)
+`--force`  
+If set to true, any RepositoryGroups from this CodeRepositoryIndex will also be deleted. (Otherwise, the request will only work if the CodeRepositoryIndex has no RepositoryGroups.)
 
-  - `--request-id` = `  REQUEST_ID  `  
-    An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. The server will guarantee that for at least 60 minutes after the first request.
-    
-    The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+`--request-id` = `REQUEST_ID`  
+An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. The server will guarantee that for at least 60 minutes after the first request.
+
+The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --access-token-file  ` , `  --account  ` , `  --billing-project  ` , `  --configuration  ` , `  --flags-file  ` , `  --flatten  ` , `  --format  ` , `  --help  ` , `  --impersonate-service-account  ` , `  --log-http  ` , `  --project  ` , `  --quiet  ` , `  --trace-token  ` , `  --user-output-enabled  ` , `  --verbosity  ` .
+These flags are available to all commands: [`--access-token-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--access-token-file) , [`--account`](https://docs.cloud.google.com/sdk/gcloud/reference#--account) , [`--billing-project`](https://docs.cloud.google.com/sdk/gcloud/reference#--billing-project) , [`--configuration`](https://docs.cloud.google.com/sdk/gcloud/reference#--configuration) , [`--flags-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--flags-file) , [`--flatten`](https://docs.cloud.google.com/sdk/gcloud/reference#--flatten) , [`--format`](https://docs.cloud.google.com/sdk/gcloud/reference#--format) , [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) , [`--impersonate-service-account`](https://docs.cloud.google.com/sdk/gcloud/reference#--impersonate-service-account) , [`--log-http`](https://docs.cloud.google.com/sdk/gcloud/reference#--log-http) , [`--project`](https://docs.cloud.google.com/sdk/gcloud/reference#--project) , [`--quiet`](https://docs.cloud.google.com/sdk/gcloud/reference#--quiet) , [`--trace-token`](https://docs.cloud.google.com/sdk/gcloud/reference#--trace-token) , [`--user-output-enabled`](https://docs.cloud.google.com/sdk/gcloud/reference#--user-output-enabled) , [`--verbosity`](https://docs.cloud.google.com/sdk/gcloud/reference#--verbosity) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 API REFERENCE
 

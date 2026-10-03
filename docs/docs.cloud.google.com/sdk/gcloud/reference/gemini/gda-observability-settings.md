@@ -12,7 +12,7 @@ gcloud gemini gda-observability-settings - manage Gda Observability Setting reso
 
 SYNOPSIS
 
-`gcloud gemini gda-observability-settings` `  GROUP  ` | `  COMMAND  ` \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini gda-observability-settings` [`GROUP`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings#GROUP) \| [`COMMAND`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings#COMMAND) \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -20,28 +20,32 @@ Manage Gda Observability Setting resources.
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --help  ` .
+These flags are available to all commands: [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 GROUPS
 
-`  GROUP  ` is one of the following:
+`GROUP` is one of the following:
 
-  - `  setting-bindings  `  
-    Manage Setting Binding resources.
+[`setting-bindings`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings/setting-bindings)  
+Manage Setting Binding resources.
 
 COMMANDS
 
-`  COMMAND  ` is one of the following:
+`COMMAND` is one of the following:
 
-  - `  create  `  
-    Create gdaObservabilitySettings.
-  - `  delete  `  
-    Delete gdaObservabilitySettings.
-  - `  describe  `  
-    Describe gdaObservabilitySettings.
-  - `  list  `  
-    List gdaObservabilitySettings.
-  - `  update  `  
-    Update gdaObservabilitySettings.
+[`create`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings/create)  
+Create gdaObservabilitySettings.
+
+[`delete`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings/delete)  
+Delete gdaObservabilitySettings.
+
+[`describe`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings/describe)  
+Describe gdaObservabilitySettings.
+
+[`list`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings/list)  
+List gdaObservabilitySettings.
+
+[`update`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings/update)  
+Update gdaObservabilitySettings.

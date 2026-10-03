@@ -12,7 +12,7 @@ gcloud gemini data-sharing-with-google-settings - manage Data Sharing With Googl
 
 SYNOPSIS
 
-`gcloud gemini data-sharing-with-google-settings` `  GROUP  ` | `  COMMAND  ` \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini data-sharing-with-google-settings` [`GROUP`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings#GROUP) \| [`COMMAND`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings#COMMAND) \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -20,28 +20,32 @@ Manage Data Sharing With Google Setting resources.
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --help  ` .
+These flags are available to all commands: [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 GROUPS
 
-`  GROUP  ` is one of the following:
+`GROUP` is one of the following:
 
-  - `  setting-bindings  `  
-    Manage Setting Binding resources.
+[`setting-bindings`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings/setting-bindings)  
+Manage Setting Binding resources.
 
 COMMANDS
 
-`  COMMAND  ` is one of the following:
+`COMMAND` is one of the following:
 
-  - `  create  `  
-    Create dataSharingWithGoogleSettings.
-  - `  delete  `  
-    Delete dataSharingWithGoogleSettings.
-  - `  describe  `  
-    Describe dataSharingWithGoogleSettings.
-  - `  list  `  
-    List dataSharingWithGoogleSettings.
-  - `  update  `  
-    Update dataSharingWithGoogleSettings.
+[`create`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings/create)  
+Create dataSharingWithGoogleSettings.
+
+[`delete`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings/delete)  
+Delete dataSharingWithGoogleSettings.
+
+[`describe`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings/describe)  
+Describe dataSharingWithGoogleSettings.
+
+[`list`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings/list)  
+List dataSharingWithGoogleSettings.
+
+[`update`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings/update)  
+Update dataSharingWithGoogleSettings.

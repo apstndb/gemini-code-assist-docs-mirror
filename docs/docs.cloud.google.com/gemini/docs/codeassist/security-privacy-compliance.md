@@ -18,10 +18,10 @@ The following diagram shows the components of the Gemini Code Assist Standard an
 
 The components include the following:
 
-  - In your on-premises environment, your application developers install the Gemini Code Assist extension for Visual Studio Code or JetBrains. Developers can use this extension to interact with Gemini Code Assist Standard and Enterprise.
-  - By default, the extension uses an encrypted TLS connection over the internet to connect from your on-premises environment to Google Cloud. To create a dedicated secured connection between your on-premises environment and Google Cloud, you can configure [Cloud VPN](https://docs.cloud.google.com/network-connectivity/docs/vpn/concepts/overview) or [Cloud Interconnect](https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/overview) .
-  - Within your Google Cloud environment, you can set up a [VPC Service Controls service perimeter](https://docs.cloud.google.com/vpc-service-controls/docs/overview) . VPC Service Controls lets you define security policies that prevent access to Google-managed services outside of a trusted perimeter, block access to data from untrusted locations, and mitigate data exfiltration risks.
-  - Your Google Cloud project where you enabled the Gemini Code Assist Standard and Enterprise service. Gemini Code Assist Standard and Enterprise use the [Gemini for Google Cloud API](https://console.cloud.google.com/marketplace/product/google/cloudaicompanion.googleapis.com) to process conversations. The Gemini for Google Cloud API doesn't have access to any of the other APIs or resources in your project.
+- In your on-premises environment, your application developers install the Gemini Code Assist extension for Visual Studio Code or JetBrains. Developers can use this extension to interact with Gemini Code Assist Standard and Enterprise.
+- By default, the extension uses an encrypted TLS connection over the internet to connect from your on-premises environment to Google Cloud. To create a dedicated secured connection between your on-premises environment and Google Cloud, you can configure [Cloud VPN](https://docs.cloud.google.com/network-connectivity/docs/vpn/concepts/overview) or [Cloud Interconnect](https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/overview) .
+- Within your Google Cloud environment, you can set up a [VPC Service Controls service perimeter](https://docs.cloud.google.com/vpc-service-controls/docs/overview) . VPC Service Controls lets you define security policies that prevent access to Google-managed services outside of a trusted perimeter, block access to data from untrusted locations, and mitigate data exfiltration risks.
+- Your Google Cloud project where you enabled the Gemini Code Assist Standard and Enterprise service. Gemini Code Assist Standard and Enterprise use the [Gemini for Google Cloud API](https://console.cloud.google.com/marketplace/product/google/cloudaicompanion.googleapis.com) to process conversations. The Gemini for Google Cloud API doesn't have access to any of the other APIs or resources in your project.
 
 Alternatively, if your organization uses [Cloud Workstations](https://docs.cloud.google.com/workstations/docs/overview) , developers can interact with Gemini Code Assist Standard and Enterprise in their workstations. For more information, see [Code with Gemini Code Assist](https://docs.cloud.google.com/workstations/docs/write-code-gemini) .
 
@@ -37,9 +37,9 @@ Gemini Code Assist Standard and Enterprise require that your application develop
 
 After you create the accounts, consider the following security best practices:
 
-  - Enable [single sign-on](https://docs.cloud.google.com/architecture/identity/single-sign-on) when authenticating with external identity providers.
-  - Use [2-step verification](https://support.google.com/a/answer/175197) to help protect users from stolen passwords.
-  - [Enforce and monitor password requirements](https://support.google.com/a/answer/139399) .
+- Enable [single sign-on](https://docs.cloud.google.com/architecture/identity/single-sign-on) when authenticating with external identity providers.
+- Use [2-step verification](https://support.google.com/a/answer/175197) to help protect users from stolen passwords.
+- [Enforce and monitor password requirements](https://support.google.com/a/answer/139399) .
 
 ### Access controls
 
@@ -63,11 +63,11 @@ If required by your organization, you can configure additional security controls
 
 Consider the following:
 
-  - Use Cloud VPN or Cloud Interconnect to maximize security and reliability for the connection between your corporate network and Google Cloud. For more information, see [Choosing a Network Connectivity product](https://docs.cloud.google.com/network-connectivity/docs/how-to/choose-product) .
+- Use Cloud VPN or Cloud Interconnect to maximize security and reliability for the connection between your corporate network and Google Cloud. For more information, see [Choosing a Network Connectivity product](https://docs.cloud.google.com/network-connectivity/docs/how-to/choose-product) .
 
-  - Use VPC Service Controls. VPC Service Controls lets you control the movement of data in Google services and set up context-based perimeter security. For more information on setting up VPC Service Controls, see [Configure VPC Service Controls for Gemini](https://docs.cloud.google.com/gemini/docs/configure-vpc-service-controls) .
+- Use VPC Service Controls. VPC Service Controls lets you control the movement of data in Google services and set up context-based perimeter security. For more information on setting up VPC Service Controls, see [Configure VPC Service Controls for Gemini](https://docs.cloud.google.com/gemini/docs/configure-vpc-service-controls) .
 
-  - In Google Cloud, consider [Shared VPC](https://docs.cloud.google.com/vpc/docs/shared-vpc) as your network topology. Shared VPC provides centralized network configuration management while maintaining separation of environments. For more information about network topologies, see [Decide the network design for your Google Cloud landing zone](https://docs.cloud.google.com/architecture/landing-zones/decide-network-design) .
+- In Google Cloud, consider [Shared VPC](https://docs.cloud.google.com/vpc/docs/shared-vpc) as your network topology. Shared VPC provides centralized network configuration management while maintaining separation of environments. For more information about network topologies, see [Decide the network design for your Google Cloud landing zone](https://docs.cloud.google.com/architecture/landing-zones/decide-network-design) .
 
 For more information about network security best practices, see [Secure your network](https://docs.cloud.google.com/architecture/framework/security/network-security) and [Decide the network design for your Google Cloud landing zone](https://docs.cloud.google.com/architecture/landing-zones/decide-network-design) .
 
@@ -81,9 +81,9 @@ Customer Data is defined in the [Google Cloud Terms of Service](https://cloud.go
 
 For example, Gemini Code Assist Standard and Enterprise handle the following data as Customer Data:
 
-  - Prompt data, which includes developer queries
-  - Response data from Gemini Code Assist Standard and Enterprise
-  - Additional context, such as the current conversation history, snippets of files that are open in the IDE, snippets of files that are stored adjacent to the open file, and cursor location in the current file
+- Prompt data, which includes developer queries
+- Response data from Gemini Code Assist Standard and Enterprise
+- Additional context, such as the current conversation history, snippets of files that are open in the IDE, snippets of files that are stored adjacent to the open file, and cursor location in the current file
 
 Because Gemini Code Assist Standard and Enterprise are stateless Google Cloud services, they don't store prompts and responses in Google Cloud. If required, you can set up Gemini Code Assist Standard and Enterprise to store user input and responses in a Cloud Logging bucket. For more information, see [View Gemini logs](https://docs.cloud.google.com/gemini/docs/log-gemini) . To monitor Gemini Code Assist Standard and Enterprise usage, see [Monitor Gemini Code Assist usage](https://docs.cloud.google.com/gemini/docs/codeassist/monitor-gemini-code-assist) .
 
@@ -95,17 +95,17 @@ Service Data for Gemini Code Assist Standard and Enterprise is defined in the [G
 
 Examples of Service Data that is collected by Gemini Code Assist Standard and Enterprise include the following:
 
-  - User analytics (data about the developer's actions)
-  - Telemetry data
-  - [Google feedback](https://www.google.com/tools/feedback/intl/en/learnmore.html)
+- User analytics (data about the developer's actions)
+- Telemetry data
+- [Google feedback](https://www.google.com/tools/feedback/intl/en/learnmore.html)
 
 Telemetry data includes data that describes the technical operation of the product. Examples of telemetry data include the following:
 
-  - An event indicating that a request was made (but not the contents of the request)
-  - An event indicating that a response was received (but not the contents of the response)
-  - A user's reaction to the response (for example, whether the user accepted or rejected the response)
-  - The character count length of accepted suggestions
-  - A user's interaction with various UI elements
+- An event indicating that a request was made (but not the contents of the request)
+- An event indicating that a response was received (but not the contents of the response)
+- A user's reaction to the response (for example, whether the user accepted or rejected the response)
+- The character count length of accepted suggestions
+- A user's interaction with various UI elements
 
 Gemini Code Assist Standard and Enterprise engineers have access to telemetry data to help with continual product improvements.
 
@@ -119,8 +119,8 @@ Gemini Code Assist Standard and Enterprise use the global Google Edge Network to
 
 To help protect the privacy of your data, Gemini Code Assist Standard and Enterprise conform to [Google's privacy commitment](https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-unveils-ai-and-ml-privacy-commitment) with generative AI technologies. This commitment includes items such as the following:
 
-  - Google doesn't use your data to train our models without your permission.
-  - We incorporate privacy principles in the development of Gemini Code Assist Standard and Enterprise, such as those described in [Common Privacy Principles](https://cloud.google.com/privacy/common-privacy-principles) .
+- Google doesn't use your data to train our models without your permission.
+- We incorporate privacy principles in the development of Gemini Code Assist Standard and Enterprise, such as those described in [Common Privacy Principles](https://cloud.google.com/privacy/common-privacy-principles) .
 
 For more information about our AI principles, see [Google AI Principles](https://ai.google/responsibility/principles/) .
 
@@ -130,8 +130,8 @@ Gemini Code Assist Standard and Enterprise act as data processors for all Custom
 
 Gemini Code Assist Standard and Enterprise received the following certifications:
 
-  - [International Organization for Standardization (ISO) 27001](https://cloud.google.com/security/compliance/iso-27001) , [ISO 27017](https://cloud.google.com/security/compliance/iso-27017) , [ISO 27018](https://cloud.google.com/security/compliance/iso-27018) , and [ISO 27701](https://cloud.google.com/security/compliance/iso-27701)
-  - [SOC 1](https://cloud.google.com/security/compliance/soc-1) , [SOC 2](https://cloud.google.com/security/compliance/soc-2) , and [SOC 3](https://cloud.google.com/security/compliance/soc-3)
+- [International Organization for Standardization (ISO) 27001](https://cloud.google.com/security/compliance/iso-27001) , [ISO 27017](https://cloud.google.com/security/compliance/iso-27017) , [ISO 27018](https://cloud.google.com/security/compliance/iso-27018) , and [ISO 27701](https://cloud.google.com/security/compliance/iso-27701)
+- [SOC 1](https://cloud.google.com/security/compliance/soc-1) , [SOC 2](https://cloud.google.com/security/compliance/soc-2) , and [SOC 3](https://cloud.google.com/security/compliance/soc-3)
 
 For more information about Google Cloud compliance with different regulatory framework and certifications, see the [compliance resource center](https://cloud.google.com/compliance) .
 

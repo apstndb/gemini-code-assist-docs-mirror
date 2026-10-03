@@ -47,7 +47,7 @@ To disable `.gitignore` files from context exclusion, follow these steps:
 2.  In the **Settings** window, navigate to **Extensions** \> **Gemini Code Assist** . Scroll until you find **Context Exclusion Gitignore** .
 
 3.  Unselect the checkbox.
-    
+
     `.gitignore` files are now disabled for specifying file Gemini Code Assist to ignore.
 
 ## Write an `.aiexclude` file
@@ -60,26 +60,36 @@ An `.aiexclude` file follows the same syntax as a `.gitignore` file.
 
 The following examples demonstrate how you can configure an `.aiexclude` file:
 
-  - Block all files named `apikeys.txt` at or below the directory that contains the `.aiexclude` file:
-    
-        apikeys.txt
+- Block all files named `apikeys.txt` at or below the directory that contains the `.aiexclude` file:
 
-  - Block all files with the `.key` file extension at or below the directory that contains the `.aiexclude` file:
-    
-        *.key
+  ```
+  apikeys.txt
+  ```
 
-  - Block only the `apikeys.txt` file at the same directory as the `.aiexclude` file, but not any subdirectories:
-    
-        /apikeys.txt
+- Block all files with the `.key` file extension at or below the directory that contains the `.aiexclude` file:
 
-  - Block all files in the directory `my/sensitive/dir` and all subdirectories. The path should be relative to the directory that contains the `.aiexclude` file.
-    
-        my/sensitive/dir/
+  ```
+  *.key
+  ```
 
-  - Blocks all the files in directory `foo` and its subdirectories except file named `bar.txt` in the foo directory.
-    
-        foo/*
-        !foo/bar.txt
+- Block only the `apikeys.txt` file at the same directory as the `.aiexclude` file, but not any subdirectories:
+
+  ```
+  /apikeys.txt
+  ```
+
+- Block all files in the directory `my/sensitive/dir` and all subdirectories. The path should be relative to the directory that contains the `.aiexclude` file.
+
+  ```
+  my/sensitive/dir/
+  ```
+
+- Blocks all the files in directory `foo` and its subdirectories except file named `bar.txt` in the foo directory.
+
+  ```
+  foo/*
+  !foo/bar.txt
+  ```
 
 ## Control access to index for code customization
 

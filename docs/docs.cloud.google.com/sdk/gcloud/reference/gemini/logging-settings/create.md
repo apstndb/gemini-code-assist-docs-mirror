@@ -12,7 +12,7 @@ gcloud gemini logging-settings create - create loggingSettings
 
 SYNOPSIS
 
-`gcloud gemini logging-settings create` ( `  LOGGING_SETTING  ` : `  --location  ` = `  LOCATION  ` ) \[ `  --labels  ` =\[ `  LABELS  ` , …\]\] \[ `  --log-metadata  ` \] \[ `  --log-prompts-and-responses  ` \] \[ `  --request-id  ` = `  REQUEST_ID  ` \] \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini logging-settings create` ( [`LOGGING_SETTING`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/logging-settings/create#LOGGING_SETTING) : [`--location`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/logging-settings/create#--location) = `LOCATION` ) \[ [`--labels`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/logging-settings/create#--labels) =\[ `LABELS` , …\]\] \[ [`--log-metadata`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/logging-settings/create#--log-metadata) \] \[ [`--log-prompts-and-responses`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/logging-settings/create#--log-prompts-and-responses) \] \[ [`--request-id`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/logging-settings/create#--request-id) = `REQUEST_ID` \] \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/logging-settings/create#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -22,7 +22,9 @@ EXAMPLES
 
 To create the loggingSetting, run:
 
-    gcloud gemini logging-settings create
+```
+gcloud gemini logging-settings create
+```
 
 POSITIONAL ARGUMENTS
 
@@ -30,69 +32,76 @@ LoggingSetting resource - Identifier. Name of the resource. Format:projects/{pro
 
 To set the `project` attribute:
 
-  - provide the argument `logging_setting` on the command line with a fully specified name;
-  - provide the argument `--project` on the command line;
-  - set the property `core/project` .
+- provide the argument `logging_setting` on the command line with a fully specified name;
+- provide the argument `--project` on the command line;
+- set the property `core/project` .
 
 This must be specified.
 
-  - `  LOGGING_SETTING  `  
-    ID of the loggingSetting or fully qualified identifier for the loggingSetting.
-    
-    To set the `logging_setting` attribute:
-    
-      - provide the argument `logging_setting` on the command line.
-    
-    This positional argument must be specified if any of the other arguments in this group are specified.
+`LOGGING_SETTING`  
+ID of the loggingSetting or fully qualified identifier for the loggingSetting.
 
-  - `--location` = `  LOCATION  `  
-    The location id of the loggingSetting resource.
-    
-    To set the `location` attribute:
-    
-      - provide the argument `logging_setting` on the command line with a fully specified name;
-      - provide the argument `--location` on the command line.
+To set the `logging_setting` attribute:
+
+- provide the argument `logging_setting` on the command line.
+
+This positional argument must be specified if any of the other arguments in this group are specified.
+
+`--location` = `LOCATION`  
+The location id of the loggingSetting resource.
+
+To set the `location` attribute:
+
+- provide the argument `logging_setting` on the command line with a fully specified name;
+- provide the argument `--location` on the command line.
 
 FLAGS
 
-  - `--labels` =\[ `  LABELS  ` ,…\]  
-    Labels as key value pairs.
-    
-      - `KEY`  
-        Keys must start with a lowercase character and contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
-      - `VALUE`  
-        Values must contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
-    
-    `Shorthand Example:`
-    
-        --labels=string=string
-    
-    `JSON Example:`
-    
-        --labels='{"string": "string"}'
-    
-    `File Example:`
-    
-        --labels=path_to_file.(yaml|json)
+`--labels` =\[ `LABELS` ,…\]  
+Labels as key value pairs.
 
-  - `--log-metadata`  
-    Whether to log metadata.
+`KEY`  
+Keys must start with a lowercase character and contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
 
-  - `--log-prompts-and-responses`  
-    Whether to log prompts and responses.
+`VALUE`  
+Values must contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
 
-  - `--request-id` = `  REQUEST_ID  `  
-    An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. The server will guarantee that for at least 60 minutes since the first request.
-    
-    For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.
-    
-    The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+`Shorthand Example:`
+
+```
+--labels=string=string
+```
+
+`JSON Example:`
+
+```
+--labels='{"string": "string"}'
+```
+
+`File Example:`
+
+```
+--labels=path_to_file.(yaml|json)
+```
+
+`--log-metadata`  
+Whether to log metadata.
+
+`--log-prompts-and-responses`  
+Whether to log prompts and responses.
+
+`--request-id` = `REQUEST_ID`  
+An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. The server will guarantee that for at least 60 minutes since the first request.
+
+For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.
+
+The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --access-token-file  ` , `  --account  ` , `  --billing-project  ` , `  --configuration  ` , `  --flags-file  ` , `  --flatten  ` , `  --format  ` , `  --help  ` , `  --impersonate-service-account  ` , `  --log-http  ` , `  --project  ` , `  --quiet  ` , `  --trace-token  ` , `  --user-output-enabled  ` , `  --verbosity  ` .
+These flags are available to all commands: [`--access-token-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--access-token-file) , [`--account`](https://docs.cloud.google.com/sdk/gcloud/reference#--account) , [`--billing-project`](https://docs.cloud.google.com/sdk/gcloud/reference#--billing-project) , [`--configuration`](https://docs.cloud.google.com/sdk/gcloud/reference#--configuration) , [`--flags-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--flags-file) , [`--flatten`](https://docs.cloud.google.com/sdk/gcloud/reference#--flatten) , [`--format`](https://docs.cloud.google.com/sdk/gcloud/reference#--format) , [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) , [`--impersonate-service-account`](https://docs.cloud.google.com/sdk/gcloud/reference#--impersonate-service-account) , [`--log-http`](https://docs.cloud.google.com/sdk/gcloud/reference#--log-http) , [`--project`](https://docs.cloud.google.com/sdk/gcloud/reference#--project) , [`--quiet`](https://docs.cloud.google.com/sdk/gcloud/reference#--quiet) , [`--trace-token`](https://docs.cloud.google.com/sdk/gcloud/reference#--trace-token) , [`--user-output-enabled`](https://docs.cloud.google.com/sdk/gcloud/reference#--user-output-enabled) , [`--verbosity`](https://docs.cloud.google.com/sdk/gcloud/reference#--verbosity) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 API REFERENCE
 

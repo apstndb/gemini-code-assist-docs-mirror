@@ -31,7 +31,7 @@ The following tables list metrics available for Gemini Code Assist. All metrics 
 These metrics track the number of users shown a response from a Gemini Code Assist service over different time frames.
 
 | Metric                                      | Name                     |
-| ------------------------------------------- | ------------------------ |
+|---------------------------------------------|--------------------------|
 | `code_assist/hourly_active_user_count`      | Hourly active user count |
 | `code_assist/daily_active_users`            | Daily active users       |
 | `code_assist/weekly_active_user_count`      | Weekly active user count |
@@ -42,7 +42,7 @@ These metrics track the number of users shown a response from a Gemini Code Assi
 These metrics count the number of Gemini Code Assist code responses shown to and accepted by users in the IDE or with the Gemini CLI.
 
 | Metric                                        | Name                            |
-| --------------------------------------------- | ------------------------------- |
+|-----------------------------------------------|---------------------------------|
 | `code_assist/code_suggestions_count`          | Code suggestions count          |
 | `code_assist/code_suggestions_accepted_count` | Code suggestions accepted count |
 | `code_assist/code_lines_accepted_count`       | Code lines accepted count       |
@@ -55,7 +55,7 @@ These metrics count the number of Gemini Code Assist code responses shown to and
 These metrics track usage at the platform level, including API calls and tokens used.
 
 | Metric                          | Name              |
-| ------------------------------- | ----------------- |
+|---------------------------------|-------------------|
 | `code_assist/used_tokens_count` | Used tokens count |
 | `code_assist/api_calls_count`   | API calls count   |
 
@@ -64,7 +64,7 @@ These metrics track usage at the platform level, including API calls and tokens 
 These metrics track model token consumption and overage usage for your organization:
 
 | Metric              | Name                                     |
-| ------------------- | ---------------------------------------- |
+|---------------------|------------------------------------------|
 | `usage/token_count` | Total tokens (Input, Output, and Cached) |
 
 ## View Gemini Code Assist metrics in your project
@@ -77,5 +77,5 @@ To view aggregated metrics for Gemini Code Assist, do the following:
 
 ## What's next
 
-  - Learn how to view [Gemini Code Assist logs](https://docs.cloud.google.com/gemini/docs/log-gemini) .
-  - Learn how to [monitor services and resources on Google Cloud](https://docs.cloud.google.com/monitoring/docs/monitoring-overview) .
+- Learn how to view [Gemini Code Assist logs](https://docs.cloud.google.com/gemini/docs/log-gemini) .
+- Learn how to [monitor services and resources on Google Cloud](https://docs.cloud.google.com/monitoring/docs/monitoring-overview) .

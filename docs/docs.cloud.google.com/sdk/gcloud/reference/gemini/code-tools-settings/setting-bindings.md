@@ -12,7 +12,7 @@ gcloud gemini code-tools-settings setting-bindings - manage Setting Binding reso
 
 SYNOPSIS
 
-`gcloud gemini code-tools-settings setting-bindings` `  COMMAND  ` \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini code-tools-settings setting-bindings` [`COMMAND`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/setting-bindings#COMMAND) \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/setting-bindings#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -20,21 +20,25 @@ Manage Setting Binding resources.
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --help  ` .
+These flags are available to all commands: [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 COMMANDS
 
-`  COMMAND  ` is one of the following:
+`COMMAND` is one of the following:
 
-  - `  create  `  
-    Create settingBindings.
-  - `  delete  `  
-    Delete settingBindings.
-  - `  describe  `  
-    Describe settingBindings.
-  - `  list  `  
-    List settingBindings.
-  - `  update  `  
-    Update settingBindings.
+[`create`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/setting-bindings/create)  
+Create settingBindings.
+
+[`delete`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/setting-bindings/delete)  
+Delete settingBindings.
+
+[`describe`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/setting-bindings/describe)  
+Describe settingBindings.
+
+[`list`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/setting-bindings/list)  
+List settingBindings.
+
+[`update`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/setting-bindings/update)  
+Update settingBindings.

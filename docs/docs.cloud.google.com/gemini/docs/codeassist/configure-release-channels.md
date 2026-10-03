@@ -12,17 +12,17 @@ We release Gemini Code Assist features in different release channels. You can se
 
 The following release channels are available:
 
-  - **Generally Available.** The default release channel. Lets you use generally available models and features. Note that it is possible to access certain preview features without opting into the Preview channel, using alternative mechanisms of Preview sign-up. These features will be accessible within the GA channel, but are still covered under Pre-GA Offering Terms.
+- **Generally Available.** The default release channel. Lets you use generally available models and features. Note that it is possible to access certain preview features without opting into the Preview channel, using alternative mechanisms of Preview sign-up. These features will be accessible within the GA channel, but are still covered under Pre-GA Offering Terms.
 
-  - **Preview.** Lets you access certain preview features for Gemini Code Assist and, optionally, provide feedback and usage data to help Google improve future releases. Note that there are no distinct features in the Preview release channel.
-    
-    When you enable the Preview release channel on a project, you agree on behalf of the customer that **all** usage of Gemini Code Assist in that project is subject to the Pre-GA Offering Terms of the [Google Cloud Platform Specific Service Terms](https://cloud.google.com/terms/service-terms) . Don't use this channel for projects and resources that aren't suitable for use with pre-GA offerings.
+- **Preview.** Lets you access certain preview features for Gemini Code Assist and, optionally, provide feedback and usage data to help Google improve future releases. Note that there are no distinct features in the Preview release channel.
+
+  When you enable the Preview release channel on a project, you agree on behalf of the customer that **all** usage of Gemini Code Assist in that project is subject to the Pre-GA Offering Terms of the [Google Cloud Platform Specific Service Terms](https://cloud.google.com/terms/service-terms) . Don't use this channel for projects and resources that aren't suitable for use with pre-GA offerings.
 
 The following sections provide steps required to set or change your Gemini Code Assist release channel.
 
 ## Before you begin
 
-  - Verify that your Google Cloud project is attached to a billing account. For more information, see [Verify the billing status of your projects](https://docs.cloud.google.com/billing/docs/how-to/verify-billing-enabled#billing_project_linkage) .
+- Verify that your Google Cloud project is attached to a billing account. For more information, see [Verify the billing status of your projects](https://docs.cloud.google.com/billing/docs/how-to/verify-billing-enabled#billing_project_linkage) .
 
 ### Required roles
 
@@ -32,34 +32,23 @@ To see the exact permissions that are required, expand the **Required permission
 
 #### Required permissions
 
-`cloudaicompanion.releaseChannelSettings.create`
-
-`cloudaicompanion.releaseChannelSettings.delete`
-
-`cloudaicompanion.releaseChannelSettings.get`
-
-`cloudaicompanion.releaseChannelSettings.list`
-
-`cloudaicompanion.releaseChannelSettings.update`
-
-`cloudaicompanion.dataSharingWithGoogleSettings.create`
-
-Configure release channels using an API:
-
+- `cloudaicompanion.releaseChannelSettings.create`
+- `cloudaicompanion.releaseChannelSettings.delete`
+- `cloudaicompanion.releaseChannelSettings.get`
+- `cloudaicompanion.releaseChannelSettings.list`
+- `cloudaicompanion.releaseChannelSettings.update`
+- `cloudaicompanion.dataSharingWithGoogleSettings.create`
+- Configure release channels using an API:
   - `cloudaicompanion.settingBindings.releaseChannelSettingsCreate`
   - `cloudaicompanion.settingBindings.releaseChannelSettingsDelete`
   - `cloudaicompanion.settingBindings.releaseChannelSettingsGet`
   - `cloudaicompanion.settingBindings.releaseChannelSettingsList`
   - `cloudaicompanion.settingBindings.releaseChannelSettingsUpdate`
   - `cloudaicompanion.settingBindings.releaseChannelSettingsUse`
-
-Configure prompt and response sharing using an API:
-
+- Configure prompt and response sharing using an API:
   - `cloudaicompanion.settingBindings.dataSharingWithGoogleSettingsCreate`
   - `cloudaicompanion.settingBindings.dataSharingWithGoogleSettingsUse`
-
-View Gemini Code Assist administrator settings:
-
+- View Gemini Code Assist administrator settings:
   - `cloudaicompanion.instances.queryEffectiveSetting`
   - `cloudaicompanion.instances.queryEffectiveSettingBindings`
 
@@ -74,52 +63,56 @@ Select one of the following options:
 2.  Click **Settings** in the navigation menu.
 
 3.  In the **Release channels for Gemini Code Assist in local IDEs** section, select the release channel that best suits your needs:
-    
+
     ### Preview
-    
+
     1.  Select **Preview** .
     2.  Review the Preview release channel details and Trusted Tester program terms, and then click **Save changes** .
-    
+
     ### Generally Available
-    
+
     1.  Select **GA** .
     2.  Click **Save changes** .
 
 ### API
 
 1.  Create the release channel setting and a setting-specific value:
-    
+
     1.  Obtain an [authentication token](https://docs.cloud.google.com/docs/authentication/rest) . You must be authenticated using gcloud CLI authentication to obtain it:
-        
-            TOKEN=$(gcloud auth print-access-token)
-    
+
+        ```
+        TOKEN=$(gcloud auth print-access-token)
+        ```
+
     2.  Create the setting. These instructions use [`cURL`](http://curl.haxx.se/) to call API methods:
-        
-        ``` 
+
+        ```
           curl -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' -d '{
               "release_channel": "RELEASE_CHANNEL",
             } ' -X POST "https://cloudaicompanion.googleapis.com/v1/projects/CONTAINER_PROJECT_NAME/locations/global/releaseChannelSettings?release_channel_setting_id=RC_SETTING_ID"
         ```
-        
+
         Replace the following:
-        
-          - `  RELEASE_CHANNEL  ` : the release channel, either `EXPERIMENTAL` for Preview or `STABLE` for Generally Available.
-          - `  CONTAINER_PROJECT_NAME  ` : the project ID of the project where the binding resource is stored. This is the parent project of the binding.
-          - `  RC_SETTING_ID  ` : a unique setting name—for example, `rc1` for `Release Channel` .
-        
-        The output shows the `releaseChannel` set to `  RELEASE_CHANNEL  ` :
-        
-            {
-              "name": "projects/CONTAINER_PROJECT_NAME
-            /locations/global/releaseChannelSettings/RC_SETTING_ID",
-              "createTime": "2025-01-23T15:22:49.717166932Z",
-              "updateTime": "2025-01-23T15:22:49.717166932Z",
-              "releaseChannel": RELEASE_CHANNEL
-            }
-    
+
+        - `RELEASE_CHANNEL` : the release channel, either `EXPERIMENTAL` for Preview or `STABLE` for Generally Available.
+        - `CONTAINER_PROJECT_NAME` : the project ID of the project where the binding resource is stored. This is the parent project of the binding.
+        - `RC_SETTING_ID` : a unique setting name—for example, `rc1` for `Release Channel` .
+
+        The output shows the `releaseChannel` set to `RELEASE_CHANNEL` :
+
+        ```
+        {
+          "name": "projects/CONTAINER_PROJECT_NAME
+        /locations/global/releaseChannelSettings/RC_SETTING_ID",
+          "createTime": "2025-01-23T15:22:49.717166932Z",
+          "updateTime": "2025-01-23T15:22:49.717166932Z",
+          "releaseChannel": RELEASE_CHANNEL
+        }
+        ```
+
     3.  Create the release channel setting binding:
-        
-        ``` 
+
+        ```
           curl \
           -H "Authorization: Bearer $TOKEN" \
           -H 'Content-Type: application/json' \
@@ -129,69 +122,79 @@ Select one of the following options:
             }' \
           -X POST "https://cloudaicompanion.googleapis.com/v1/projects/CONTAINER_PROJECT_NAME/locations/global/releaseChannelSettings/RC_SETTING_ID/settingBindings?setting_binding_id=RC_BINDING_ID"
         ```
-        
+
         Replace the following:
-        
-          - `  TARGET_PROJECT_NAME  ` : the target project to which the binding should be bound. This is often the same as the container project. However, you can bind a setting to multiple projects so that the setting resource doesn't have to be duplicated.
-          - `  CONTAINER_PROJECT_NAME  ` : the project ID of the project where the binding resource is stored. This is the parent project of the binding.
-          - `  RC_SETTING_ID  ` : the same `  RC_SETTING_ID  ` that you used when you created the setting, but appended with `b1` . For example, use `rc1b1` for `Release Channel` .
-          - `  RC_BINDING_ID  ` : a unique name for the settings binding—for example, `rc_binding` .
-        
+
+        - `TARGET_PROJECT_NAME` : the target project to which the binding should be bound. This is often the same as the container project. However, you can bind a setting to multiple projects so that the setting resource doesn't have to be duplicated.
+        - `CONTAINER_PROJECT_NAME` : the project ID of the project where the binding resource is stored. This is the parent project of the binding.
+        - `RC_SETTING_ID` : the same `RC_SETTING_ID` that you used when you created the setting, but appended with `b1` . For example, use `rc1b1` for `Release Channel` .
+        - `RC_BINDING_ID` : a unique name for the settings binding—for example, `rc_binding` .
+
         The output includes the operation metadata in the following format:
-        
-            {
-              "name": "projects/CONTAINER_PROJECT_NAME/locations/global/operations/operation-RC_BINDING_OPERATION_ID",
-              "metadata": {
-                "@type": "type.googleapis.com/google.cloud.cloudaicompanion.v1.OperationMetadata",
-                "createTime": "2025-01-23T15:27:50.076075570Z",
-                "target": "projects/TARGET_PROJECT_NAME/locations/global/releaseChannelSettings/RC_SETTING_ID/settingBindings/RC_BINDING_ID",
-                "verb": "create",
-                "requestedCancellation": false,
-                "apiVersion": "v1"
-              },
-              "done": false
-            }
-    
+
+        ```
+        {
+          "name": "projects/CONTAINER_PROJECT_NAME/locations/global/operations/operation-RC_BINDING_OPERATION_ID",
+          "metadata": {
+            "@type": "type.googleapis.com/google.cloud.cloudaicompanion.v1.OperationMetadata",
+            "createTime": "2025-01-23T15:27:50.076075570Z",
+            "target": "projects/TARGET_PROJECT_NAME/locations/global/releaseChannelSettings/RC_SETTING_ID/settingBindings/RC_BINDING_ID",
+            "verb": "create",
+            "requestedCancellation": false,
+            "apiVersion": "v1"
+          },
+          "done": false
+        }
+        ```
+
     4.  Optional: Check the status of the release channel setting binding creation:
-        
-            curl -H "Authorization: Bearer $TOKEN" \
-            https://cloudaicompanion.googleapis.com/v1/projects/CONTAINER_PROJECT_NAME/locations/global/operations/operation-RC_BINDING_OPERATION_ID
-        
+
+        ```
+        curl -H "Authorization: Bearer $TOKEN" \
+        https://cloudaicompanion.googleapis.com/v1/projects/CONTAINER_PROJECT_NAME/locations/global/operations/operation-RC_BINDING_OPERATION_ID
+        ```
+
         Replace the following:
-        
-          - `  CONTAINER_PROJECT_NAME  ` : the project ID of the project where the binding resource is stored. This is the parent project of the binding.
-          - `  RC_BINDING_OPERATION_ID  ` : the release channel setting binding creation operation ID provided in the response in the previous step.
+
+        - `CONTAINER_PROJECT_NAME` : the project ID of the project where the binding resource is stored. This is the parent project of the binding.
+        - `RC_BINDING_OPERATION_ID` : the release channel setting binding creation operation ID provided in the response in the previous step.
 
 2.  Optional: Create the prompt and response sharing setting and a setting-specific value:
-    
+
     1.  Obtain the token:
-        
-            TOKEN=$(gcloud auth print-access-token)
-    
+
+        ```
+        TOKEN=$(gcloud auth print-access-token)
+        ```
+
     2.  Create the setting:
-        
-            curl -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' -d '{
-                "enable_preview_data_sharing": true,
-              } ' -X POST "https://cloudaicompanion.googleapis.com/v1/projects/CONTAINER_PROJECT_NAME/locations/global/dataSharingWithGoogleSettings?data_sharing_with_google_setting_id=DSWG_SETTING_ID"
-        
+
+        ```
+        curl -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' -d '{
+            "enable_preview_data_sharing": true,
+          } ' -X POST "https://cloudaicompanion.googleapis.com/v1/projects/CONTAINER_PROJECT_NAME/locations/global/dataSharingWithGoogleSettings?data_sharing_with_google_setting_id=DSWG_SETTING_ID"
+        ```
+
         Replace the following:
-        
-          - `  CONTAINER_PROJECT_NAME  ` : the parent project ID
-          - `  DSWG_SETTING_ID  ` : a unique setting name—for example, `dswg1` for `Data Sharing with Google`
-        
+
+        - `CONTAINER_PROJECT_NAME` : the parent project ID
+        - `DSWG_SETTING_ID` : a unique setting name—for example, `dswg1` for `Data Sharing with Google`
+
         The output shows the `enablePreviewDataSharing` set to `true` :
-        
-            {
-              "name": "projects/CONTAINER_PROJECT_NAME
-            /locations/global/dataSharingWithGoogleSettings/DSWG_SETTING_ID",
-              "createTime": "2025-01-23T15:22:49.717166932Z",
-              "updateTime": "2025-01-23T15:22:49.717166932Z",
-              "enablePreviewDataSharing": true
-            }
-    
+
+        ```
+        {
+          "name": "projects/CONTAINER_PROJECT_NAME
+        /locations/global/dataSharingWithGoogleSettings/DSWG_SETTING_ID",
+          "createTime": "2025-01-23T15:22:49.717166932Z",
+          "updateTime": "2025-01-23T15:22:49.717166932Z",
+          "enablePreviewDataSharing": true
+        }
+        ```
+
     3.  Create the prompt and response setting binding:
-        
-        ``` 
+
+        ```
           curl \
           -H "Authorization: Bearer $TOKEN" \
           -H 'Content-Type: application/json' \
@@ -201,40 +204,44 @@ Select one of the following options:
             }' \
           -X POST "https://cloudaicompanion.googleapis.com/v1/projects/CONTAINER_PROJECT_NAME/locations/global/dataSharingWithGoogleSettings/DSWG_SETTING_ID/settingBindings?setting_binding_id=DSWG_BINDING_ID"
         ```
-        
+
         Replace the following:
-        
-          - `  TARGET_PROJECT_NAME  ` : the target project to which the setting should be applied.
-          - `  CONTAINER_PROJECT_NAME  ` : the parent project ID.
-          - `  DSWG_SETTING_ID  ` : the same `  DSWG_SETTING_ID  ` that you used when you created the setting, but appended with `b1` . For example, use `dswg1b1` for `Data Sharing with Google` .
-          - `  DSWG_BINDING_ID  ` : a unique name for the settings binding—for example, `dswg_binding` .
-        
+
+        - `TARGET_PROJECT_NAME` : the target project to which the setting should be applied.
+        - `CONTAINER_PROJECT_NAME` : the parent project ID.
+        - `DSWG_SETTING_ID` : the same `DSWG_SETTING_ID` that you used when you created the setting, but appended with `b1` . For example, use `dswg1b1` for `Data Sharing with Google` .
+        - `DSWG_BINDING_ID` : a unique name for the settings binding—for example, `dswg_binding` .
+
         The output includes the operation metadata in the following format:
-        
-            {
-            "name": "projects/CONTAINER_PROJECT_NAME/locations/global/operations/operation-DSWG_BINDING_OPERATION_ID",
-            "metadata": {
-              "@type": "type.googleapis.com/google.cloud.cloudaicompanion.v1.OperationMetadata",
-              "createTime": "2025-01-23T15:27:50.076075570Z",
-              "target": "projects/TARGET_PROJECT_NAME/locations/global/dataSharingWithGoogleSettings/DSWG_SETTING_ID/settingBindings/DSWG_BINDING_ID",
-              "verb": "create",
-              "requestedCancellation": false,
-              "apiVersion": "v1"
-            },
-            "done": false
-            }
-    
+
+        ```
+        {
+        "name": "projects/CONTAINER_PROJECT_NAME/locations/global/operations/operation-DSWG_BINDING_OPERATION_ID",
+        "metadata": {
+          "@type": "type.googleapis.com/google.cloud.cloudaicompanion.v1.OperationMetadata",
+          "createTime": "2025-01-23T15:27:50.076075570Z",
+          "target": "projects/TARGET_PROJECT_NAME/locations/global/dataSharingWithGoogleSettings/DSWG_SETTING_ID/settingBindings/DSWG_BINDING_ID",
+          "verb": "create",
+          "requestedCancellation": false,
+          "apiVersion": "v1"
+        },
+        "done": false
+        }
+        ```
+
     4.  Optional: Check the status of the prompt and response setting binding creation:
-        
-            curl -H "Authorization: Bearer $TOKEN" \
-            https://cloudaicompanion.googleapis.com/v1/projects/CONTAINER_PROJECT_NAME/locations/global/operations/operation-DSWG_BINDING_OPERATION_ID
-        
+
+        ```
+        curl -H "Authorization: Bearer $TOKEN" \
+        https://cloudaicompanion.googleapis.com/v1/projects/CONTAINER_PROJECT_NAME/locations/global/operations/operation-DSWG_BINDING_OPERATION_ID
+        ```
+
         Replace the following:
-        
-          - `  CONTAINER_PROJECT_NAME  ` : the project ID of the project where the binding resource is stored. This is the parent project of the binding.
-          - `  DSWG_BINDING_OPERATION_ID  ` : the prompt and response setting binding creation operation ID provided in the response in the previous step.
+
+        - `CONTAINER_PROJECT_NAME` : the project ID of the project where the binding resource is stored. This is the parent project of the binding.
+        - `DSWG_BINDING_OPERATION_ID` : the prompt and response setting binding creation operation ID provided in the response in the previous step.
 
 ## What's next
 
-  - Learn about [Gemini Code Assist pricing](https://cloud.google.com/products/gemini/pricing) .
-  - [View other Gemini Code Assist administrator settings](https://docs.cloud.google.com/gemini/docs/admin-settings-console) .
+- Learn about [Gemini Code Assist pricing](https://cloud.google.com/products/gemini/pricing) .
+- [View other Gemini Code Assist administrator settings](https://docs.cloud.google.com/gemini/docs/admin-settings-console) .

@@ -22,58 +22,58 @@ Both Gemini Code Assist and code customization are managed services. You license
 
 Google provides security of your stored private code in several ways:
 
-  - We index and store your code in a dedicated single-tenant environment.
-  - [Administrative access controls](https://docs.cloud.google.com/assured-workloads/cloud-provider-access-management/docs/administrative-access) help prevent Google employees from accessing your content without justification and, optionally, explicit approval.
-  - The Gemini model doesn't train on your private source code.
-  - Your results are private to you, and we don't share your results with other customers.
+- We index and store your code in a dedicated single-tenant environment.
+- [Administrative access controls](https://docs.cloud.google.com/assured-workloads/cloud-provider-access-management/docs/administrative-access) help prevent Google employees from accessing your content without justification and, optionally, explicit approval.
+- The Gemini model doesn't train on your private source code.
+- Your results are private to you, and we don't share your results with other customers.
 
 For further details on Google's security measures, see the [Google security overview](https://cloud.google.com/security/overview/whitepaper) .
 
 Here's how you can control access to your data:
 
-  - You can use Identity and Access Management (IAM) permissions to help control individuals who can get code suggestions from your codebase.
-  - You can [create an `.aiexclude` file](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization#optional_choose_which_files_are_not_indexed) to choose specific repositories or parts of repositories that Gemini Code Assist indexes.
+- You can use Identity and Access Management (IAM) permissions to help control individuals who can get code suggestions from your codebase.
+- You can [create an `.aiexclude` file](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization#optional_choose_which_files_are_not_indexed) to choose specific repositories or parts of repositories that Gemini Code Assist indexes.
 
 To configure code customization in your IDE, see [Configure Gemini Code Assist code customization](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization) .
 
 ## Limitations
 
-  - Google limits the number of code repository indexes to one for each project and for each organization.
+- Google limits the number of code repository indexes to one for each project and for each organization.
 
-  - The maximum number of repositories that can be indexed is 20,000.
+- The maximum number of repositories that can be indexed is 20,000.
 
-  - The maximum number of repository groups per code repository index is 500.
+- The maximum number of repository groups per code repository index is 500.
 
-  - The maximum number of repositories per repository group is 500.
+- The maximum number of repositories per repository group is 500.
 
-  - Code customization is supported in the VS Code Gemini Code Assist extension (version 2.18.0+), the IntelliJ Gemini Code Assist plugin (version 1.1.0), Cloud Workstations, and the Cloud Shell Editor.
+- Code customization is supported in the VS Code Gemini Code Assist extension (version 2.18.0+), the IntelliJ Gemini Code Assist plugin (version 1.1.0), Cloud Workstations, and the Cloud Shell Editor.
 
-  - Code customization supports repositories hosted on github.com, gitlab.com, bitbucket.org, and on-premises repositories hosted on GitLab Enterprise, GitHub Enterprise, and Bitbucket Data Center.
+- Code customization supports repositories hosted on github.com, gitlab.com, bitbucket.org, and on-premises repositories hosted on GitLab Enterprise, GitHub Enterprise, and Bitbucket Data Center.
 
-  - Code customization doesn't support [GitHub Enterprise Cloud IP restrictions](https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-allowed-ip-addresses-for-your-organization) .
+- Code customization doesn't support [GitHub Enterprise Cloud IP restrictions](https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-allowed-ip-addresses-for-your-organization) .
 
-  - Code customization supports only [Developer Connect connections](https://docs.cloud.google.com/developer-connect/docs/git-repo-connections) in the following locations (regions):
-    
-      - `us-central1`
-      - `europe-west1`
-      - `asia-southeast1`
+- Code customization supports only [Developer Connect connections](https://docs.cloud.google.com/developer-connect/docs/git-repo-connections) in the following locations (regions):
 
-  - Code customization doesn't index media. Code customization supports only documentation (in Markdown) and the following languages:
-    
-      - C, C++, and C\#
-      - Golang
-      - Java
-      - JavaScript
-      - Kotlin
-      - PHP
-      - Python
-      - Rust
-      - TypeScript
-      - Verilog and SystemVerilog
-    
-    All other coding languages are not indexed or used in code customization. To request support for a coding language, click **Send feedback** on this page, and then select **Product feedback** .
+  - `us-central1`
+  - `europe-west1`
+  - `asia-southeast1`
+
+- Code customization doesn't index media. Code customization supports only documentation (in Markdown) and the following languages:
+
+  - C, C++, and C#
+  - Golang
+  - Java
+  - JavaScript
+  - Kotlin
+  - PHP
+  - Python
+  - Rust
+  - TypeScript
+  - Verilog and SystemVerilog
+
+  All other coding languages are not indexed or used in code customization. To request support for a coding language, click **Send feedback** on this page, and then select **Product feedback** .
 
 ## What's next
 
-  - [Configure Gemini Code Assist code customization](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization) .
-  - [Use code customization](https://docs.cloud.google.com/gemini/docs/codeassist/use-code-customization) .
+- [Configure Gemini Code Assist code customization](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization) .
+- [Use code customization](https://docs.cloud.google.com/gemini/docs/codeassist/use-code-customization) .

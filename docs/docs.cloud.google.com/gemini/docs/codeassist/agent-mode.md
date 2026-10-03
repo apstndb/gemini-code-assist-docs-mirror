@@ -7,7 +7,7 @@ data_source: docs.cloud.google.com
 ---
 
 > **Preview**
-> 
+>
 > This feature is subject to the "Pre-GA Offerings Terms" in the General Service Terms section of the [Service Specific Terms](https://docs.cloud.google.com/terms/service-terms#1) . Pre-GA features are available "as is" and might have limited support. For more information, see the [launch stage descriptions](https://cloud.google.com/products/#product-launch-stages) .
 
 This document describes agent mode in Gemini Code Assist.
@@ -16,12 +16,12 @@ Agent mode is available in the VS Code and IntelliJ integrated development envir
 
 With agent mode, you can do any of the following and more:
 
-  - Ask questions about your code.
-  - Use context and built-in tools to improve generated content.
-  - [Configure MCP servers](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer#configure-mcp-servers) to extend the agent's abilities.
-  - Get solutions to complex tasks with multiple steps.
-  - Generate code from design documents, issues, and `TODO` comments.
-  - Control the agent behavior by commenting on, editing, and approving plans and tool use during execution.
+- Ask questions about your code.
+- Use context and built-in tools to improve generated content.
+- [Configure MCP servers](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer#configure-mcp-servers) to extend the agent's abilities.
+- Get solutions to complex tasks with multiple steps.
+- Generate code from design documents, issues, and `TODO` comments.
+- Control the agent behavior by commenting on, editing, and approving plans and tool use during execution.
 
 ## How agent mode works
 
@@ -29,8 +29,8 @@ In agent mode, your prompt is sent to the Gemini API with a list of [tools](http
 
 When a tool is requested, the agent prepares to use the tool and checks to see if it is allowed to use the tool with or without explicit permission:
 
-  - For tool requests that modify the file system, or perform mutating operations on any resources, Gemini will ask you to allow the operation unless you have configured Gemini to always allow the tool or tools.
-  - Tool requests that are read-only might not ask for permission before completing the task.
+- For tool requests that modify the file system, or perform mutating operations on any resources, Gemini will ask you to allow the operation unless you have configured Gemini to always allow the tool or tools.
+- Tool requests that are read-only might not ask for permission before completing the task.
 
 When asked to allow the use of a tool, you can choose to allow or deny the operation. The agent might also give you options to always allow a tool or server or allow similar operations. For more information, see [Always allow agent actions](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer#yolo-mode) .
 
@@ -50,21 +50,21 @@ The following tabs detail how context is gathered for different IDEs.
 
 The following methods of getting context are usually available to Gemini Code Assist in agent mode:
 
-  - Information in your IDE workspace.
-  - Tool responses from built-in tools like grep, terminal, file read, or file write.
-  - Google Search responses.
-  - Content from a given URL provided in a prompt or by a tool.
-  - Context files you create in Markdown.
+- Information in your IDE workspace.
+- Tool responses from built-in tools like grep, terminal, file read, or file write.
+- Google Search responses.
+- Content from a given URL provided in a prompt or by a tool.
+- Context files you create in Markdown.
 
 ### IntelliJ
 
 The following methods of getting context are usually available to Gemini Code Assist in agent mode:
 
-  - Information in your IDE project including your files, indexed symbols and usage of symbols in your project.
-  - Tool responses from built-in tools like grep, file read, or file write.
-  - IntelliJ [version control](https://www.jetbrains.com/help/idea/version-control-integration.html) .
-  - Configured MCP servers and tools
-  - Context files you create in Markdown.
+- Information in your IDE project including your files, indexed symbols and usage of symbols in your project.
+- Tool responses from built-in tools like grep, file read, or file write.
+- IntelliJ [version control](https://www.jetbrains.com/help/idea/version-control-integration.html) .
+- Configured MCP servers and tools
+- Context files you create in Markdown.
 
 You can see the context available to the agent in the context drawer in the agent mode chat prompt area.
 
@@ -86,26 +86,35 @@ All of the [Gemini CLI built-in tools](https://geminicli.com/docs/reference/tool
 
 ### IntelliJ
 
-  - `read_file`  
-    Retrieves the text content of a file using its absolute path.
-  - `write_file`  
-    Writes the given text to a specified file, creating the file if it doesn't exist.
-  - `analyze_current_file`  
-    Analyzes the open file in the editor for errors and warnings.
-  - `find_files`  
-    Finds the absolute path to files given a filename or a part of the path
-  - `grep`  
-    Finds all files inside the project that contain a given text pattern or regular expression.
-  - `list_files`  
-    Lists all files and directories in a given absolute path.
-  - `resolve_symbol`  
-    Resolves a specific symbol reference to its original declaration.
-  - `find_usages`  
-    Searches the project for all references to a given symbol declaration.
-  - `git`  
-    Runs a Git command-line interface (CLI) command and returns the result.
-  - `list_vcs_roots`  
-    Returns all Version Control System (VCS) roots, such as Git repositories, in the current project.
+`read_file`  
+Retrieves the text content of a file using its absolute path.
+
+`write_file`  
+Writes the given text to a specified file, creating the file if it doesn't exist.
+
+`analyze_current_file`  
+Analyzes the open file in the editor for errors and warnings.
+
+`find_files`  
+Finds the absolute path to files given a filename or a part of the path
+
+`grep`  
+Finds all files inside the project that contain a given text pattern or regular expression.
+
+`list_files`  
+Lists all files and directories in a given absolute path.
+
+`resolve_symbol`  
+Resolves a specific symbol reference to its original declaration.
+
+`find_usages`  
+Searches the project for all references to a given symbol declaration.
+
+`git`  
+Runs a Git command-line interface (CLI) command and returns the result.
+
+`list_vcs_roots`  
+Returns all Version Control System (VCS) roots, such as Git repositories, in the current project.
 
 ## Limitations
 
@@ -115,5 +124,5 @@ Recitation is not available in agent mode. While in agent mode, Gemini doesn't [
 
 ## What's next
 
-  - [Use the Gemini Code Assist agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer) .
-  - Learn about [agent mode quotas](https://docs.cloud.google.com/gemini/docs/quotas#quotas-for-agent-mode-gemini-cli) .
+- [Use the Gemini Code Assist agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer) .
+- Learn about [agent mode quotas](https://docs.cloud.google.com/gemini/docs/quotas#quotas-for-agent-mode-gemini-cli) .

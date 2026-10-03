@@ -49,21 +49,21 @@ Gemini Code Assist uses the chat history for additional context when responding 
 1.  In the **Gemini Code Assist** pane, click history **Resume Previous Chat** .
 
 2.  When the previous chats appear in the **Select chat** menu, hold your pointer over the chat that you want to clear, and select **Delete** .
-    
+
     ![Button to clear conversation history in Gemini VS Code.](https://docs.cloud.google.com/static/gemini/images/vscode-clear-history.png)
-    
+
     > **Note:** Your chat threads persist across IDE sessions until you clear your history.
 
 3.  When prompted to confirm the deletion of the chat thread, select **Delete** .
 
 ### IntelliJ
 
-1.  In the **Gemini Code Assist** tool window, click chat\_bubble **Recent Chats** .
+1.  In the **Gemini Code Assist** tool window, click chat_bubble **Recent Chats** .
 
 2.  When the previous chats appear in the **Recent Chats** menu, hold your pointer over the chat that you want to clear, and select delete **Delete** .
-    
+
     ![Button to clear conversation history in Gemini tool window.](https://docs.cloud.google.com/static/gemini/images/intellij-clear-history.png)
-    
+
     > **Note:** Your query and conversation history persist across IDE sessions until you clear the history.
 
 ## What's next

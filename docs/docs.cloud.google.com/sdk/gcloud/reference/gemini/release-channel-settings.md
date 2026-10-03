@@ -12,7 +12,7 @@ gcloud gemini release-channel-settings - manage Release Channel Setting resource
 
 SYNOPSIS
 
-`gcloud gemini release-channel-settings` `  GROUP  ` | `  COMMAND  ` \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini release-channel-settings` [`GROUP`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings#GROUP) \| [`COMMAND`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings#COMMAND) \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -20,28 +20,32 @@ Manage Release Channel Setting resources.
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --help  ` .
+These flags are available to all commands: [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 GROUPS
 
-`  GROUP  ` is one of the following:
+`GROUP` is one of the following:
 
-  - `  setting-bindings  `  
-    Manage Setting Binding resources.
+[`setting-bindings`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/setting-bindings)  
+Manage Setting Binding resources.
 
 COMMANDS
 
-`  COMMAND  ` is one of the following:
+`COMMAND` is one of the following:
 
-  - `  create  `  
-    Create releaseChannelSettings.
-  - `  delete  `  
-    Delete releaseChannelSettings.
-  - `  describe  `  
-    Describe releaseChannelSettings.
-  - `  list  `  
-    List releaseChannelSettings.
-  - `  update  `  
-    Update releaseChannelSettings.
+[`create`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/create)  
+Create releaseChannelSettings.
+
+[`delete`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/delete)  
+Delete releaseChannelSettings.
+
+[`describe`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/describe)  
+Describe releaseChannelSettings.
+
+[`list`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/list)  
+List releaseChannelSettings.
+
+[`update`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/update)  
+Update releaseChannelSettings.

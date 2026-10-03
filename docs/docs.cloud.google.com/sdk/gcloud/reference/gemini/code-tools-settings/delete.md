@@ -12,7 +12,7 @@ gcloud gemini code-tools-settings delete - delete codeToolsSettings
 
 SYNOPSIS
 
-`gcloud gemini code-tools-settings delete` ( `  CODE_TOOLS_SETTING  ` : `  --location  ` = `  LOCATION  ` ) \[ `  --force  ` \] \[ `  --request-id  ` = `  REQUEST_ID  ` \] \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini code-tools-settings delete` ( [`CODE_TOOLS_SETTING`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/delete#CODE_TOOLS_SETTING) : [`--location`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/delete#--location) = `LOCATION` ) \[ [`--force`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/delete#--force) \] \[ [`--request-id`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/delete#--request-id) = `REQUEST_ID` \] \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/delete#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -22,7 +22,9 @@ EXAMPLES
 
 To delete the codeToolsSetting, run:
 
-    gcloud gemini code-tools-settings delete
+```
+gcloud gemini code-tools-settings delete
+```
 
 POSITIONAL ARGUMENTS
 
@@ -30,46 +32,46 @@ CodeToolsSetting resource - Name of the resource The arguments in this group can
 
 To set the `project` attribute:
 
-  - provide the argument `code_tools_setting` on the command line with a fully specified name;
-  - provide the argument `--project` on the command line;
-  - set the property `core/project` .
+- provide the argument `code_tools_setting` on the command line with a fully specified name;
+- provide the argument `--project` on the command line;
+- set the property `core/project` .
 
 This must be specified.
 
-  - `  CODE_TOOLS_SETTING  `  
-    ID of the codeToolsSetting or fully qualified identifier for the codeToolsSetting.
-    
-    To set the `code_tools_setting` attribute:
-    
-      - provide the argument `code_tools_setting` on the command line.
-    
-    This positional argument must be specified if any of the other arguments in this group are specified.
+`CODE_TOOLS_SETTING`  
+ID of the codeToolsSetting or fully qualified identifier for the codeToolsSetting.
 
-  - `--location` = `  LOCATION  `  
-    The location id of the codeToolsSetting resource.
-    
-    To set the `location` attribute:
-    
-      - provide the argument `code_tools_setting` on the command line with a fully specified name;
-      - provide the argument `--location` on the command line.
+To set the `code_tools_setting` attribute:
+
+- provide the argument `code_tools_setting` on the command line.
+
+This positional argument must be specified if any of the other arguments in this group are specified.
+
+`--location` = `LOCATION`  
+The location id of the codeToolsSetting resource.
+
+To set the `location` attribute:
+
+- provide the argument `code_tools_setting` on the command line with a fully specified name;
+- provide the argument `--location` on the command line.
 
 FLAGS
 
-  - `--force`  
-    If set to true, any code tools settings from this publisher will also be deleted. (Otherwise, the request will only work if the publisher has no books.)
+`--force`  
+If set to true, any code tools settings from this publisher will also be deleted. (Otherwise, the request will only work if the publisher has no books.)
 
-  - `--request-id` = `  REQUEST_ID  `  
-    An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. The server will guarantee that for at least 60 minutes after the first request.
-    
-    For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.
-    
-    The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+`--request-id` = `REQUEST_ID`  
+An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. The server will guarantee that for at least 60 minutes after the first request.
+
+For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.
+
+The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --access-token-file  ` , `  --account  ` , `  --billing-project  ` , `  --configuration  ` , `  --flags-file  ` , `  --flatten  ` , `  --format  ` , `  --help  ` , `  --impersonate-service-account  ` , `  --log-http  ` , `  --project  ` , `  --quiet  ` , `  --trace-token  ` , `  --user-output-enabled  ` , `  --verbosity  ` .
+These flags are available to all commands: [`--access-token-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--access-token-file) , [`--account`](https://docs.cloud.google.com/sdk/gcloud/reference#--account) , [`--billing-project`](https://docs.cloud.google.com/sdk/gcloud/reference#--billing-project) , [`--configuration`](https://docs.cloud.google.com/sdk/gcloud/reference#--configuration) , [`--flags-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--flags-file) , [`--flatten`](https://docs.cloud.google.com/sdk/gcloud/reference#--flatten) , [`--format`](https://docs.cloud.google.com/sdk/gcloud/reference#--format) , [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) , [`--impersonate-service-account`](https://docs.cloud.google.com/sdk/gcloud/reference#--impersonate-service-account) , [`--log-http`](https://docs.cloud.google.com/sdk/gcloud/reference#--log-http) , [`--project`](https://docs.cloud.google.com/sdk/gcloud/reference#--project) , [`--quiet`](https://docs.cloud.google.com/sdk/gcloud/reference#--quiet) , [`--trace-token`](https://docs.cloud.google.com/sdk/gcloud/reference#--trace-token) , [`--user-output-enabled`](https://docs.cloud.google.com/sdk/gcloud/reference#--user-output-enabled) , [`--verbosity`](https://docs.cloud.google.com/sdk/gcloud/reference#--verbosity) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 API REFERENCE
 

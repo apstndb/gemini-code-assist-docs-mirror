@@ -12,7 +12,7 @@ gcloud gemini code-tools-settings - manage Code Tools Setting resources
 
 SYNOPSIS
 
-`gcloud gemini code-tools-settings` `  GROUP  ` | `  COMMAND  ` \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini code-tools-settings` [`GROUP`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings#GROUP) \| [`COMMAND`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings#COMMAND) \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -20,28 +20,32 @@ Manage Code Tools Setting resources.
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --help  ` .
+These flags are available to all commands: [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 GROUPS
 
-`  GROUP  ` is one of the following:
+`GROUP` is one of the following:
 
-  - `  setting-bindings  `  
-    Manage Setting Binding resources.
+[`setting-bindings`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/setting-bindings)  
+Manage Setting Binding resources.
 
 COMMANDS
 
-`  COMMAND  ` is one of the following:
+`COMMAND` is one of the following:
 
-  - `  create  `  
-    Create codeToolsSettings.
-  - `  delete  `  
-    Delete codeToolsSettings.
-  - `  describe  `  
-    Describe codeToolsSettings.
-  - `  list  `  
-    List codeToolsSettings.
-  - `  update  `  
-    Update codeToolsSettings.
+[`create`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/create)  
+Create codeToolsSettings.
+
+[`delete`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/delete)  
+Delete codeToolsSettings.
+
+[`describe`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/describe)  
+Describe codeToolsSettings.
+
+[`list`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/list)  
+List codeToolsSettings.
+
+[`update`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/update)  
+Update codeToolsSettings.

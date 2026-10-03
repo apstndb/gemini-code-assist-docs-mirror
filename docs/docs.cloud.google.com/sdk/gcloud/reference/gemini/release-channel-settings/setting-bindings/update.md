@@ -12,7 +12,7 @@ gcloud gemini release-channel-settings setting-bindings update - update settingB
 
 SYNOPSIS
 
-`gcloud gemini release-channel-settings setting-bindings update` ( `  SETTING_BINDING  ` : `  --location  ` = `  LOCATION  ` `  --release-channel-setting  ` = `  RELEASE_CHANNEL_SETTING  ` ) \[ `  --async  ` \] \[ `  --product  ` = `  PRODUCT  ` \] \[ `  --request-id  ` = `  REQUEST_ID  ` \] \[ `  --target  ` = `  TARGET  ` \] \[ `  --labels  ` =\[ `  LABELS  ` , …\] | `  --update-labels  ` =\[ `  UPDATE_LABELS  ` , …\] `  --clear-labels  ` | `  --remove-labels  ` = `  REMOVE_LABELS  ` \] \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini release-channel-settings setting-bindings update` ( [`SETTING_BINDING`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/setting-bindings/update#SETTING_BINDING) : [`--location`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/setting-bindings/update#--location) = `LOCATION` [`--release-channel-setting`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/setting-bindings/update#--release-channel-setting) = `RELEASE_CHANNEL_SETTING` ) \[ [`--async`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/setting-bindings/update#--async) \] \[ [`--product`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/setting-bindings/update#--product) = `PRODUCT` \] \[ [`--request-id`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/setting-bindings/update#--request-id) = `REQUEST_ID` \] \[ [`--target`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/setting-bindings/update#--target) = `TARGET` \] \[ [`--labels`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/setting-bindings/update#--labels) =\[ `LABELS` , …\] \| [`--update-labels`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/setting-bindings/update#--update-labels) =\[ `UPDATE_LABELS` , …\] [`--clear-labels`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/setting-bindings/update#--clear-labels) \| [`--remove-labels`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/setting-bindings/update#--remove-labels) = `REMOVE_LABELS` \] \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/release-channel-settings/setting-bindings/update#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -22,44 +22,46 @@ EXAMPLES
 
 To update the settingBinding, run:
 
-    gcloud gemini release-channel-settings setting-bindings update
+```
+gcloud gemini release-channel-settings setting-bindings update
+```
 
 POSITIONAL ARGUMENTS
 
-SettingBinding resource - Identifier. Name of the resource. Format:projects/{project}/locations/{location}/{settingType}/{setting}/settingBindings/{setting\_binding} The arguments in this group can be used to specify the attributes of this resource. (NOTE) Some attributes are not given arguments in this group but can be set in other ways.
+SettingBinding resource - Identifier. Name of the resource. Format:projects/{project}/locations/{location}/{settingType}/{setting}/settingBindings/{setting_binding} The arguments in this group can be used to specify the attributes of this resource. (NOTE) Some attributes are not given arguments in this group but can be set in other ways.
 
 To set the `project` attribute:
 
-  - provide the argument `setting_binding` on the command line with a fully specified name;
-  - provide the argument `--project` on the command line;
-  - set the property `core/project` .
+- provide the argument `setting_binding` on the command line with a fully specified name;
+- provide the argument `--project` on the command line;
+- set the property `core/project` .
 
 This must be specified.
 
-  - `  SETTING_BINDING  `  
-    ID of the settingBinding or fully qualified identifier for the settingBinding.
-    
-    To set the `setting_binding` attribute:
-    
-      - provide the argument `setting_binding` on the command line.
-    
-    This positional argument must be specified if any of the other arguments in this group are specified.
+`SETTING_BINDING`  
+ID of the settingBinding or fully qualified identifier for the settingBinding.
 
-  - `--location` = `  LOCATION  `  
-    The location id of the settingBinding resource.
-    
-    To set the `location` attribute:
-    
-      - provide the argument `setting_binding` on the command line with a fully specified name;
-      - provide the argument `--location` on the command line.
+To set the `setting_binding` attribute:
 
-  - `--release-channel-setting` = `  RELEASE_CHANNEL_SETTING  `  
-    The releaseChannelSetting id of the settingBinding resource.
-    
-    To set the `release-channel-setting` attribute:
-    
-      - provide the argument `setting_binding` on the command line with a fully specified name;
-      - provide the argument `--release-channel-setting` on the command line.
+- provide the argument `setting_binding` on the command line.
+
+This positional argument must be specified if any of the other arguments in this group are specified.
+
+`--location` = `LOCATION`  
+The location id of the settingBinding resource.
+
+To set the `location` attribute:
+
+- provide the argument `setting_binding` on the command line with a fully specified name;
+- provide the argument `--location` on the command line.
+
+`--release-channel-setting` = `RELEASE_CHANNEL_SETTING`  
+The releaseChannelSetting id of the settingBinding resource.
+
+To set the `release-channel-setting` attribute:
+
+- provide the argument `setting_binding` on the command line with a fully specified name;
+- provide the argument `--release-channel-setting` on the command line.
 
 FLAGS
 
@@ -67,20 +69,23 @@ FLAGS
 
 Return immediately, without waiting for the operation in progress to complete.
 
-`--product` = `  PRODUCT  `
+`--product` = `PRODUCT`
 
-Product type of the setting binding. `  PRODUCT  ` must be one of:
+Product type of the setting binding. `PRODUCT` must be one of:
 
-  - `gemini-cloud-assist`  
-    Gemini Cloud Assist.
-  - `gemini-code-assist`  
-    Gemini Code Assist.
-  - `gemini-in-bigquery`  
-    Gemini in BigQuery.
-  - `gemini-in-looker`  
-    Gemini in Looker.
+`gemini-cloud-assist`  
+Gemini Cloud Assist.
 
-`--request-id` = `  REQUEST_ID  `
+`gemini-code-assist`  
+Gemini Code Assist.
+
+`gemini-in-bigquery`  
+Gemini in BigQuery.
+
+`gemini-in-looker`  
+Gemini in Looker.
+
+`--request-id` = `REQUEST_ID`
 
 An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. The server will guarantee that for at least 60 minutes since the first request.
 
@@ -88,7 +93,7 @@ For example, consider a situation where you make an initial request and the requ
 
 The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
 
-`--target` = `  TARGET  `
+`--target` = `TARGET`
 
 Target of the binding.
 
@@ -96,73 +101,93 @@ Update labels.
 
 At most one of these can be specified:
 
-`--labels` =\[ `  LABELS  ` ,…\]
+`--labels` =\[ `LABELS` ,…\]
 
 Set labels to new value. Labels as key value pairs.
 
-  - `KEY`  
-    Keys must start with a lowercase character and contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
-  - `VALUE`  
-    Values must contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
+`KEY`  
+Keys must start with a lowercase character and contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
+
+`VALUE`  
+Values must contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
 
 `Shorthand Example:`
 
-    --labels=string=string
+```
+--labels=string=string
+```
 
 `JSON Example:`
 
-    --labels='{"string": "string"}'
+```
+--labels='{"string": "string"}'
+```
 
 `File Example:`
 
-    --labels=path_to_file.(yaml|json)
+```
+--labels=path_to_file.(yaml|json)
+```
 
 Or at least one of these can be specified:
 
-`--update-labels` =\[ `  UPDATE_LABELS  ` ,…\]
+`--update-labels` =\[ `UPDATE_LABELS` ,…\]
 
 Update labels value or add key value pair. Labels as key value pairs.
 
-  - `KEY`  
-    Keys must start with a lowercase character and contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
-  - `VALUE`  
-    Values must contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
+`KEY`  
+Keys must start with a lowercase character and contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
+
+`VALUE`  
+Values must contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
 
 `Shorthand Example:`
 
-    --update-labels=string=string
+```
+--update-labels=string=string
+```
 
 `JSON Example:`
 
-    --update-labels='{"string": "string"}'
+```
+--update-labels='{"string": "string"}'
+```
 
 `File Example:`
 
-    --update-labels=path_to_file.(yaml|json)
+```
+--update-labels=path_to_file.(yaml|json)
+```
 
 At most one of these can be specified:
 
-  - `--clear-labels`  
-    Clear labels value and set to empty map.
+`--clear-labels`  
+Clear labels value and set to empty map.
 
-  - `--remove-labels` = `  REMOVE_LABELS  `  
-    Remove existing value from map labels. Sets `remove_labels` value. `Shorthand Example:`
-    
-        --remove-labels=string,string
-    
-    `JSON Example:`
-    
-        --remove-labels=["string"]
-    
-    `File Example:`
-    
-        --remove-labels=path_to_file.(yaml|json)
+`--remove-labels` = `REMOVE_LABELS`  
+Remove existing value from map labels. Sets `remove_labels` value. `Shorthand Example:`
+
+```
+--remove-labels=string,string
+```
+
+`JSON Example:`
+
+```
+--remove-labels=["string"]
+```
+
+`File Example:`
+
+```
+--remove-labels=path_to_file.(yaml|json)
+```
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --access-token-file  ` , `  --account  ` , `  --billing-project  ` , `  --configuration  ` , `  --flags-file  ` , `  --flatten  ` , `  --format  ` , `  --help  ` , `  --impersonate-service-account  ` , `  --log-http  ` , `  --project  ` , `  --quiet  ` , `  --trace-token  ` , `  --user-output-enabled  ` , `  --verbosity  ` .
+These flags are available to all commands: [`--access-token-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--access-token-file) , [`--account`](https://docs.cloud.google.com/sdk/gcloud/reference#--account) , [`--billing-project`](https://docs.cloud.google.com/sdk/gcloud/reference#--billing-project) , [`--configuration`](https://docs.cloud.google.com/sdk/gcloud/reference#--configuration) , [`--flags-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--flags-file) , [`--flatten`](https://docs.cloud.google.com/sdk/gcloud/reference#--flatten) , [`--format`](https://docs.cloud.google.com/sdk/gcloud/reference#--format) , [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) , [`--impersonate-service-account`](https://docs.cloud.google.com/sdk/gcloud/reference#--impersonate-service-account) , [`--log-http`](https://docs.cloud.google.com/sdk/gcloud/reference#--log-http) , [`--project`](https://docs.cloud.google.com/sdk/gcloud/reference#--project) , [`--quiet`](https://docs.cloud.google.com/sdk/gcloud/reference#--quiet) , [`--trace-token`](https://docs.cloud.google.com/sdk/gcloud/reference#--trace-token) , [`--user-output-enabled`](https://docs.cloud.google.com/sdk/gcloud/reference#--user-output-enabled) , [`--verbosity`](https://docs.cloud.google.com/sdk/gcloud/reference#--verbosity) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 API REFERENCE
 

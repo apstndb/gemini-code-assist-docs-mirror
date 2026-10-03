@@ -18,6 +18,6 @@ For users of Gemini Code Assist Standard and Enterprise, the data protection and
 
 ## What's next
 
-  - Read more about [Gemini CLI documentation](https://geminicli.com/docs/) .
-  - Download and [install Gemini CLI](https://geminicli.com/docs/get-started/installation/) .
-  - Learn about [Gemini Code Assist agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode) , which is powered by the Gemini CLI in VS Code.
+- Read more about [Gemini CLI documentation](https://geminicli.com/docs/) .
+- Download and [install Gemini CLI](https://geminicli.com/docs/get-started/installation/) .
+- Learn about [Gemini Code Assist agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode) , which is powered by the Gemini CLI in VS Code.

@@ -12,7 +12,7 @@ gcloud gemini code-tools-settings update - update codeToolsSettings
 
 SYNOPSIS
 
-`gcloud gemini code-tools-settings update` ( `  CODE_TOOLS_SETTING  ` : `  --location  ` = `  LOCATION  ` ) \[ `  --request-id  ` = `  REQUEST_ID  ` \] \[ `  --enabled-tool  ` =\[ `  accountConnector  ` = `  ACCOUNTCONNECTOR  ` \], \[ `  config  ` = `  CONFIG  ` \], \[ `  handle  ` = `  HANDLE  ` \], \[ `  tool  ` = `  TOOL  ` \], \[ `  uriOverride  ` = `  URIOVERRIDE  ` \] | `  --add-enabled-tool  ` =\[ `  accountConnector  ` = `  ACCOUNTCONNECTOR  ` \], \[ `  config  ` = `  CONFIG  ` \], \[ `  handle  ` = `  HANDLE  ` \], \[ `  tool  ` = `  TOOL  ` \], \[ `  uriOverride  ` = `  URIOVERRIDE  ` \] `  --clear-enabled-tool  ` | `  --remove-enabled-tool  ` =\[ `  accountConnector  ` = `  ACCOUNTCONNECTOR  ` \], \[ `  config  ` = `  CONFIG  ` \], \[ `  handle  ` = `  HANDLE  ` \], \[ `  tool  ` = `  TOOL  ` \], \[ `  uriOverride  ` = `  URIOVERRIDE  ` \]\] \[ `  --labels  ` =\[ `  LABELS  ` , …\] | `  --update-labels  ` =\[ `  UPDATE_LABELS  ` , …\] `  --clear-labels  ` | `  --remove-labels  ` = `  REMOVE_LABELS  ` \] \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini code-tools-settings update` ( [`CODE_TOOLS_SETTING`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/update#CODE_TOOLS_SETTING) : [`--location`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/update#--location) = `LOCATION` ) \[ [`--request-id`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/update#--request-id) = `REQUEST_ID` \] \[ [`--enabled-tool`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/update#--enabled-tool) =\[ `accountConnector` = `ACCOUNTCONNECTOR` \], \[ `config` = `CONFIG` \], \[ `handle` = `HANDLE` \], \[ `tool` = `TOOL` \], \[ `uriOverride` = `URIOVERRIDE` \] \| [`--add-enabled-tool`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/update#--add-enabled-tool) =\[ `accountConnector` = `ACCOUNTCONNECTOR` \], \[ `config` = `CONFIG` \], \[ `handle` = `HANDLE` \], \[ `tool` = `TOOL` \], \[ `uriOverride` = `URIOVERRIDE` \] [`--clear-enabled-tool`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/update#--clear-enabled-tool) \| [`--remove-enabled-tool`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/update#--remove-enabled-tool) =\[ `accountConnector` = `ACCOUNTCONNECTOR` \], \[ `config` = `CONFIG` \], \[ `handle` = `HANDLE` \], \[ `tool` = `TOOL` \], \[ `uriOverride` = `URIOVERRIDE` \]\] \[ [`--labels`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/update#--labels) =\[ `LABELS` , …\] \| [`--update-labels`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/update#--update-labels) =\[ `UPDATE_LABELS` , …\] [`--clear-labels`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/update#--clear-labels) \| [`--remove-labels`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/update#--remove-labels) = `REMOVE_LABELS` \] \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/code-tools-settings/update#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -22,7 +22,9 @@ EXAMPLES
 
 To update the codeToolsSetting, run:
 
-    gcloud gemini code-tools-settings update
+```
+gcloud gemini code-tools-settings update
+```
 
 POSITIONAL ARGUMENTS
 
@@ -30,32 +32,32 @@ CodeToolsSetting resource - Identifier. Name of the resource. Format:projects/{p
 
 To set the `project` attribute:
 
-  - provide the argument `code_tools_setting` on the command line with a fully specified name;
-  - provide the argument `--project` on the command line;
-  - set the property `core/project` .
+- provide the argument `code_tools_setting` on the command line with a fully specified name;
+- provide the argument `--project` on the command line;
+- set the property `core/project` .
 
 This must be specified.
 
-  - `  CODE_TOOLS_SETTING  `  
-    ID of the codeToolsSetting or fully qualified identifier for the codeToolsSetting.
-    
-    To set the `code_tools_setting` attribute:
-    
-      - provide the argument `code_tools_setting` on the command line.
-    
-    This positional argument must be specified if any of the other arguments in this group are specified.
+`CODE_TOOLS_SETTING`  
+ID of the codeToolsSetting or fully qualified identifier for the codeToolsSetting.
 
-  - `--location` = `  LOCATION  `  
-    The location id of the codeToolsSetting resource.
-    
-    To set the `location` attribute:
-    
-      - provide the argument `code_tools_setting` on the command line with a fully specified name;
-      - provide the argument `--location` on the command line.
+To set the `code_tools_setting` attribute:
+
+- provide the argument `code_tools_setting` on the command line.
+
+This positional argument must be specified if any of the other arguments in this group are specified.
+
+`--location` = `LOCATION`  
+The location id of the codeToolsSetting resource.
+
+To set the `location` attribute:
+
+- provide the argument `code_tools_setting` on the command line with a fully specified name;
+- provide the argument `--location` on the command line.
 
 FLAGS
 
-`--request-id` = `  REQUEST_ID  `
+`--request-id` = `REQUEST_ID`
 
 An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. The server will guarantee that for at least 60 minutes since the first request.
 
@@ -63,180 +65,236 @@ For example, consider a situation where you make an initial request and the requ
 
 The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
 
-Update enabled\_tool.
+Update enabled_tool.
 
 At most one of these can be specified:
 
-`--enabled-tool` =\[ `  accountConnector  ` = `  ACCOUNTCONNECTOR  ` \],\[ `  config  ` = `  CONFIG  ` \],\[ `  handle  ` = `  HANDLE  ` \],\[ `  tool  ` = `  TOOL  ` \],\[ `  uriOverride  ` = `  URIOVERRIDE  ` \]
+`--enabled-tool` =\[ `accountConnector` = `ACCOUNTCONNECTOR` \],\[ `config` = `CONFIG` \],\[ `handle` = `HANDLE` \],\[ `tool` = `TOOL` \],\[ `uriOverride` = `URIOVERRIDE` \]
 
-Set enabled\_tool to new value. Represents the full set of enabled tools.
+Set enabled_tool to new value. Represents the full set of enabled tools.
 
-  - `accountConnector`  
-    Link to the Dev Connect Account Connector that holds the user credentials. projects/{project}/locations/{location}/accountConnectors/{account\_connector\_id}.
-  - `config`  
-    Configuration parameters for the tool.
-      - `key`  
-        Key of the configuration item.
-      - `value`  
-        Value of the configuration item.
-  - `handle`  
-    Handle used to invoke the tool.
-  - `tool`  
-    Link to the Tool.
-  - `uriOverride`  
-    Overridden URI, if allowed by Tool.
+`accountConnector`  
+Link to the Dev Connect Account Connector that holds the user credentials. projects/{project}/locations/{location}/accountConnectors/{account_connector_id}.
+
+`config`  
+Configuration parameters for the tool.
+
+`key`  
+Key of the configuration item.
+
+`value`  
+Value of the configuration item.
+
+`handle`  
+Handle used to invoke the tool.
+
+`tool`  
+Link to the Tool.
+
+`uriOverride`  
+Overridden URI, if allowed by Tool.
 
 `Shorthand Example:`
 
-    --enabled-tool=accountConnector=string,config=[{key=string,value=string}],handle=string,tool=string,uriOverride=string --enabled-tool=accountConnector=string,config=[{key=string,value=string}],handle=string,tool=string,uriOverride=string
+```
+--enabled-tool=accountConnector=string,config=[{key=string,value=string}],handle=string,tool=string,uriOverride=string --enabled-tool=accountConnector=string,config=[{key=string,value=string}],handle=string,tool=string,uriOverride=string
+```
 
 `JSON Example:`
 
-    --enabled-tool='[{"accountConnector": "string", "config": [{"key": "string", "value": "string"}], "handle": "string", "tool": "string", "uriOverride": "string"}]'
+```
+--enabled-tool='[{"accountConnector": "string", "config": [{"key": "string", "value": "string"}], "handle": "string", "tool": "string", "uriOverride": "string"}]'
+```
 
 `File Example:`
 
-    --enabled-tool=path_to_file.(yaml|json)
+```
+--enabled-tool=path_to_file.(yaml|json)
+```
 
 Or at least one of these can be specified:
 
-`--add-enabled-tool` =\[ `  accountConnector  ` = `  ACCOUNTCONNECTOR  ` \],\[ `  config  ` = `  CONFIG  ` \],\[ `  handle  ` = `  HANDLE  ` \],\[ `  tool  ` = `  TOOL  ` \],\[ `  uriOverride  ` = `  URIOVERRIDE  ` \]
+`--add-enabled-tool` =\[ `accountConnector` = `ACCOUNTCONNECTOR` \],\[ `config` = `CONFIG` \],\[ `handle` = `HANDLE` \],\[ `tool` = `TOOL` \],\[ `uriOverride` = `URIOVERRIDE` \]
 
-Add new value to enabled\_tool list. Represents the full set of enabled tools.
+Add new value to enabled_tool list. Represents the full set of enabled tools.
 
-  - `accountConnector`  
-    Link to the Dev Connect Account Connector that holds the user credentials. projects/{project}/locations/{location}/accountConnectors/{account\_connector\_id}.
-  - `config`  
-    Configuration parameters for the tool.
-      - `key`  
-        Key of the configuration item.
-      - `value`  
-        Value of the configuration item.
-  - `handle`  
-    Handle used to invoke the tool.
-  - `tool`  
-    Link to the Tool.
-  - `uriOverride`  
-    Overridden URI, if allowed by Tool.
+`accountConnector`  
+Link to the Dev Connect Account Connector that holds the user credentials. projects/{project}/locations/{location}/accountConnectors/{account_connector_id}.
+
+`config`  
+Configuration parameters for the tool.
+
+`key`  
+Key of the configuration item.
+
+`value`  
+Value of the configuration item.
+
+`handle`  
+Handle used to invoke the tool.
+
+`tool`  
+Link to the Tool.
+
+`uriOverride`  
+Overridden URI, if allowed by Tool.
 
 `Shorthand Example:`
 
-    --add-enabled-tool=accountConnector=string,config=[{key=string,value=string}],handle=string,tool=string,uriOverride=string --add-enabled-tool=accountConnector=string,config=[{key=string,value=string}],handle=string,tool=string,uriOverride=string
+```
+--add-enabled-tool=accountConnector=string,config=[{key=string,value=string}],handle=string,tool=string,uriOverride=string --add-enabled-tool=accountConnector=string,config=[{key=string,value=string}],handle=string,tool=string,uriOverride=string
+```
 
 `JSON Example:`
 
-    --add-enabled-tool='[{"accountConnector": "string", "config": [{"key": "string", "value": "string"}], "handle": "string", "tool": "string", "uriOverride": "string"}]'
+```
+--add-enabled-tool='[{"accountConnector": "string", "config": [{"key": "string", "value": "string"}], "handle": "string", "tool": "string", "uriOverride": "string"}]'
+```
 
 `File Example:`
 
-    --add-enabled-tool=path_to_file.(yaml|json)
+```
+--add-enabled-tool=path_to_file.(yaml|json)
+```
 
 At most one of these can be specified:
 
-  - `--clear-enabled-tool`  
-    Clear enabled\_tool value and set to empty list.
+`--clear-enabled-tool`  
+Clear enabled_tool value and set to empty list.
 
-  - `--remove-enabled-tool` =\[ `  accountConnector  ` = `  ACCOUNTCONNECTOR  ` \],\[ `  config  ` = `  CONFIG  ` \],\[ `  handle  ` = `  HANDLE  ` \],\[ `  tool  ` = `  TOOL  ` \],\[ `  uriOverride  ` = `  URIOVERRIDE  ` \]  
-    Remove existing value from enabled\_tool list. Represents the full set of enabled tools.
-    
-      - `accountConnector`  
-        Link to the Dev Connect Account Connector that holds the user credentials. projects/{project}/locations/{location}/accountConnectors/{account\_connector\_id}.
-      - `config`  
-        Configuration parameters for the tool.
-          - `key`  
-            Key of the configuration item.
-          - `value`  
-            Value of the configuration item.
-      - `handle`  
-        Handle used to invoke the tool.
-      - `tool`  
-        Link to the Tool.
-      - `uriOverride`  
-        Overridden URI, if allowed by Tool.
-    
-    `Shorthand Example:`
-    
-        --remove-enabled-tool=accountConnector=string,config=[{key=string,value=string}],handle=string,tool=string,uriOverride=string --remove-enabled-tool=accountConnector=string,config=[{key=string,value=string}],handle=string,tool=string,uriOverride=string
-    
-    `JSON Example:`
-    
-        --remove-enabled-tool='[{"accountConnector": "string", "config": [{"key": "string", "value": "string"}], "handle": "string", "tool": "string", "uriOverride": "string"}]'
-    
-    `File Example:`
-    
-        --remove-enabled-tool=path_to_file.(yaml|json)
+`--remove-enabled-tool` =\[ `accountConnector` = `ACCOUNTCONNECTOR` \],\[ `config` = `CONFIG` \],\[ `handle` = `HANDLE` \],\[ `tool` = `TOOL` \],\[ `uriOverride` = `URIOVERRIDE` \]  
+Remove existing value from enabled_tool list. Represents the full set of enabled tools.
+
+`accountConnector`  
+Link to the Dev Connect Account Connector that holds the user credentials. projects/{project}/locations/{location}/accountConnectors/{account_connector_id}.
+
+`config`  
+Configuration parameters for the tool.
+
+`key`  
+Key of the configuration item.
+
+`value`  
+Value of the configuration item.
+
+`handle`  
+Handle used to invoke the tool.
+
+`tool`  
+Link to the Tool.
+
+`uriOverride`  
+Overridden URI, if allowed by Tool.
+
+`Shorthand Example:`
+
+```
+--remove-enabled-tool=accountConnector=string,config=[{key=string,value=string}],handle=string,tool=string,uriOverride=string --remove-enabled-tool=accountConnector=string,config=[{key=string,value=string}],handle=string,tool=string,uriOverride=string
+```
+
+`JSON Example:`
+
+```
+--remove-enabled-tool='[{"accountConnector": "string", "config": [{"key": "string", "value": "string"}], "handle": "string", "tool": "string", "uriOverride": "string"}]'
+```
+
+`File Example:`
+
+```
+--remove-enabled-tool=path_to_file.(yaml|json)
+```
 
 Update labels.
 
 At most one of these can be specified:
 
-`--labels` =\[ `  LABELS  ` ,…\]
+`--labels` =\[ `LABELS` ,…\]
 
 Set labels to new value. Labels as key value pairs.
 
-  - `KEY`  
-    Keys must start with a lowercase character and contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
-  - `VALUE`  
-    Values must contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
+`KEY`  
+Keys must start with a lowercase character and contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
+
+`VALUE`  
+Values must contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
 
 `Shorthand Example:`
 
-    --labels=string=string
+```
+--labels=string=string
+```
 
 `JSON Example:`
 
-    --labels='{"string": "string"}'
+```
+--labels='{"string": "string"}'
+```
 
 `File Example:`
 
-    --labels=path_to_file.(yaml|json)
+```
+--labels=path_to_file.(yaml|json)
+```
 
 Or at least one of these can be specified:
 
-`--update-labels` =\[ `  UPDATE_LABELS  ` ,…\]
+`--update-labels` =\[ `UPDATE_LABELS` ,…\]
 
 Update labels value or add key value pair. Labels as key value pairs.
 
-  - `KEY`  
-    Keys must start with a lowercase character and contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
-  - `VALUE`  
-    Values must contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
+`KEY`  
+Keys must start with a lowercase character and contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
+
+`VALUE`  
+Values must contain only hyphens ( `-` ), underscores ( `_` ), lowercase characters, and numbers.
 
 `Shorthand Example:`
 
-    --update-labels=string=string
+```
+--update-labels=string=string
+```
 
 `JSON Example:`
 
-    --update-labels='{"string": "string"}'
+```
+--update-labels='{"string": "string"}'
+```
 
 `File Example:`
 
-    --update-labels=path_to_file.(yaml|json)
+```
+--update-labels=path_to_file.(yaml|json)
+```
 
 At most one of these can be specified:
 
-  - `--clear-labels`  
-    Clear labels value and set to empty map.
+`--clear-labels`  
+Clear labels value and set to empty map.
 
-  - `--remove-labels` = `  REMOVE_LABELS  `  
-    Remove existing value from map labels. Sets `remove_labels` value. `Shorthand Example:`
-    
-        --remove-labels=string,string
-    
-    `JSON Example:`
-    
-        --remove-labels=["string"]
-    
-    `File Example:`
-    
-        --remove-labels=path_to_file.(yaml|json)
+`--remove-labels` = `REMOVE_LABELS`  
+Remove existing value from map labels. Sets `remove_labels` value. `Shorthand Example:`
+
+```
+--remove-labels=string,string
+```
+
+`JSON Example:`
+
+```
+--remove-labels=["string"]
+```
+
+`File Example:`
+
+```
+--remove-labels=path_to_file.(yaml|json)
+```
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --access-token-file  ` , `  --account  ` , `  --billing-project  ` , `  --configuration  ` , `  --flags-file  ` , `  --flatten  ` , `  --format  ` , `  --help  ` , `  --impersonate-service-account  ` , `  --log-http  ` , `  --project  ` , `  --quiet  ` , `  --trace-token  ` , `  --user-output-enabled  ` , `  --verbosity  ` .
+These flags are available to all commands: [`--access-token-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--access-token-file) , [`--account`](https://docs.cloud.google.com/sdk/gcloud/reference#--account) , [`--billing-project`](https://docs.cloud.google.com/sdk/gcloud/reference#--billing-project) , [`--configuration`](https://docs.cloud.google.com/sdk/gcloud/reference#--configuration) , [`--flags-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--flags-file) , [`--flatten`](https://docs.cloud.google.com/sdk/gcloud/reference#--flatten) , [`--format`](https://docs.cloud.google.com/sdk/gcloud/reference#--format) , [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) , [`--impersonate-service-account`](https://docs.cloud.google.com/sdk/gcloud/reference#--impersonate-service-account) , [`--log-http`](https://docs.cloud.google.com/sdk/gcloud/reference#--log-http) , [`--project`](https://docs.cloud.google.com/sdk/gcloud/reference#--project) , [`--quiet`](https://docs.cloud.google.com/sdk/gcloud/reference#--quiet) , [`--trace-token`](https://docs.cloud.google.com/sdk/gcloud/reference#--trace-token) , [`--user-output-enabled`](https://docs.cloud.google.com/sdk/gcloud/reference#--user-output-enabled) , [`--verbosity`](https://docs.cloud.google.com/sdk/gcloud/reference#--verbosity) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 API REFERENCE
 

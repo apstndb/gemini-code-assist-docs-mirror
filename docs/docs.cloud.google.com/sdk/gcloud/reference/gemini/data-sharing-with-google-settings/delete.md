@@ -12,7 +12,7 @@ gcloud gemini data-sharing-with-google-settings delete - delete dataSharingWithG
 
 SYNOPSIS
 
-`gcloud gemini data-sharing-with-google-settings delete` ( `  DATA_SHARING_WITH_GOOGLE_SETTING  ` : `  --location  ` = `  LOCATION  ` ) \[ `  --request-id  ` = `  REQUEST_ID  ` \] \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini data-sharing-with-google-settings delete` ( [`DATA_SHARING_WITH_GOOGLE_SETTING`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings/delete#DATA_SHARING_WITH_GOOGLE_SETTING) : [`--location`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings/delete#--location) = `LOCATION` ) \[ [`--request-id`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings/delete#--request-id) = `REQUEST_ID` \] \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings/delete#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -22,7 +22,9 @@ EXAMPLES
 
 To delete the dataSharingWithGoogleSetting, run:
 
-    gcloud gemini data-sharing-with-google-settings delete
+```
+gcloud gemini data-sharing-with-google-settings delete
+```
 
 POSITIONAL ARGUMENTS
 
@@ -30,43 +32,43 @@ DataSharingWithGoogleSetting resource - Name of the resource The arguments in th
 
 To set the `project` attribute:
 
-  - provide the argument `data_sharing_with_google_setting` on the command line with a fully specified name;
-  - provide the argument `--project` on the command line;
-  - set the property `core/project` .
+- provide the argument `data_sharing_with_google_setting` on the command line with a fully specified name;
+- provide the argument `--project` on the command line;
+- set the property `core/project` .
 
 This must be specified.
 
-  - `  DATA_SHARING_WITH_GOOGLE_SETTING  `  
-    ID of the dataSharingWithGoogleSetting or fully qualified identifier for the dataSharingWithGoogleSetting.
-    
-    To set the `data_sharing_with_google_setting` attribute:
-    
-      - provide the argument `data_sharing_with_google_setting` on the command line.
-    
-    This positional argument must be specified if any of the other arguments in this group are specified.
+`DATA_SHARING_WITH_GOOGLE_SETTING`  
+ID of the dataSharingWithGoogleSetting or fully qualified identifier for the dataSharingWithGoogleSetting.
 
-  - `--location` = `  LOCATION  `  
-    The location id of the dataSharingWithGoogleSetting resource.
-    
-    To set the `location` attribute:
-    
-      - provide the argument `data_sharing_with_google_setting` on the command line with a fully specified name;
-      - provide the argument `--location` on the command line.
+To set the `data_sharing_with_google_setting` attribute:
+
+- provide the argument `data_sharing_with_google_setting` on the command line.
+
+This positional argument must be specified if any of the other arguments in this group are specified.
+
+`--location` = `LOCATION`  
+The location id of the dataSharingWithGoogleSetting resource.
+
+To set the `location` attribute:
+
+- provide the argument `data_sharing_with_google_setting` on the command line with a fully specified name;
+- provide the argument `--location` on the command line.
 
 FLAGS
 
-  - `--request-id` = `  REQUEST_ID  `  
-    An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. The server will guarantee that for at least 60 minutes after the first request.
-    
-    For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.
-    
-    The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
+`--request-id` = `REQUEST_ID`  
+An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. The server will guarantee that for at least 60 minutes after the first request.
+
+For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.
+
+The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --access-token-file  ` , `  --account  ` , `  --billing-project  ` , `  --configuration  ` , `  --flags-file  ` , `  --flatten  ` , `  --format  ` , `  --help  ` , `  --impersonate-service-account  ` , `  --log-http  ` , `  --project  ` , `  --quiet  ` , `  --trace-token  ` , `  --user-output-enabled  ` , `  --verbosity  ` .
+These flags are available to all commands: [`--access-token-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--access-token-file) , [`--account`](https://docs.cloud.google.com/sdk/gcloud/reference#--account) , [`--billing-project`](https://docs.cloud.google.com/sdk/gcloud/reference#--billing-project) , [`--configuration`](https://docs.cloud.google.com/sdk/gcloud/reference#--configuration) , [`--flags-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--flags-file) , [`--flatten`](https://docs.cloud.google.com/sdk/gcloud/reference#--flatten) , [`--format`](https://docs.cloud.google.com/sdk/gcloud/reference#--format) , [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) , [`--impersonate-service-account`](https://docs.cloud.google.com/sdk/gcloud/reference#--impersonate-service-account) , [`--log-http`](https://docs.cloud.google.com/sdk/gcloud/reference#--log-http) , [`--project`](https://docs.cloud.google.com/sdk/gcloud/reference#--project) , [`--quiet`](https://docs.cloud.google.com/sdk/gcloud/reference#--quiet) , [`--trace-token`](https://docs.cloud.google.com/sdk/gcloud/reference#--trace-token) , [`--user-output-enabled`](https://docs.cloud.google.com/sdk/gcloud/reference#--user-output-enabled) , [`--verbosity`](https://docs.cloud.google.com/sdk/gcloud/reference#--verbosity) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 API REFERENCE
 

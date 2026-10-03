@@ -51,7 +51,7 @@ To configure your PITM proxy, follow these steps:
 2.  Configure the proxy to intercept all outgoing requests to the Gemini Code Assist endpoint ( `https://cloudcode-pa.googleapis.com` ). Don't use wildcards ( `*` ) when you specify the Gemini Code Assist endpoint.
 
 3.  Configure the proxy to inject the `X-GeminiCodeAssist-Allowed-Domains` header into each request. The header should contain a comma-separated list of allowed domains (e.g., `example.com` , `yourcompany.net` ). Make sure that domain names are separated by commas and don't include the `@` symbol.
-    
+
     If headers aren't resolved into at least one valid domain, restrictions won't apply. For example, an empty header won't apply any restrictions. `domain` won't apply any restrictions as it isn't a valid domain name.
 
 When a user tries to access Gemini Code Assist from a domain not included in the header list, they see a message telling them that they're restricted from using Gemini Code Assist on their domain by their administrator.
@@ -60,17 +60,17 @@ When a user tries to access Gemini Code Assist from a domain not included in the
 
 If your proxy needs to decrypt HTTPS traffic to inject the header, make sure it's configured for SSL/TLS interception. This typically involves:
 
-  - Generating a certificate for the proxy.
+- Generating a certificate for the proxy.
 
-  - Installing the proxy's certificate on user devices to establish trust and avoid certificate errors.
+- Installing the proxy's certificate on user devices to establish trust and avoid certificate errors.
 
 ## Header validation
 
-  - Gemini Code Assist automatically validates the `X-GeminiCodeAssist-Allowed-Domains` header and enforces the restrictions.
+- Gemini Code Assist automatically validates the `X-GeminiCodeAssist-Allowed-Domains` header and enforces the restrictions.
 
-  - If the header doesn't resolve to at least one valid domain, the validation won't be performed.
+- If the header doesn't resolve to at least one valid domain, the validation won't be performed.
 
-  - If the domain associated with the user's authentication isn't in the allowed list, the request is rejected. For example if the user logs in with a gmail account and only example.com is on the allowed list, the request is rejected.
+- If the domain associated with the user's authentication isn't in the allowed list, the request is rejected. For example if the user logs in with a gmail account and only example.com is on the allowed list, the request is rejected.
 
 ## What's next
 

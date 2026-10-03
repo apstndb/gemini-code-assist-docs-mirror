@@ -12,7 +12,7 @@ gcloud gemini data-sharing-with-google-settings describe - describe dataSharingW
 
 SYNOPSIS
 
-`gcloud gemini data-sharing-with-google-settings describe` ( `  DATA_SHARING_WITH_GOOGLE_SETTING  ` : `  --location  ` = `  LOCATION  ` ) \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini data-sharing-with-google-settings describe` ( [`DATA_SHARING_WITH_GOOGLE_SETTING`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings/describe#DATA_SHARING_WITH_GOOGLE_SETTING) : [`--location`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings/describe#--location) = `LOCATION` ) \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/data-sharing-with-google-settings/describe#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -22,7 +22,9 @@ EXAMPLES
 
 To describe the dataSharingWithGoogleSetting, run:
 
-    gcloud gemini data-sharing-with-google-settings describe
+```
+gcloud gemini data-sharing-with-google-settings describe
+```
 
 POSITIONAL ARGUMENTS
 
@@ -30,34 +32,34 @@ DataSharingWithGoogleSetting resource - Name of the resource. The arguments in t
 
 To set the `project` attribute:
 
-  - provide the argument `data_sharing_with_google_setting` on the command line with a fully specified name;
-  - provide the argument `--project` on the command line;
-  - set the property `core/project` .
+- provide the argument `data_sharing_with_google_setting` on the command line with a fully specified name;
+- provide the argument `--project` on the command line;
+- set the property `core/project` .
 
 This must be specified.
 
-  - `  DATA_SHARING_WITH_GOOGLE_SETTING  `  
-    ID of the dataSharingWithGoogleSetting or fully qualified identifier for the dataSharingWithGoogleSetting.
-    
-    To set the `data_sharing_with_google_setting` attribute:
-    
-      - provide the argument `data_sharing_with_google_setting` on the command line.
-    
-    This positional argument must be specified if any of the other arguments in this group are specified.
+`DATA_SHARING_WITH_GOOGLE_SETTING`  
+ID of the dataSharingWithGoogleSetting or fully qualified identifier for the dataSharingWithGoogleSetting.
 
-  - `--location` = `  LOCATION  `  
-    The location id of the dataSharingWithGoogleSetting resource.
-    
-    To set the `location` attribute:
-    
-      - provide the argument `data_sharing_with_google_setting` on the command line with a fully specified name;
-      - provide the argument `--location` on the command line.
+To set the `data_sharing_with_google_setting` attribute:
+
+- provide the argument `data_sharing_with_google_setting` on the command line.
+
+This positional argument must be specified if any of the other arguments in this group are specified.
+
+`--location` = `LOCATION`  
+The location id of the dataSharingWithGoogleSetting resource.
+
+To set the `location` attribute:
+
+- provide the argument `data_sharing_with_google_setting` on the command line with a fully specified name;
+- provide the argument `--location` on the command line.
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --access-token-file  ` , `  --account  ` , `  --billing-project  ` , `  --configuration  ` , `  --flags-file  ` , `  --flatten  ` , `  --format  ` , `  --help  ` , `  --impersonate-service-account  ` , `  --log-http  ` , `  --project  ` , `  --quiet  ` , `  --trace-token  ` , `  --user-output-enabled  ` , `  --verbosity  ` .
+These flags are available to all commands: [`--access-token-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--access-token-file) , [`--account`](https://docs.cloud.google.com/sdk/gcloud/reference#--account) , [`--billing-project`](https://docs.cloud.google.com/sdk/gcloud/reference#--billing-project) , [`--configuration`](https://docs.cloud.google.com/sdk/gcloud/reference#--configuration) , [`--flags-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--flags-file) , [`--flatten`](https://docs.cloud.google.com/sdk/gcloud/reference#--flatten) , [`--format`](https://docs.cloud.google.com/sdk/gcloud/reference#--format) , [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) , [`--impersonate-service-account`](https://docs.cloud.google.com/sdk/gcloud/reference#--impersonate-service-account) , [`--log-http`](https://docs.cloud.google.com/sdk/gcloud/reference#--log-http) , [`--project`](https://docs.cloud.google.com/sdk/gcloud/reference#--project) , [`--quiet`](https://docs.cloud.google.com/sdk/gcloud/reference#--quiet) , [`--trace-token`](https://docs.cloud.google.com/sdk/gcloud/reference#--trace-token) , [`--user-output-enabled`](https://docs.cloud.google.com/sdk/gcloud/reference#--user-output-enabled) , [`--verbosity`](https://docs.cloud.google.com/sdk/gcloud/reference#--verbosity) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 API REFERENCE
 

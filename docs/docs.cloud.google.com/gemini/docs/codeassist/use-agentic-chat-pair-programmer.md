@@ -7,19 +7,19 @@ data_source: docs.cloud.google.com
 ---
 
 > **Preview**
-> 
+>
 > This feature is subject to the "Pre-GA Offerings Terms" in the General Service Terms section of the [Service Specific Terms](https://docs.cloud.google.com/terms/service-terms#1) . Pre-GA features are available "as is" and might have limited support. For more information, see the [launch stage descriptions](https://cloud.google.com/products/#product-launch-stages) .
 
 This document describes how to configure and use Gemini Code Assist agent mode as a pair programmer in your integrated development environment (IDE).
 
 With agent mode, you can do any of the following and more:
 
-  - Ask questions about your code.
-  - Use context and built-in tools to improve generated content.
-  - Configure MCP servers to extend the agent's abilities.
-  - Get solutions to complex tasks with multiple steps.
-  - Generate code from design documents, issues, and `TODO` comments.
-  - Control the agent behavior by commenting on, editing, and approving plans and tool use during execution.
+- Ask questions about your code.
+- Use context and built-in tools to improve generated content.
+- Configure MCP servers to extend the agent's abilities.
+- Get solutions to complex tasks with multiple steps.
+- Generate code from design documents, issues, and `TODO` comments.
+- Control the agent behavior by commenting on, editing, and approving plans and tool use during execution.
 
 ## Limitations
 
@@ -64,7 +64,7 @@ To use the standard Gemini Code Assist chat, click add **New chat** to create a 
 4.  As the agent goes through the steps to accomplish the task, you'll have the option to review and approve any changes.
 
 5.  Optional: To automatically approve changes, select settings **Agent options** and click the checkbox next to **Auto-approve changes** .
-    
+
     > **Caution:** The agent has access to your machine's file system and terminal actions as well as any tools you've configured for use. Be extremely careful where and when you auto-approve changes.
 
 ## Configure tools for agent mode
@@ -79,10 +79,11 @@ Agent mode has access to your built-in tools like file search, file read, file w
 
 You can use the `coreTools` and `excludeTools` settings to control which tools Gemini has access to in agent mode.
 
-  - `coreTools`  
-    Lets you specify a list of tools that you want to be available to the model. You can also specify command-specific restrictions for tools that support it. For example—adding the following to your Gemini settings JSON will only allow the shell `ls -l` command to be executed: `"coreTools": ["ShellTool(ls -l)"]` .
-  - `excludeTools`  
-    Lets you specify a list of tools that you don't want to be available to the model. You can also specify command-specific restrictions for tools that support it. For example—adding the following to your Gemini settings JSON will block the use of the `rm -rf` command: `"excludeTools": ["ShellTool(rm -rf)"]` .
+`coreTools`  
+Lets you specify a list of tools that you want to be available to the model. You can also specify command-specific restrictions for tools that support it. For example—adding the following to your Gemini settings JSON will only allow the shell `ls -l` command to be executed: `"coreTools": ["ShellTool(ls -l)"]` .
+
+`excludeTools`  
+Lets you specify a list of tools that you don't want to be available to the model. You can also specify command-specific restrictions for tools that support it. For example—adding the following to your Gemini settings JSON will block the use of the `rm -rf` command: `"excludeTools": ["ShellTool(rm -rf)"]` .
 
 A tool listed in both `excludeTools` and `coreTools` is excluded.
 
@@ -91,36 +92,44 @@ To configure the built-in tools available in agent mode, do the following:
 1.  Open your Gemini settings JSON located in `~/.gemini/settings.json` where `~` is your home directory.
 
 2.  To restrict agent tool use to a list of approved tools, add the following line to your Gemini settings JSON:
-    
-        "coreTools": ["TOOL_NAME_1,TOOL_NAME_2"]
-    
-    Replace `TOOL_NAME_1` and `TOOL_NAME_2` with the names of the [built-in tools](https://geminicli.com/docs/tools/) you want the agent to have access to.
-    
+
+    ```
+    "coreTools": ["TOOL_NAME_1,TOOL_NAME_2"]
+    ```
+
+    Replace ` ``TOOL_NAME_1`` ` and ` ``TOOL_NAME_2`` ` with the names of the [built-in tools](https://geminicli.com/docs/tools/) you want the agent to have access to.
+
     You can list as many built-in tools as you want. By default all built-in tools are available to the agent.
 
 3.  To restrict agent tool use to specific tool commands, add the following line to your Gemini settings JSON:
-    
-        "coreTools": ["TOOL_NAME(COMMAND)"]
-    
+
+    ```
+    "coreTools": ["TOOL_NAME(COMMAND)"]
+    ```
+
     Replace the following:
-    
-      - `TOOL_NAME` : the name of the built-in tool
-      - `COMMAND` : the name of the built-in tool command you want the agent to be able to use.
+
+    - ` ``TOOL_NAME`` ` : the name of the built-in tool
+    - ` ``COMMAND`` ` : the name of the built-in tool command you want the agent to be able to use.
 
 4.  To exclude a tool from agent use, add the following line to your Gemini settings JSON:
-    
-        "excludeTools": ["TOOL_NAME_1,TOOL_NAME_2"]
-    
-    Replace `TOOL_NAME_1` and `TOOL_NAME_2` with the names of the [built-in tools](https://geminicli.com/docs/tools/) you want to exclude from agent use.
+
+    ```
+    "excludeTools": ["TOOL_NAME_1,TOOL_NAME_2"]
+    ```
+
+    Replace ` ``TOOL_NAME_1`` ` and ` ``TOOL_NAME_2`` ` with the names of the [built-in tools](https://geminicli.com/docs/tools/) you want to exclude from agent use.
 
 5.  To exclude a tool command from agent use, add the following line to your Gemini settings JSON:
-    
-        "excludeTools": ["TOOL_NAME(COMMAND)"]
-    
+
+    ```
+    "excludeTools": ["TOOL_NAME(COMMAND)"]
+    ```
+
     Replace the following:
-    
-      - `TOOL_NAME` : the name of the built-in tool
-      - `COMMAND` : the name of the built-in tool command you want to exclude from agent use.
+
+    - ` ``TOOL_NAME`` ` : the name of the built-in tool
+    - ` ``COMMAND`` ` : the name of the built-in tool command you want to exclude from agent use.
 
 For more information about the `coreTools` and `excludeTools` configuration settings, see the [Gemini CLI configuration documentation](https://geminicli.com/docs/reference/configuration/) .
 
@@ -145,32 +154,34 @@ To make MCP servers available for use in agent mode, add the configuration for e
 2.  Open your Gemini settings JSON file, located at `~/.gemini/settings.json` where `~` is your home directory.
 
 3.  Configure each local or remote MCP server in the Gemini settings JSON file, according to each server's instructions.
-    
+
     The following example Gemini settings JSON file configures two remote Cloudflare MCP servers, a remote GitLab MCP server, and a local GitHub MCP server for use with Gemini Code Assist in VS Code.
-    
-        {
-          "mcpServers": {
-            "github": {
-              "command": "npx",
-              "args": ["-y", "@modelcontextprotocol/server-github"],
-              "env": {
-                "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_example_personal_access_token12345"
-              }
-            },
-            "gitlab": {
-              "command": "npx",
-              "args": ["mcp-remote", "https://your-gitlab-instance.com/api/v4/mcp"]
-            },
-            "cloudflare-observability": {
-              "command": "npx",
-              "args": ["mcp-remote", "https://observability.mcp.cloudflare.com/sse"]
-            },
-            "cloudflare-bindings": {
-              "command": "npx",
-              "args": ["mcp-remote", "https://bindings.mcp.cloudflare.com/sse"]
-            }
+
+    ```
+    {
+      "mcpServers": {
+        "github": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-github"],
+          "env": {
+            "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_example_personal_access_token12345"
           }
+        },
+        "gitlab": {
+          "command": "npx",
+          "args": ["mcp-remote", "https://your-gitlab-instance.com/api/v4/mcp"]
+        },
+        "cloudflare-observability": {
+          "command": "npx",
+          "args": ["mcp-remote", "https://observability.mcp.cloudflare.com/sse"]
+        },
+        "cloudflare-bindings": {
+          "command": "npx",
+          "args": ["mcp-remote", "https://bindings.mcp.cloudflare.com/sse"]
         }
+      }
+    }
+    ```
 
 4.  Open the command palette and select **Developer: Reload Window** .
 
@@ -185,32 +196,34 @@ To make MCP servers available for use in agent mode, add the configuration for e
 2.  Create a file named `mcp.json` in your IDE's [configuration directory](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs) .
 
 3.  Configure each local or remote MCP server in the `mcp.json` file, according to each server's instructions.
-    
+
     The following example `mcp.json` file configures two remote Cloudflare MCP servers, a remote GitLab MCP server, and a local GitHub MCP server for use with Gemini Code Assist in IntelliJ.
-    
-        {
-          "mcpServers": {
-            "github": {
-              "command": "npx",
-              "args": ["-y", "@modelcontextprotocol/server-github"],
-              "env": {
-                "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_example_personal_access_token12345"
-              }
-            },
-            "gitlab": {
-              "command": "npx",
-              "args": ["mcp-remote", "https://your-gitlab-instance.com/api/v4/mcp"]
-            },
-            "cloudflare-observability": {
-              "command": "npx",
-              "args": ["mcp-remote", "https://observability.mcp.cloudflare.com/sse"]
-            },
-            "cloudflare-bindings": {
-              "command": "npx",
-              "args": ["mcp-remote", "https://bindings.mcp.cloudflare.com/sse"]
-            }
+
+    ```
+    {
+      "mcpServers": {
+        "github": {
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-github"],
+          "env": {
+            "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_example_personal_access_token12345"
           }
+        },
+        "gitlab": {
+          "command": "npx",
+          "args": ["mcp-remote", "https://your-gitlab-instance.com/api/v4/mcp"]
+        },
+        "cloudflare-observability": {
+          "command": "npx",
+          "args": ["mcp-remote", "https://observability.mcp.cloudflare.com/sse"]
+        },
+        "cloudflare-bindings": {
+          "command": "npx",
+          "args": ["mcp-remote", "https://bindings.mcp.cloudflare.com/sse"]
         }
+      }
+    }
+    ```
 
 Your configured MCP servers are available for the agent to use in agent mode.
 
@@ -224,25 +237,27 @@ For MCP servers that require authentication, you can add them to your Gemini set
 
 The following example shows how to specify a personal access token for the GitHub local and remote MCP servers:
 
-    {
-      "mcpServers": {
-        "github-remote": {
-          "httpUrl": "https://api.githubcopilot.com/mcp/",
-          "headers": {
-            "Authorization": "Bearer ACCESS_TOKEN"
-          }
-        },
-        "github-local": {
-          "command": "/Users/username/code/github-mcp-server/cmd/github-mcp-server/github-mcp-server",
-          "args": ["stdio"],
-          "env": {
-            "GITHUB_PERSONAL_ACCESS_TOKEN": "ACCESS_TOKEN"
-          }
-        }
+```
+{
+  "mcpServers": {
+    "github-remote": {
+      "httpUrl": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ACCESS_TOKEN"
+      }
+    },
+    "github-local": {
+      "command": "/Users/username/code/github-mcp-server/cmd/github-mcp-server/github-mcp-server",
+      "args": ["stdio"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ACCESS_TOKEN"
       }
     }
+  }
+}
+```
 
-Where `ACCESS_TOKEN` is the user's access token.
+Where ` ``ACCESS_TOKEN`` ` is the user's access token.
 
 ### IntelliJ
 
@@ -250,19 +265,21 @@ For MCP servers that require authentication, you can add them to your `mcp.json`
 
 The following example adds a personal access token for the GitHub local server:
 
-    {
-      "mcpServers": {
-        "github-local": {
-          "command": "/Users/username/code/github-mcp-server/cmd/github-mcp-server/github-mcp-server",
-          "args": ["stdio"],
-          "env": {
-            "GITHUB_PERSONAL_ACCESS_TOKEN": "ACCESS_TOKEN"
-          }
-        }
+```
+{
+  "mcpServers": {
+    "github-local": {
+      "command": "/Users/username/code/github-mcp-server/cmd/github-mcp-server/github-mcp-server",
+      "args": ["stdio"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ACCESS_TOKEN"
       }
     }
+  }
+}
+```
 
-Where `ACCESS_TOKEN` is the user's access token.
+Where ` ``ACCESS_TOKEN`` ` is the user's access token.
 
 ### Create a context file
 
@@ -271,13 +288,12 @@ Context allows an agent to generate better responses for a given prompt. Context
 ### VS Code
 
 1.  Create a file named `GEMINI.md` in a location that matches the scope you want the context to apply to. The following table details the locations for context files for different scopes:
-    
+
     | Scope                                                     | Location                                                                                                                                |
-    | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+    |-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
     | All your projects                                         | `~/.gemini/GEMINI.md`                                                                                                                   |
     | A specific project                                        | Your working directory or any parent directories up to either your project root (identified by a `.git` folder) or your home directory. |
     | A specific component, module, or sub-section of a project | Subdirectories of your working directory.                                                                                               |
-    
 
     The agent's memory system is created by loading context files from multiple locations. Context from more specific files, like those for specific components or modules, overrides or supplements content from more general context files like the global context file at `~/.gemini/GEMINI.md` .
 
@@ -291,7 +307,7 @@ The agent includes the information in your context file along with any prompts y
 
 2.  Write any rules, style guide information, or context that you want the agent to use in Markdown and save the file.
 
-The agent includes the information in your context file along with any prompts you send to it. You can also add context by including a file manually with the `@` `FILENAME` syntax where `FILENAME` is the name of the file with contextual information you want to include.
+The agent includes the information in your context file along with any prompts you send to it. You can also add context by including a file manually with the `@` ` ``FILENAME`` ` syntax where ` ``FILENAME`` ` is the name of the file with contextual information you want to include.
 
 ## Use commands
 
@@ -301,12 +317,12 @@ Slash `/` commands let you quickly run commands similar to commands in a termina
 
 You can use the following built-in Gemini CLI commands in agent mode:
 
-  - `/tools` : Displays a list of tools that are available in your agent mode session.
-  - `/mcp` : Lists configured Model Context Protocol (MCP) servers, their connection status, server details, and available tools.
+- `/tools` : Displays a list of tools that are available in your agent mode session.
+- `/mcp` : Lists configured Model Context Protocol (MCP) servers, their connection status, server details, and available tools.
 
-<!-- end list -->
+<!-- -->
 
-  - `/deploy` : Deploys a web application to Cloud Run. This Gemini CLI-based [custom command](https://cloud.google.com/blog/topics/developers-practitioners/gemini-cli-custom-slash-commands) uses the Cloud Run Model Context Protocol (MCP) server to build, containerize, push, configure, and return a public URL for your application. You must have Cloud Run enabled in your Google Cloud project and install the [Cloud Run MCP server as a Gemini extension](https://github.com/GoogleCloudPlatform/cloud-run-mcp?tab=readme-ov-file#use-as-a-gemini-cli-extension) to use this command.
+- `/deploy` : Deploys a web application to Cloud Run. This Gemini CLI-based [custom command](https://cloud.google.com/blog/topics/developers-practitioners/gemini-cli-custom-slash-commands) uses the Cloud Run Model Context Protocol (MCP) server to build, containerize, push, configure, and return a public URL for your application. You must have Cloud Run enabled in your Google Cloud project and install the [Cloud Run MCP server as a Gemini extension](https://github.com/GoogleCloudPlatform/cloud-run-mcp?tab=readme-ov-file#use-as-a-gemini-cli-extension) to use this command.
 
 For more information on Gemini CLI commands, see [Gemini CLI Commands](https://geminicli.com/docs/reference/commands/) and [Gemini custom commands](https://geminicli.com/docs/cli/custom-commands/) . Note that not all Gemini CLI commands are available in agent mode.
 
@@ -329,16 +345,18 @@ Use yolo mode to automatically allow all agent actions. Yolo mode can only be us
 To configure yolo mode:
 
 1.  Open your VS Code user settings JSON file:
-    
+
     1.  Open the **Command palette** ( `ctrl` / `command` + `Shift` + `P` ).
     2.  Select **Preferences: Open User Settings (JSON)** .
 
 2.  Add the following to your VS Code user settings JSON file:
-    
-        //other settings...
-        
-        "geminicodeassist.agentYoloMode": true,
-        //other settings...
+
+    ```
+    //other settings...
+
+    "geminicodeassist.agentYoloMode": true,
+    //other settings...
+    ```
 
 3.  Open the command palette and select **Developer: Reload Window** .
 
@@ -354,16 +372,16 @@ Agent mode automatically approves all requests, and won't ask for permission bef
 
 Try out the following prompts with your own information:
 
-  - "What does this repository do? Help me understand the architecture."
-  - "What does this \[class/function\] do?"
-  - "Add a feature to this codebase - "\[link-or-path-to-codebase\]"."
-  - "Refactor function \[A\] and \[B\] to use the common method \[C\]."
-  - "Fix the GitHub issue \[link-to-github-issue\]."
-  - "Build an application to do \[goal\] with a UI that lets the user do \[task\] in the \[environment\]."
-  - "Migrate library versions in this repository from \[X\] to \[Y\]."
-  - "Optimize performance of this Go code so that it runs faster."
-  - "Use \[name-of-API\] to build out this feature."
-  - "Implement an algorithm to do \[x\], \[Y\], and \[Z\]."
+- "What does this repository do? Help me understand the architecture."
+- "What does this \[class/function\] do?"
+- "Add a feature to this codebase - "\[link-or-path-to-codebase\]"."
+- "Refactor function \[A\] and \[B\] to use the common method \[C\]."
+- "Fix the GitHub issue \[link-to-github-issue\]."
+- "Build an application to do \[goal\] with a UI that lets the user do \[task\] in the \[environment\]."
+- "Migrate library versions in this repository from \[X\] to \[Y\]."
+- "Optimize performance of this Go code so that it runs faster."
+- "Use \[name-of-API\] to build out this feature."
+- "Implement an algorithm to do \[x\], \[Y\], and \[Z\]."
 
 ## Optional: Use an API Key
 
@@ -377,13 +395,13 @@ To add your API key:
 
 2.  Open the `settings.json` file.
 
-3.  Add the following line, replacing `  YOUR_KEY  ` with your API key:
-    
-    `"geminicodeassist.geminiApiKey": " YOUR_KEY "`
+3.  Add the following line, replacing `YOUR_KEY` with your API key:
+
+    `"geminicodeassist.geminiApiKey": " `` YOUR_KEY `` "`
 
 ## What's next
 
-  - Read the [Gemini Code Assist overview](https://docs.cloud.google.com/gemini/docs/codeassist/overview) .
-  - Explore some [example MCP servers](https://modelcontextprotocol.io/examples) .
-  - Find more [MCP servers on GitHub](https://github.com/modelcontextprotocol/servers) .
-  - [Send feedback from your IDE](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#leave_feedback) .
+- Read the [Gemini Code Assist overview](https://docs.cloud.google.com/gemini/docs/codeassist/overview) .
+- Explore some [example MCP servers](https://modelcontextprotocol.io/examples) .
+- Find more [MCP servers on GitHub](https://github.com/modelcontextprotocol/servers) .
+- [Send feedback from your IDE](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#leave_feedback) .

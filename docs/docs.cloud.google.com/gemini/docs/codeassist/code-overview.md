@@ -10,9 +10,9 @@ data_source: docs.cloud.google.com
 
 This document describes how you can use [Gemini Code Assist](https://docs.cloud.google.com/gemini/docs/codeassist/overview) , an AI-powered collaborator in your IDE, to help you do the following in VS Code or IntelliJ and other [supported JetBrains IDEs](https://docs.cloud.google.com/gemini/docs/codeassist/supported-languages#supported_ides) :
 
-  - Generate code for your project with code transformation.
-  - Receive code completions while you're coding.
-  - Use smart actions.
+- Generate code for your project with code transformation.
+- Receive code completions while you're coding.
+- Use smart actions.
 
 If you're using [Gemini Code Assist Enterprise](https://docs.cloud.google.com/gemini/docs/codeassist/overview#editions-overview) , you can use [Code customization](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization-overview) , which lets you get code suggestions based on your organization's private codebase directly from Gemini Code Assist Enterprise. Learn [how to configure code customization](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization) .
 
@@ -48,38 +48,38 @@ Code transformation allows you to use commands or natural language prompts in th
 
 ### VS Code
 
-1.  In your code file, on a new line, press Control+I (for Windows and Linux) or Command+I (for macOS) to open the **Gemini Code Assist Quick Pick** menu.
+1.  In your code file, on a new line, press <span class="kbd"> Control+I </span> (for Windows and Linux) or <span class="kbd"> Command+I </span> (for macOS) to open the **Gemini Code Assist Quick Pick** menu.
 
-2.  In the menu, using the `/generate` command, enter `/generate function to create a Cloud Storage bucket` and then press Enter (for Windows and Linux) or Return (for macOS).
-    
+2.  In the menu, using the `/generate` command, enter `/generate function to create a Cloud Storage bucket` and then press <span class="kbd"> Enter </span> (for Windows and Linux) or <span class="kbd"> Return </span> (for macOS).
+
     ![Gemini Code Assist generates code with the /generate command.](https://docs.cloud.google.com/static/code/docs/vscode/images/gemini-code-assist-generate-command.png)
-    
+
     Gemini Code Assist generates the code based on your prompt in a diff view.
-    
+
     ![Gemini Code Assist opens a diff view to show generated code.](https://docs.cloud.google.com/static/code/docs/vscode/images/gemini-code-assist-diff-view.png)
 
 3.  Optional: To accept these changes, click **Accept** .
 
 ### IntelliJ
 
-1.  In your code file, on a new line, press Alt+\\ (for Windows and Linux) or Cmd+\\ (for macOS) to open the **Gemini Code Assist Quick Pick** menu.
+1.  In your code file, on a new line, press <span class="kbd"> Alt+\\ </span> (for Windows and Linux) or <span class="kbd"> Cmd+\\ </span> (for macOS) to open the **Gemini Code Assist Quick Pick** menu.
 
-2.  In the menu, using the `/generate` command, enter `/generate function to create a Cloud Storage bucket` and then press Enter (for Windows and Linux) or Return (for macOS).
-    
+2.  In the menu, using the `/generate` command, enter `/generate function to create a Cloud Storage bucket` and then press <span class="kbd"> Enter </span> (for Windows and Linux) or <span class="kbd"> Return </span> (for macOS).
+
     ![Code transformation generate function in IntelliJ Gemini Code Assist](https://docs.cloud.google.com/static/gemini/images/cloud-transformation-generate-function-gca-intellij.png)
-    
+
     Gemini Code Assist generates the code based on your prompt in a diff view.
-    
+
     ![Code transformation diff view in IntelliJ Gemini Code Assist](https://docs.cloud.google.com/static/gemini/images/cloud-transformation-diff-view-gca-intellij.png)
 
 3.  Optional: To accept these changes, click **Accept Changes** .
-    
+
     You can use the following code transformation commands in your IDE:
-    
-      - `/fix` : Fix issues or errors in your code. Example: `/fix potential NullPointerExceptions in my code` .
-      - `/generate` : Generate code. Example: `/generate a function to get the current time` .
-      - `/doc` : Add documentation to your code. Example: `/doc this function` .
-      - `/simplify` : Simplify your code. Example: `/simplify if statement in this code` .
+
+    - `/fix` : Fix issues or errors in your code. Example: `/fix potential NullPointerExceptions in my code` .
+    - `/generate` : Generate code. Example: `/generate a function to get the current time` .
+    - `/doc` : Add documentation to your code. Example: `/doc this function` .
+    - `/simplify` : Simplify your code. Example: `/simplify if statement in this code` .
 
 ### Prompt Gemini Code Assist in a code file with a comment
 
@@ -87,23 +87,23 @@ If you prefer, you can also prompt Gemini Code Assist in your code file with a c
 
 ### VS Code
 
-1.  On a new line, enter the comment `Function to create a Cloud Storage bucket` , and then press Enter (for Windows and Linux) or Return (for macOS).
+1.  On a new line, enter the comment `Function to create a Cloud Storage bucket` , and then press <span class="kbd"> Enter </span> (for Windows and Linux) or <span class="kbd"> Return </span> (for macOS).
 
-2.  To generate code, press Control+Enter (for Windows and Linux) or Control+Return (for macOS).
-    
+2.  To generate code, press <span class="kbd"> Control+Enter </span> (for Windows and Linux) or <span class="kbd"> Control+Return </span> (for macOS).
+
     Next to your prompt text in your code file, Gemini Code Assist generates the code in the form of ghost text.
 
-3.  Optional: To accept the generated code, press Tab .
+3.  Optional: To accept the generated code, press <span class="kbd"> Tab </span> .
 
 ### IntelliJ
 
 1.  In your code file, on a new line, enter the comment `Function to create a Cloud Storage bucket` .
 
-2.  To generate code, press Alt+G (for Windows and Linux) or Option+G (for macOS). Alternatively, you can right-click next to the comment and select **Generate Code** .
-    
+2.  To generate code, press <span class="kbd"> Alt+G </span> (for Windows and Linux) or <span class="kbd"> Option+G </span> (for macOS). Alternatively, you can right-click next to the comment and select **Generate Code** .
+
     Gemini Code Assist generates the code below your comment in the form of ghost text.
 
-3.  Optional: To accept the generated code, press Tab .
+3.  Optional: To accept the generated code, press <span class="kbd"> Tab </span> .
 
 ### Optional: Change keyboard shortcut for generating code
 
@@ -116,21 +116,21 @@ While you write code, Gemini Code Assist makes inline code suggestions, also kno
 ### VS Code
 
 1.  In your code file, on a new line, start writing a function. For example, if you're in a Python file, write `def` .
-    
+
     Gemini Code Assist suggests code in the form of ghost text.
 
-2.  To accept the code suggestion from Gemini Code Assist, press Tab . Otherwise, to ignore the suggestion, press Esc or continue writing your code.
+2.  To accept the code suggestion from Gemini Code Assist, press <span class="kbd"> Tab </span> . Otherwise, to ignore the suggestion, press <span class="kbd"> Esc </span> or continue writing your code.
 
 ### IntelliJ
 
 1.  In your code file, on a new line, start writing a function. For example, if you're in a Python file, write `def` .
-    
+
     Gemini Code Assist suggests code in the form of an inline suggestion.
 
-2.  To accept the code suggestion from Gemini Code Assist, press Tab . Otherwise, to ignore the suggestion, press Esc or continue writing your code.
+2.  To accept the code suggestion from Gemini Code Assist, press <span class="kbd"> Tab </span> . Otherwise, to ignore the suggestion, press <span class="kbd"> Esc </span> or continue writing your code.
 
 3.  Optional: If you prefer to use a different shortcut key to accept the inline suggestion, hold your pointer over the inline suggestion and click the **Tab** dropdown that appears. Then, select your preferred shortcut or click **Custom** to enter your own shortcut.
-    
+
     ![Gemini provides a dropdown menu to change your shortcut to accept an inline suggestion.](https://docs.cloud.google.com/static/code/docs/intellij/images/gemini-code-assist-change-inline-completion-shortcut.png)
 
 ### Optional: Disable code completion
@@ -144,8 +144,8 @@ Code completion is enabled by default. If you want to disable code completion, f
 2.  On the **User** tab of the **Settings** dialog, navigate to **Extensions** \> **Gemini Code Assist** .
 
 3.  Scroll until you find the **Geminicodeassist \> Inline Suggestions: Enable Auto** list, and then select **Off** .
-    
-    This turns off the inline suggestions. You can still press Control+Enter (for Windows and Linux) or Control+Return (for macOS) to manually trigger inline suggestions.
+
+    This turns off the inline suggestions. You can still press <span class="kbd"> Control+Enter </span> (for Windows and Linux) or <span class="kbd"> Control+Return </span> (for macOS) to manually trigger inline suggestions.
 
 ### IntelliJ
 
@@ -158,7 +158,7 @@ This disables the code completion setting, and Gemini Code Assist no longer make
 ## Use Next Edit Predictions
 
 > **Preview**
-> 
+>
 > This product or feature is in preview. Products and features that are in preview are available "as is".
 
 While code completion only suggests changes at your cursor in a code file, Next Edit Predictions provide predicted code suggestions throughout the file, even in locations away from the cursor.
@@ -182,21 +182,21 @@ To begin using Next Edit Predictions, enable the setting:
 Now that you've enabled the setting, you can start using Next Edit Predictions in a code file by performing these steps:
 
 1.  In your code file, start writing code. Next Edit Predictions appear when you pause or stop typing.
-    
+
     ![User triggers the Next Edit Predictions in VS Code Gemini Code Assist.](https://docs.cloud.google.com/static/gemini/images/vscode-next-edits-triggererd.png)
 
-2.  Press Tab to accept the provided Next Edit suggestion.
-    
+2.  Press <span class="kbd"> Tab </span> to accept the provided Next Edit suggestion.
+
     ![User enters the Next Edit Prediction in VS Code Gemini Code Assist.](https://docs.cloud.google.com/static/gemini/images/vscode-next-edits-entered.png)
 
-3.  If you want to accept the next suggestion, press Tab again. A further suggestion may appear and the process can again be repeated. Otherwise, press Esc to dismiss, or continue typing to ignore the suggestion.
-    
-    When you press Tab to enter the suggestion, you can hold your pointer over the suggestion to see the other suggestions, if applicable. If there are multiple suggestions, you can click the left and right arrows to cycle through the other suggestions.
-    
+3.  If you want to accept the next suggestion, press <span class="kbd"> Tab </span> again. A further suggestion may appear and the process can again be repeated. Otherwise, press <span class="kbd"> Esc </span> to dismiss, or continue typing to ignore the suggestion.
+
+    When you press <span class="kbd"> Tab </span> to enter the suggestion, you can hold your pointer over the suggestion to see the other suggestions, if applicable. If there are multiple suggestions, you can click the left and right arrows to cycle through the other suggestions.
+
     ![Available Next Edit Predictions in VS Code Gemini Code Assist.](https://docs.cloud.google.com/static/gemini/images/vscode-next-edits-available.png)
-    
-    Whenever you press Esc to dismiss the suggestion, Gemini Code Assist stops suggesting Next Edit Predictions for that specific code block. You continue to receive suggestions when you move to another section of your code.
-    
+
+    Whenever you press <span class="kbd"> Esc </span> to dismiss the suggestion, Gemini Code Assist stops suggesting Next Edit Predictions for that specific code block. You continue to receive suggestions when you move to another section of your code.
+
     > **Note:** Gemini Code Assist only provides Next Edit Predictions in the file that you're currently in. Gemini Code Assist doesn't provide Next Edit Predictions in other files.
 
 ### IntelliJ
@@ -210,17 +210,17 @@ To begin using Next Edit Predictions, enable the setting:
 Now that you've enabled the setting, you can start using Next Edit Predictions in a code file by performing these steps:
 
 1.  In your code file, start writing code. Next Edit Predictions appear when you pause or stop typing.
-    
+
     ![User triggers the Next Edit Predictions in IntelliJ Gemini Code Assist.](https://docs.cloud.google.com/static/gemini/images/intellij-next-edits-triggererd.png)
 
-2.  Press Tab to accept the provided Next Edit suggestion.
-    
+2.  Press <span class="kbd"> Tab </span> to accept the provided Next Edit suggestion.
+
     ![User enters the Next Edit Prediction in IntelliJ Gemini Code Assist.](https://docs.cloud.google.com/static/gemini/images/intellij-next-edits-entered.png)
 
-3.  If you want to accept the next suggestion, press Tab again. A further suggestion may appear and the process can again be repeated. Otherwise, press Esc to dismiss, or continue typing to ignore the suggestion.
-    
-    Whenever you press Esc to dismiss the suggestion, Gemini Code Assist stops suggesting Next Edit Predictions for that specific code block. You continue to receive suggestions when you move to another section of your code.
-    
+3.  If you want to accept the next suggestion, press <span class="kbd"> Tab </span> again. A further suggestion may appear and the process can again be repeated. Otherwise, press <span class="kbd"> Esc </span> to dismiss, or continue typing to ignore the suggestion.
+
+    Whenever you press <span class="kbd"> Esc </span> to dismiss the suggestion, Gemini Code Assist stops suggesting Next Edit Predictions for that specific code block. You continue to receive suggestions when you move to another section of your code.
+
     > **Note:** Gemini Code Assist only provides Next Edit Predictions in the file that you're currently in. Gemini Code Assist doesn't provide Next Edit Predictions that would impact code in other files.
 
 ## Finish changes in a file
@@ -232,7 +232,7 @@ Gemini Code Assist can generate code suggestion to complete your file's pseudoco
 1.  In your code file, start writing code until the `Alt+F` or `Opt+F` hint appears.
 
 2.  To generate suggested code, press the keyboard shortcut provided by the hint, or right-click in the file and select **Gemini Code Assist** \> **Finish changes** .
-    
+
     You can dismiss the hint or cancel the code generation process by pressing `Esc` .
 
 3.  Once Gemini Code Assist finishes generating suggested code, you can click **Accept** , which applies the suggested code to your file, or you can click **Decline** , which leaves your original code unchanged.
@@ -242,11 +242,11 @@ Gemini Code Assist can generate code suggestion to complete your file's pseudoco
 1.  Check that there are portions of your focused file that have code in need of completion, such as pseudocode or \#TODOs.
 
 2.  In the file window, right-click \> **Gemini** \> **Finish changes** . Alternatively, you can [use the finish changes keyboard shortcut](https://docs.cloud.google.com/gemini/docs/codeassist/keyboard-shortcuts#code-shortcuts) .
-    
+
     Gemini Code Assist generates code suggestions to finish the incomplete portions of your code.
 
-3.  For each code suggestion, click check\_small **Accept** or undo **Reject** .
-    
+3.  For each code suggestion, click check_small **Accept** or undo **Reject** .
+
     Alternatively, the option to **Accept all** or **Reject all** is available at the top of the file.
 
 ## Get more relevant suggestions with remote repository context
@@ -261,7 +261,7 @@ Before you use a remote repository as context, you must first [index and configu
 
 To direct Gemini Code Assist to use one or more repositories as the primary context for your prompts:
 
-1.  In your IDE's chat, start your prompt with the @ symbol. A list of your available indexed remote repositories appears.
+1.  In your IDE's chat, start your prompt with the <span class="kbd"> @ </span> symbol. A list of your available indexed remote repositories appears.
 2.  Select the repository (or repositories) you want to use for context from the list. You can also start typing the repository name to filter the list.
 3.  After selecting the repositories, write the rest of your prompt.
 
@@ -271,15 +271,15 @@ Gemini Code Assist then prioritizes the selected repositories when generating a 
 
 This section includes examples of how you can get more relevant suggestions with remote repository context.
 
-  - Understand a repository
-      - `@REPOSITORY_NAME What is the overall structure of this repository?`
-      - `@REPOSITORY_NAME I'm a new team member. Can you give me an overview of this repository's purpose and key modules?`
-  - Generate and modify code
-      - `@REPOSITORY_NAME Implement an authentication function similar to the one in this repository.`
-      - `@REPOSITORY_NAME Refactor the following code to follow the conventions in the selected repository.`
-      - `Use the library-x in @REPOSITORY_A_NAME-A and implement the function-x`
-  - Test
-      - `@UNIT_TEST_FILE_NAME Generate unit tests for module-x based on the examples in the selected file.`
+- Understand a repository
+  - `@REPOSITORY_NAME What is the overall structure of this repository?`
+  - `@REPOSITORY_NAME I'm a new team member. Can you give me an overview of this repository's purpose and key modules?`
+- Generate and modify code
+  - `@REPOSITORY_NAME Implement an authentication function similar to the one in this repository.`
+  - `@REPOSITORY_NAME Refactor the following code to follow the conventions in the selected repository.`
+  - `Use the library-x in @REPOSITORY_A_NAME-A and implement the function-x`
+- Test
+  - `@UNIT_TEST_FILE_NAME Generate unit tests for module-x based on the examples in the selected file.`
 
 By using remote repositories as a focused source of context, you can get more accurate and relevant suggestions from Gemini Code Assist, which can help you code faster and more efficiently.
 
@@ -294,11 +294,11 @@ To use smart actions in your code, follow these steps:
 1.  In your code file, select a block of code.
 
 2.  Next to the selected code block, click lightbulb **Show Code Actions** .
-    
+
     ![Smart actions lightbulb icon appears after selecting a block of code in VS Code.](https://docs.cloud.google.com/static/code/docs/vscode/images/duet-ai-vsc-code-actions.png)
 
 3.  Select an action such as **Generate unit tests** .
-    
+
     Gemini Code Assist generates a response that's based on the action you selected.
 
 ### IntelliJ
@@ -306,7 +306,7 @@ To use smart actions in your code, follow these steps:
 1.  In your code file, select a line or block of code.
 
 2.  Right-click the selected code and select a smart action, like **Generate unit tests** .
-    
+
     Selecting the smart action will automatically prompt Gemini Code Assist to generate a response to the prompt in the **Gemini Code Assist** tool window.
 
 ## Use code transformation quick fix
@@ -318,7 +318,7 @@ To apply a quick fix in your code file, follow these steps:
 ### VS Code
 
 1.  In your code file, hold your pointer over the squiggly error line and select **Quick Fix** , and then select **/fix** .
-    
+
     ![Code transformation quick fix in the IDE.](https://docs.cloud.google.com/static/code/docs/vscode/images/code-transformation-quick-fix.png)
 
 2.  When the quick fix is applied, a diff view appears. To accept these changes, click **Accept** .
@@ -326,7 +326,7 @@ To apply a quick fix in your code file, follow these steps:
 ### IntelliJ
 
 1.  In your code file, click the red error bulb icon, which indicates an error in your code, and select **Fix with Gemini** .
-    
+
     ![Code transformation option to fix with Gemini in the IDE.](https://docs.cloud.google.com/static/gemini/images/code-transformation-quick-fix-gca-intellij.png)
 
 2.  When the fix is applied, a diff view appears. To accept these changes, click **Accept** .
@@ -371,65 +371,67 @@ This section outlines the known issues of Gemini Code Assist:
 
 ### VS Code
 
-  - **Chat responses may be truncated when they include an updated version of a large open file**
-    
-    To work around this issue, select a smaller section of code and include an additional directive in the chat prompt, such as `only output the selected code.`
+- **Chat responses may be truncated when they include an updated version of a large open file**
 
-  - **Vim: Cannot accept or dismiss code generation suggestions unless in insert mode**
-    
-    When using the Vim plugin in normal mode, you can't accept or dismiss code suggestions.
-    
-    To work around this issue, press i to enter insert mode, and then press Tab to accept the suggestion.
+  To work around this issue, select a smaller section of code and include an additional directive in the chat prompt, such as `only output the selected code.`
 
-  - **Vim: Inconsistent behavior when pressing Esc to dismiss suggestions**
-    
-    When you press Esc , both the IDE and Gemini Code Assist suggestions are dismissed. This behavior is different from the non-Vim behavior where pressing Esc re-triggers Gemini Code Assist.
+- **Vim: Cannot accept or dismiss code generation suggestions unless in insert mode**
 
-  - **Sign-in attempts keep timing out**
-    
-    If your sign-in attempts keep timing out, try adding the `cloudcode.beta.forceOobLogin` setting to your `settings.json` file:
-    
-    ``` 
-     "cloudcode.beta.forceOobLogin": true
-    ```
+  When using the Vim plugin in normal mode, you can't accept or dismiss code suggestions.
 
-  - **License recitation warnings don't persist across sessions**
-    
-    If license recitation warnings don't persist across sessions, refer to the persistent logs:
-    
-    1.  Click **View** \> **Output** .
-    
-    2.  Select **Gemini Code Assist - Citations** .
+  To work around this issue, press <span class="kbd"> i </span> to enter insert mode, and then press <span class="kbd"> Tab </span> to accept the suggestion.
 
-  - **Connectivity issues in the Gemini Code Assist output window**
-    
-    If you see a connection error or other connectivity problems in the Gemini Code Assist output window, try the following:
-    
-      - Configure your firewall to allow access to `oauth2.googleapis.com` and `cloudaicompanion.googleapis.com` .
-    
-      - Configure your firewall to allow communication over HTTP/2, which gRPC uses.
-    
-    You can use the `grpc-health-probe` tool to test connectivity. A successful check results in the following output:
-    
-    `$ grpc-health-probe -addr cloudaicompanion.googleapis.com:443 -tls error: this server does not implement the grpc health protocol (grpc.health.v1.Health): GRPC target method can't be resolved`
-    
-    An unsuccessful check results in the following output:
-    
-    `timeout: failed to connect service "cloudaicompanion.googleapis.com:443" within 1s`
-    
-    To obtain more details, run the following before `grpc-health-probe` :
-    
-        export GRPC_GO_LOG_SEVERITY_LEVEL=info
+- **Vim: Inconsistent behavior when pressing <span class="kbd"> Esc </span> to dismiss suggestions**
 
-  - **'Activate Gemini Code Assist' still appears after selecting Gemini Code Assist project**
-    
-    If you [selected your project](https://docs.cloud.google.com/gemini/docs/codeassist/code-overview#sign-in-select-gcp-project) per the instructions in this guide, which includes enabling the Gemini for Google Cloud API, then there may be an issue with the LS server.
-    
-    To find out more details about your issue, perform the following actions:
-    
-    1.  In the status bar, click spark **Gemini Code Assist** and then select **Send feedback** .
-    
-    2.  Click **Show** for any of the log files to see more details and to help troubleshoot the issue.
+  When you press <span class="kbd"> Esc </span> , both the IDE and Gemini Code Assist suggestions are dismissed. This behavior is different from the non-Vim behavior where pressing <span class="kbd"> Esc </span> re-triggers Gemini Code Assist.
+
+- **Sign-in attempts keep timing out**
+
+  If your sign-in attempts keep timing out, try adding the `cloudcode.beta.forceOobLogin` setting to your `settings.json` file:
+
+  ```
+   "cloudcode.beta.forceOobLogin": true
+  ```
+
+- **License recitation warnings don't persist across sessions**
+
+  If license recitation warnings don't persist across sessions, refer to the persistent logs:
+
+  1.  Click **View** \> **Output** .
+
+  2.  Select **Gemini Code Assist - Citations** .
+
+- **Connectivity issues in the Gemini Code Assist output window**
+
+  If you see a connection error or other connectivity problems in the Gemini Code Assist output window, try the following:
+
+  - Configure your firewall to allow access to `oauth2.googleapis.com` and `cloudaicompanion.googleapis.com` .
+
+  - Configure your firewall to allow communication over HTTP/2, which gRPC uses.
+
+  You can use the `grpc-health-probe` tool to test connectivity. A successful check results in the following output:
+
+  `$ grpc-health-probe -addr cloudaicompanion.googleapis.com:443 -tls error: this server does not implement the grpc health protocol (grpc.health.v1.Health): GRPC target method can't be resolved`
+
+  An unsuccessful check results in the following output:
+
+  `timeout: failed to connect service "cloudaicompanion.googleapis.com:443" within 1s`
+
+  To obtain more details, run the following before `grpc-health-probe` :
+
+  ```
+  export GRPC_GO_LOG_SEVERITY_LEVEL=info
+  ```
+
+- **'Activate Gemini Code Assist' still appears after selecting Gemini Code Assist project**
+
+  If you [selected your project](https://docs.cloud.google.com/gemini/docs/codeassist/code-overview#sign-in-select-gcp-project) per the instructions in this guide, which includes enabling the Gemini for Google Cloud API, then there may be an issue with the LS server.
+
+  To find out more details about your issue, perform the following actions:
+
+  1.  In the status bar, click spark **Gemini Code Assist** and then select **Send feedback** .
+
+  2.  Click **Show** for any of the log files to see more details and to help troubleshoot the issue.
 
 ### IntelliJ
 
@@ -441,7 +443,7 @@ To leave feedback of your experience, see [Provide Gemini Code Assist feedback](
 
 ## What's next
 
-  - Learn how to [write better prompts](https://docs.cloud.google.com/gemini/docs/discover/write-prompts) .
-  - Learn [how Gemini Code Assist uses your data](https://docs.cloud.google.com/gemini/docs/discover/data-governance) .
-  - Learn about [Gemini Code Assist pricing](https://cloud.google.com/products/gemini/pricing) .
-  - Learn more about [Google Cloud compliance](https://cloud.google.com/compliance) .
+- Learn how to [write better prompts](https://docs.cloud.google.com/gemini/docs/discover/write-prompts) .
+- Learn [how Gemini Code Assist uses your data](https://docs.cloud.google.com/gemini/docs/discover/data-governance) .
+- Learn about [Gemini Code Assist pricing](https://cloud.google.com/products/gemini/pricing) .
+- Learn more about [Google Cloud compliance](https://cloud.google.com/compliance) .

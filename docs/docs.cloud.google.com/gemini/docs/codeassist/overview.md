@@ -45,7 +45,7 @@ The following table helps you to decide which edition aligns best with your orga
 </thead>
 <tbody>
 <tr class="odd">
-<td>Intended audience</td>
+<th>Intended audience</th>
 <td><ul>
 <li>Customers with basic coding needs.</li>
 <li>Organizations with strict data security and compliance requirements.</li>
@@ -57,7 +57,7 @@ The following table helps you to decide which edition aligns best with your orga
 </ul></td>
 </tr>
 <tr class="even">
-<td>Benefits</td>
+<th>Benefits</th>
 <td><ul>
 <li>Code completion and generation for popular programming languages, and available across some Google Cloud services.</li>
 <li>AI-powered chat support.</li>
@@ -66,10 +66,12 @@ The following table helps you to decide which edition aligns best with your orga
 <li>Enterprise-grade security: Robust data governance, secure infrastructure, and indemnification for code suggestions.</li>
 <li>Extended integrations: Gemini Code Assist Standard provides AI assistance in Firebase, Colab Enterprise, BigQuery data insights, Cloud Run, and Database Studio.</li>
 </ul></td>
-<td>All of the benefits mentioned for Gemini Code Assist Standard, with the addition of the following:
+<td><ul>
+<li>All of the benefits mentioned for Gemini Code Assist Standard, with the addition of the following:
 <ul>
 <li><a href="https://docs.cloud.google.com/gemini/docs/codeassist/code-customization-overview">Code customization</a> : Your organization can augment the model with your private codebases for tailored suggestions.</li>
 <li>Extended integrations: Gemini Code Assist Enterprise provides AI assistance across Google Cloud like Apigee, Application Integration, and Gemini Cloud Assist, empowering cloud teams to build, design and operate, and optimize their applications and infrastructure more effectively on Google Cloud.</li>
+</ul></li>
 </ul></td>
 </tr>
 </tbody>
@@ -85,47 +87,104 @@ The following sections show the types of generative AI assistance that are avail
 
 The following table shows the types of generative AI assistance that are available in [supported IDEs](https://docs.cloud.google.com/gemini/docs/codeassist/supported-languages#supported_ides) :
 
-AI coding assistance
-
-Gemini Code Assist Standard
-
-Gemini Code Assist Enterprise
-
-Code completion and generation in your IDE project in the following IDEs:
-
-  - [Cloud Shell Editor](https://docs.cloud.google.com/code/docs/shell/write-code-gemini#get_inline_suggestions_while_you_code)
-  - [Cloud Workstations](https://docs.cloud.google.com/workstations/docs/write-code-gemini#get_inline_suggestions_while_you_code)
-  - [JetBrains IDEs (such as IntelliJ and PyCharm)](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#get_code_completions)
-  - [VS Code](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#get_code_completions)
-  - [Android Studio](https://developer.android.com/studio/gemini/overview)
-
-Conversational assistant in your IDE [using your opened files' context](https://docs.cloud.google.com/gemini/docs/discover/works#gemini-code-assist)
-
-Multi-IDE support (VS Code, [JetBrains IDEs such as IntelliJ and PyCharm](https://docs.cloud.google.com/gemini/docs/codeassist/supported-languages#supported_ides) , Cloud Workstations)
-
-Agentic chat
-
-Prompt Gemini to complete complex, multi-step tasks that use system tools and Model Context Protocol (MCP) servers. For more information, see [Use the Gemini Code Assist agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer) .
-
-Gemini CLI quota
-
-[Quota](https://docs.cloud.google.com/gemini/docs/quotas) for using [Gemini CLI](https://docs.cloud.google.com/gemini/docs/codeassist/gemini-cli) .
-
-Smart actions and commands
-
-Initiate smart actions by right-clicking selected code ( [VS Code](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#use_smart_actions) , [JetBrains IDEs such as IntelliJ and PyCharm](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#use_smart_actions) , [Cloud Shell Editor](https://docs.cloud.google.com/code/docs/shell/write-code-gemini#use_smart_actions) , [Cloud Workstations](https://docs.cloud.google.com/workstations/docs/write-code-gemini#use_smart_actions) , and [Android Studio](https://developer.android.com/studio/gemini/overview) ). Initiate smart commands with the slash `/` on the quick pick bar either with or without selected code ( [VS Code](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#generate_code_with_prompts) , [Cloud Shell Editor](https://docs.cloud.google.com/code/docs/shell/write-code-gemini#use_smart_commands) , and [Cloud Workstations](https://docs.cloud.google.com/workstations/docs/write-code-gemini#use_smart_commands) ).
-
-Intellectual property and compliance
-
-[Source citations in your IDE and the Google Cloud console](https://docs.cloud.google.com/gemini/docs/discover/works)
-
-[IP indemnification](https://docs.cloud.google.com/gemini/docs/discover/works#how-gemini-protects)
-
-[VPC-SC and Private Google Access](https://docs.cloud.google.com/gemini/docs/configure-vpc-service-controls)
-
-Enterprise knowledge
-
-[Customized code suggestions from your code bases in GitHub, GitLab, and Bitbucket in your IDE](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization-overview)
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>AI coding assistance</th>
+<th>Gemini Code Assist Standard</th>
+<th>Gemini Code Assist Enterprise</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th><p>Code completion and generation in your IDE project in the following IDEs:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/code/docs/shell/write-code-gemini#get_inline_suggestions_while_you_code">Cloud Shell Editor</a></li>
+<li><a href="https://docs.cloud.google.com/workstations/docs/write-code-gemini#get_inline_suggestions_while_you_code">Cloud Workstations</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#get_code_completions">JetBrains IDEs (such as IntelliJ and PyCharm)</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#get_code_completions">VS Code</a></li>
+<li><a href="https://developer.android.com/studio/gemini/overview">Android Studio</a></li>
+</ul></th>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<th>Conversational assistant in your IDE <a href="https://docs.cloud.google.com/gemini/docs/discover/works#gemini-code-assist">using your opened files' context</a></th>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<th>Multi-IDE support (VS Code, <a href="https://docs.cloud.google.com/gemini/docs/codeassist/supported-languages#supported_ides">JetBrains IDEs such as IntelliJ and PyCharm</a> , Cloud Workstations)</th>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<th>Agentic chat</th>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<th><p>Prompt Gemini to complete complex, multi-step tasks that use system tools and Model Context Protocol (MCP) servers. For more information, see <a href="https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer">Use the Gemini Code Assist agent mode</a> .</p></th>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<th>Gemini CLI quota</th>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<th><p><a href="https://docs.cloud.google.com/gemini/docs/quotas">Quota</a> for using <a href="https://docs.cloud.google.com/gemini/docs/codeassist/gemini-cli">Gemini CLI</a> .</p></th>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<th>Smart actions and commands</th>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<th>Initiate smart actions by right-clicking selected code ( <a href="https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#use_smart_actions">VS Code</a> , <a href="https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#use_smart_actions">JetBrains IDEs such as IntelliJ and PyCharm</a> , <a href="https://docs.cloud.google.com/code/docs/shell/write-code-gemini#use_smart_actions">Cloud Shell Editor</a> , <a href="https://docs.cloud.google.com/workstations/docs/write-code-gemini#use_smart_actions">Cloud Workstations</a> , and <a href="https://developer.android.com/studio/gemini/overview">Android Studio</a> ). Initiate smart commands with the slash <code>/</code> on the quick pick bar either with or without selected code ( <a href="https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#generate_code_with_prompts">VS Code</a> , <a href="https://docs.cloud.google.com/code/docs/shell/write-code-gemini#use_smart_commands">Cloud Shell Editor</a> , and <a href="https://docs.cloud.google.com/workstations/docs/write-code-gemini#use_smart_commands">Cloud Workstations</a> ).</th>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<th>Intellectual property and compliance</th>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<th><a href="https://docs.cloud.google.com/gemini/docs/discover/works">Source citations in your IDE and the Google Cloud console</a></th>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<th><a href="https://docs.cloud.google.com/gemini/docs/discover/works#how-gemini-protects">IP indemnification</a></th>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<th><a href="https://docs.cloud.google.com/gemini/docs/configure-vpc-service-controls">VPC-SC and Private Google Access</a></th>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<th>Enterprise knowledge</th>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<th><a href="https://docs.cloud.google.com/gemini/docs/codeassist/code-customization-overview">Customized code suggestions from your code bases in GitHub, GitLab, and Bitbucket in your IDE</a></th>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 ### Additional features outside the IDE
 
@@ -136,7 +195,7 @@ The following sections detail additional features available with the Gemini Code
 The following table shows the types of generative AI assistance in [Gemini Cloud Assist](https://docs.cloud.google.com/cloud-assist/overview) in the Google Cloud console:
 
 | Gemini Cloud Assist assistance                                                                                                                                                                            | Gemini Code Assist Standard | Gemini Code Assist Enterprise |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ----------------------------- |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|-------------------------------|
 | [Gemini Cloud Assist features](https://docs.cloud.google.com/cloud-assist/overview#ai-assistance) (including features available to all Google users and available to Gemini Code Assist Enterprise users) |                             |                               |
 
 #### Gemini in Apigee
@@ -144,7 +203,7 @@ The following table shows the types of generative AI assistance in [Gemini Cloud
 The following table shows the types of generative AI assistance with API development in [Apigee](https://docs.cloud.google.com/apigee/docs) (IDE and the Google Cloud console):
 
 | Gemini Code Assist for API management                                                                                                                                                                                                                                                     | Gemini Code Assist Standard | Gemini Code Assist Enterprise |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ----------------------------- |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|-------------------------------|
 | [Create or edit OpenAPI specification](https://docs.cloud.google.com/apigee/docs/api-platform/local-development/vscode/develop-design-edit-apis#designing-apis-with-gemini-code-assist) using natural language prompts.                                                                   |                             |                               |
 | [Enterprise context](https://docs.cloud.google.com/apigee/docs/api-platform/local-development/vscode/develop-design-edit-apis#designing-apis-with-gemini-code-assist) used when creating or updating API specifications.                                                                  |                             |                               |
 | [Gemini Code Assist code explained for Apigee policies.](https://docs.cloud.google.com/apigee/docs/api-platform/develop/attaching-and-configuring-policies-management-ui#use-gemini-code-assist-code-explain) ( [Preview](https://docs.cloud.google.com/products#product-launch-stages) ) |                             |                               |
@@ -154,7 +213,7 @@ The following table shows the types of generative AI assistance with API develop
 The following table shows the types of generative AI assistance in [Application Integration](https://docs.cloud.google.com/application-integration/docs/overview) in the Google Cloud console:
 
 | Integration creation assist                                                                                                                                                                    | Gemini Code Assist Standard | Gemini Code Assist Enterprise |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ----------------------------- |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|-------------------------------|
 | [AI-assisted visual editor for automation flow generation](https://docs.cloud.google.com/application-integration/docs/build-integrations-gemini#create-an-integration)                         |                             |                               |
 | [Enterprise context embedded AI-assisted automation authoring](https://docs.cloud.google.com/application-integration/docs/build-integrations-gemini#contextual-recommendations)                |                             |                               |
 | [Generative AI Automation flow documentation generation and refinement](https://docs.cloud.google.com/application-integration/docs/build-integrations-gemini#generate-integration-description) |                             |                               |
@@ -164,7 +223,7 @@ The following table shows the types of generative AI assistance in [Application 
 The following table shows the types of generative AI assistance for BigQuery in [BigQuery Studio](https://docs.cloud.google.com/bigquery/docs/query-overview#bigquery-studio) :
 
 | Data insights                                                                                                                                                                            | Gemini Code Assist Standard | Gemini Code Assist Enterprise |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ----------------------------- |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|-------------------------------|
 | [Data insights](https://docs.cloud.google.com/bigquery/docs/data-insights#insights-bigquery-table) provides an insightful library of queries generated from the metadata of your tables. |                             |                               |
 
 #### Gemini in Colab Enterprise
@@ -172,7 +231,7 @@ The following table shows the types of generative AI assistance for BigQuery in 
 The following table shows the types of generative AI assistance for code in [Colab Enterprise](https://docs.cloud.google.com/colab/docs/introduction) :
 
 | Notebook code assist                                                                                              | Gemini Code Assist Standard | Gemini Code Assist Enterprise |
-| ----------------------------------------------------------------------------------------------------------------- | --------------------------- | ----------------------------- |
+|-------------------------------------------------------------------------------------------------------------------|-----------------------------|-------------------------------|
 | [Python code generation and completion in notebook](https://docs.cloud.google.com/colab/docs/use-code-completion) |                             |                               |
 
 #### Gemini in databases
@@ -180,7 +239,7 @@ The following table shows the types of generative AI assistance for code in [Col
 The following table shows the types of generative AI assistance for coding in databases:
 
 | Generate SQL queries                                  | Gemini Code Assist Standard | Gemini Code Assist Enterprise |
-| ----------------------------------------------------- | --------------------------- | ----------------------------- |
+|-------------------------------------------------------|-----------------------------|-------------------------------|
 | Write in natural language to generate SQL statements. |                             |                               |
 | Get contextual code that works with your schema.      |                             |                               |
 | Optimize and explain existing queries.                |                             |                               |
@@ -189,37 +248,21 @@ The following table shows the types of generative AI assistance for coding in da
 
 The following table shows the types of generative AI assistance for application development provided by [Gemini in Firebase](https://firebase.google.com/docs/gemini-in-firebase) :
 
-Chat AI assistance in the Firebase console
-
-Gemini Code Assist Standard
-
-Gemini Code Assist Enterprise
-
-Use deep knowledge, best practices, and troubleshooting expertise for Firebase products and services.
-
-Generate, refactor, and debug sample code for Firebase with natural language in chat.
-
-Use natural language prompts to explain, generate, and transform code.
-
-App quality analysis
-
-Summarize app crashes and provide insights and troubleshooting steps to help developers investigate and resolve app quality issues.
-
-Analyze existing code, identify potential issues, and suggest improvements.
-
-Firebase Cloud Messaging and In-App Messaging campaign summarization and insights
-
-Summarize and analyze your messaging campaigns, providing actionable recommendations to improve performance.
-
-Firebase Data Connect schema generation and data exploration
-
-Generate database schemas with natural language.
-
-Generate GraphQL queries and mutations with natural language.
-
-Contextual awareness
-
-Use project and application context to guide conversational assistance, troubleshooting, and app quality analysis.
+| Chat AI assistance in the Firebase console                                                                                          | Gemini Code Assist Standard | Gemini Code Assist Enterprise |
+|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|-------------------------------|
+| Use deep knowledge, best practices, and troubleshooting expertise for Firebase products and services.                               |                             |                               |
+| Generate, refactor, and debug sample code for Firebase with natural language in chat.                                               |                             |                               |
+| Use natural language prompts to explain, generate, and transform code.                                                              |                             |                               |
+| App quality analysis                                                                                                                |                             |                               |
+| Summarize app crashes and provide insights and troubleshooting steps to help developers investigate and resolve app quality issues. |                             |                               |
+| Analyze existing code, identify potential issues, and suggest improvements.                                                         |                             |                               |
+| Firebase Cloud Messaging and In-App Messaging campaign summarization and insights                                                   |                             |                               |
+| Summarize and analyze your messaging campaigns, providing actionable recommendations to improve performance.                        |                             |                               |
+| Firebase Data Connect schema generation and data exploration                                                                        |                             |                               |
+| Generate database schemas with natural language.                                                                                    |                             |                               |
+| Generate GraphQL queries and mutations with natural language.                                                                       |                             |                               |
+| Contextual awareness                                                                                                                |                             |                               |
+| Use project and application context to guide conversational assistance, troubleshooting, and app quality analysis.                  |                             |                               |
 
 ## Set up Gemini Code Assist
 
@@ -229,19 +272,19 @@ For detailed setup steps, see [Set up Gemini Code Assist](https://docs.cloud.goo
 
 After you [set up Gemini Code Assist Standard or Enterprise for a Google Cloud project](https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini) , and install the Gemini Code Assist extension in your IDE ( [VS Code](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode) or [supported JetBrains IDE](https://plugins.jetbrains.com/plugin/24198-gemini-code-assist) ), you can ask for assistance in the following ways:
 
-  - Receive code completions or generate code directly in the code editor.
+- Receive code completions or generate code directly in the code editor.
 
-  - Click spark **Gemini** in the IDE to display the conversational assistant. You can ask questions or select code in your editor and enter prompts such as the following:
-    
-      - `Write unit tests for my code.`
-      - `Help me debug my code.`
-      - `Make my code more readable.`
+- Click spark **Gemini** in the IDE to display the conversational assistant. You can ask questions or select code in your editor and enter prompts such as the following:
+
+  - `Write unit tests for my code.`
+  - `Help me debug my code.`
+  - `Make my code more readable.`
 
 For more information, see [Use Gemini Code Assist in your IDE](https://docs.cloud.google.com/gemini/docs/codeassist/use-in-ide) .
 
 ## What's next
 
-  - Learn how to [use Gemini Code Assist in your IDE](https://docs.cloud.google.com/gemini/docs/codeassist/use-in-ide) .
-  - Learn [how Gemini Code Assist uses your data](https://docs.cloud.google.com/gemini/docs/discover/data-governance) .
-  - Learn about [Gemini Code Assist pricing](https://cloud.google.com/products/gemini/pricing) .
-  - Learn about the [security, privacy, and compliance of Gemini Code Assist](https://docs.cloud.google.com/gemini/docs/codeassist/security-privacy-compliance) .
+- Learn how to [use Gemini Code Assist in your IDE](https://docs.cloud.google.com/gemini/docs/codeassist/use-in-ide) .
+- Learn [how Gemini Code Assist uses your data](https://docs.cloud.google.com/gemini/docs/discover/data-governance) .
+- Learn about [Gemini Code Assist pricing](https://cloud.google.com/products/gemini/pricing) .
+- Learn about the [security, privacy, and compliance of Gemini Code Assist](https://docs.cloud.google.com/gemini/docs/codeassist/security-privacy-compliance) .

@@ -12,7 +12,7 @@ gcloud gemini gibq-observability-settings - manage Gibq Observability Setting re
 
 SYNOPSIS
 
-`gcloud gemini gibq-observability-settings` `  GROUP  ` | `  COMMAND  ` \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini gibq-observability-settings` [`GROUP`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gibq-observability-settings#GROUP) \| [`COMMAND`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gibq-observability-settings#COMMAND) \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gibq-observability-settings#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -20,28 +20,32 @@ Manage Gibq Observability Setting resources.
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --help  ` .
+These flags are available to all commands: [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 GROUPS
 
-`  GROUP  ` is one of the following:
+`GROUP` is one of the following:
 
-  - `  setting-bindings  `  
-    Manage Setting Binding resources.
+[`setting-bindings`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gibq-observability-settings/setting-bindings)  
+Manage Setting Binding resources.
 
 COMMANDS
 
-`  COMMAND  ` is one of the following:
+`COMMAND` is one of the following:
 
-  - `  create  `  
-    Create gibqObservabilitySettings.
-  - `  delete  `  
-    Delete gibqObservabilitySettings.
-  - `  describe  `  
-    Describe gibqObservabilitySettings.
-  - `  list  `  
-    List gibqObservabilitySettings.
-  - `  update  `  
-    Update gibqObservabilitySettings.
+[`create`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gibq-observability-settings/create)  
+Create gibqObservabilitySettings.
+
+[`delete`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gibq-observability-settings/delete)  
+Delete gibqObservabilitySettings.
+
+[`describe`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gibq-observability-settings/describe)  
+Describe gibqObservabilitySettings.
+
+[`list`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gibq-observability-settings/list)  
+List gibqObservabilitySettings.
+
+[`update`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gibq-observability-settings/update)  
+Update gibqObservabilitySettings.

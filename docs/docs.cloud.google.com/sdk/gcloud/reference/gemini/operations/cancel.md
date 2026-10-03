@@ -12,7 +12,7 @@ gcloud gemini operations cancel - cancel operations
 
 SYNOPSIS
 
-`gcloud gemini operations cancel` ( `  OPERATION  ` : `  --location  ` = `  LOCATION  ` ) \[ `  GCLOUD_WIDE_FLAG …  ` \]
+`gcloud gemini operations cancel` ( [`OPERATION`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/operations/cancel#OPERATION) : [`--location`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/operations/cancel#--location) = `LOCATION` ) \[ [`GCLOUD_WIDE_FLAG`](https://docs.cloud.google.com/sdk/gcloud/reference/gemini/operations/cancel#GCLOUD-WIDE-FLAGS)` …` \]
 
 DESCRIPTION
 
@@ -22,7 +22,9 @@ EXAMPLES
 
 To cancel the operation, run:
 
-    gcloud gemini operations cancel
+```
+gcloud gemini operations cancel
+```
 
 POSITIONAL ARGUMENTS
 
@@ -30,34 +32,34 @@ Operation resource - The name of the operation resource to be cancelled. The arg
 
 To set the `project` attribute:
 
-  - provide the argument `operation` on the command line with a fully specified name;
-  - provide the argument `--project` on the command line;
-  - set the property `core/project` .
+- provide the argument `operation` on the command line with a fully specified name;
+- provide the argument `--project` on the command line;
+- set the property `core/project` .
 
 This must be specified.
 
-  - `  OPERATION  `  
-    ID of the operation or fully qualified identifier for the operation.
-    
-    To set the `operation` attribute:
-    
-      - provide the argument `operation` on the command line.
-    
-    This positional argument must be specified if any of the other arguments in this group are specified.
+`OPERATION`  
+ID of the operation or fully qualified identifier for the operation.
 
-  - `--location` = `  LOCATION  `  
-    The location id of the operation resource.
-    
-    To set the `location` attribute:
-    
-      - provide the argument `operation` on the command line with a fully specified name;
-      - provide the argument `--location` on the command line.
+To set the `operation` attribute:
+
+- provide the argument `operation` on the command line.
+
+This positional argument must be specified if any of the other arguments in this group are specified.
+
+`--location` = `LOCATION`  
+The location id of the operation resource.
+
+To set the `location` attribute:
+
+- provide the argument `operation` on the command line with a fully specified name;
+- provide the argument `--location` on the command line.
 
 GCLOUD WIDE FLAGS
 
-These flags are available to all commands: `  --access-token-file  ` , `  --account  ` , `  --billing-project  ` , `  --configuration  ` , `  --flags-file  ` , `  --flatten  ` , `  --format  ` , `  --help  ` , `  --impersonate-service-account  ` , `  --log-http  ` , `  --project  ` , `  --quiet  ` , `  --trace-token  ` , `  --user-output-enabled  ` , `  --verbosity  ` .
+These flags are available to all commands: [`--access-token-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--access-token-file) , [`--account`](https://docs.cloud.google.com/sdk/gcloud/reference#--account) , [`--billing-project`](https://docs.cloud.google.com/sdk/gcloud/reference#--billing-project) , [`--configuration`](https://docs.cloud.google.com/sdk/gcloud/reference#--configuration) , [`--flags-file`](https://docs.cloud.google.com/sdk/gcloud/reference#--flags-file) , [`--flatten`](https://docs.cloud.google.com/sdk/gcloud/reference#--flatten) , [`--format`](https://docs.cloud.google.com/sdk/gcloud/reference#--format) , [`--help`](https://docs.cloud.google.com/sdk/gcloud/reference#--help) , [`--impersonate-service-account`](https://docs.cloud.google.com/sdk/gcloud/reference#--impersonate-service-account) , [`--log-http`](https://docs.cloud.google.com/sdk/gcloud/reference#--log-http) , [`--project`](https://docs.cloud.google.com/sdk/gcloud/reference#--project) , [`--quiet`](https://docs.cloud.google.com/sdk/gcloud/reference#--quiet) , [`--trace-token`](https://docs.cloud.google.com/sdk/gcloud/reference#--trace-token) , [`--user-output-enabled`](https://docs.cloud.google.com/sdk/gcloud/reference#--user-output-enabled) , [`--verbosity`](https://docs.cloud.google.com/sdk/gcloud/reference#--verbosity) .
 
-Run ` $ gcloud help  ` for details.
+Run `$ `[`gcloud help`](https://docs.cloud.google.com/sdk/gcloud/reference) for details.
 
 API REFERENCE
 
