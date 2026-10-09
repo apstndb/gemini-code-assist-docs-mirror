@@ -6,7 +6,7 @@ description: Get AI-powered assistance from Gemini to help your development team
 data_source: docs.cloud.google.com
 ---
 
-> **Note:** We have unified our tools into a single, multi-agent platform called Antigravity, with Antigravity CLI now available. Starting June 18, 2026, Gemini Code Assist IDE Extensions and Gemini CLI stopped serving requests for the Gemini Code Assist for individuals, Google AI Pro, and Google AI Ultra tiers. Affected users should migrate to Antigravity and Antigravity CLI. To learn more, see the [deprecation page](https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals) .
+> **Important:** New Gemini Code Assist subscriptions are [no longer available for purchase](https://docs.cloud.google.com/gemini/docs/codeassist/sunset) .
 
 Gemini Code Assist Standard and Enterprise offer AI-powered assistance to help your development team build, deploy, and operate applications throughout the software development lifecycle.
 

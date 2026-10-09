@@ -6,23 +6,21 @@ description: Describes how to set up Gemini Code Assist.
 data_source: docs.cloud.google.com
 ---
 
-> **Note:** We have unified our tools into a single, multi-agent platform called Antigravity, with Antigravity CLI now available. Starting June 18, 2026, Gemini Code Assist IDE Extensions and Gemini CLI stopped serving requests for the Gemini Code Assist for individuals, Google AI Pro, and Google AI Ultra tiers. Affected users should migrate to Antigravity and Antigravity CLI. To learn more, see the [deprecation page](https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals) .
+> **Important:** New Gemini Code Assist subscriptions are [no longer available for purchase](https://docs.cloud.google.com/gemini/docs/codeassist/sunset) .
 
 This page describes how to set up Gemini Code Assist Standard and Enterprise.
 
-Before you can use services available to users with [Gemini Code Assist](https://docs.cloud.google.com/gemini/docs/codeassist/overview) Standard or Enterprise licenses, your team needs to perform the setup steps that are described in this document:
+Before you can use services available to users with [Gemini Code Assist](https://docs.cloud.google.com/gemini/docs/codeassist/overview) Standard or Enterprise licenses, your team needs to perform the setup steps that are described in this document, and you must have an active Standard or Enterprise subscription:
 
-> **Note:** An administrator typically performs steps 1-4.
+> **Note:** An administrator typically performs steps 1-3.
 
-1.  [Purchase a subscription to Gemini Code Assist Standard or Enterprise](https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini#purchase-subscription) .
+1.  [Assign licenses to users in your organization](https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini#assign_licenses) .
 
-2.  [Assign licenses to users in your organization](https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini#assign_licenses) .
+2.  [Enable the Gemini for Google Cloud API in a Google Cloud project](https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini#enable-api) .
 
-3.  [Enable the Gemini for Google Cloud API in a Google Cloud project](https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini#enable-api) .
+3.  [Grant Identity and Access Management (IAM) roles in a Google Cloud project](https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini#grant-iam) .
 
-4.  [Grant Identity and Access Management (IAM) roles in a Google Cloud project](https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini#grant-iam) .
-
-5.  Your organization's users set up the services they want to use.
+4.  Your organization's users set up the services they want to use.
 
     1.  To use Gemini Code Assist Standard or Enterprise in an IDE, users should [install the Gemini Code Assist plugin](https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini#install-gemini-code-assist) , which is documented on this page.
 
@@ -31,12 +29,6 @@ Before you can use services available to users with [Gemini Code Assist](https:/
     3.  To use Gemini CLI, users should follow the [Gemini CLI installation instructions](https://geminicli.com/docs/get-started/installation/) , and then they should authenticate by [setting a Google Cloud project](https://geminicli.com/docs/get-started/authentication#set-your-google-cloud-project) .
 
     4.  To use Gemini in Android Studio, users should refer to [Get started with Gemini in Android Studio for businesses](https://developer.android.com/studio/gemini/get-started-businesses) .
-
-## Purchase a Gemini Code Assist subscription
-
-To purchase a new Gemini Code Assist subscription, [contact Google Cloud sales](https://cloud.google.com/contact) . For a list of features available in each Gemini Code Assist edition, see [Supported features](https://docs.cloud.google.com/gemini/docs/codeassist/overview#supported-features) .
-
-If you have an existing Gemini Code Assist subscription, you can [manage and renew it through the Google Cloud console](https://docs.cloud.google.com/gemini/docs/admin) .
 
 ## Assign licenses
 

@@ -1,10 +1,10 @@
-https://developers.google.com/gemini-code-assist/docs/deprecations	2026-09-02T15:39:36Z
-https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals	2026-09-02T15:39:36Z
+https://developers.google.com/gemini-code-assist/docs/deprecations	2026-10-09T06:17:55Z
+https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals	2026-10-09T06:17:55Z
 https://developers.google.com/gemini-code-assist/docs/deprecations/consumer-code-review	2026-09-02T15:39:36Z
 https://developers.google.com/gemini-code-assist/docs/overview	2026-09-02T15:39:36Z
 https://developers.google.com/gemini-code-assist/resources/plugin-license	2026-09-02T15:39:36Z
 https://developers.google.com/gemini-code-assist/resources/privacy-notices	2026-09-02T15:39:36Z
-https://docs.cloud.google.com/gemini/docs/admin	2026-10-02T06:02:34Z
+https://docs.cloud.google.com/gemini/docs/admin	2026-10-09T06:17:55Z
 https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode	2026-10-02T06:02:34Z
 https://docs.cloud.google.com/gemini/docs/codeassist/business-audit-logging	2026-10-02T06:02:34Z
 https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini	2026-10-02T06:02:34Z
@@ -23,10 +23,11 @@ https://docs.cloud.google.com/gemini/docs/codeassist/keyboard-shortcuts	2026-10-
 https://docs.cloud.google.com/gemini/docs/codeassist/manage-licenses	2026-10-02T06:02:45Z
 https://docs.cloud.google.com/gemini/docs/codeassist/monitor-gemini-code-assist	2026-10-02T06:02:45Z
 https://docs.cloud.google.com/gemini/docs/codeassist/network-access	2026-10-02T06:02:45Z
-https://docs.cloud.google.com/gemini/docs/codeassist/overview	2026-10-02T06:02:45Z
+https://docs.cloud.google.com/gemini/docs/codeassist/overview	2026-10-09T06:17:55Z
 https://docs.cloud.google.com/gemini/docs/codeassist/request-license	2026-09-25T07:47:27Z
 https://docs.cloud.google.com/gemini/docs/codeassist/security-privacy-compliance	2026-10-02T06:02:45Z
-https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini	2026-10-02T06:02:45Z
+https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini	2026-10-09T06:17:55Z
+https://docs.cloud.google.com/gemini/docs/codeassist/sunset	2026-10-09T06:17:55Z
 https://docs.cloud.google.com/gemini/docs/codeassist/supported-languages	2026-10-02T06:02:45Z
 https://docs.cloud.google.com/gemini/docs/codeassist/troubleshoot	2026-09-25T07:47:27Z
 https://docs.cloud.google.com/gemini/docs/codeassist/turn-off	2026-10-02T06:02:45Z

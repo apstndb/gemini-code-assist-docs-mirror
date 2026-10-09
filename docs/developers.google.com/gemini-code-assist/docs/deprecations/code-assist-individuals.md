@@ -14,7 +14,7 @@ Users of Gemini Code Assist consumer accounts on both Gemini Code Assist IDE ext
 
 **I have a [Gemini Code Assist Standard or Enterprise subscription](https://docs.cloud.google.com/gemini/docs/codeassist/overview) .** **Am I affected?**
 
-No, access to Gemini Code Assist IDE extensions and Gemini CLI using Gemini Code Assist Standard or Enterprise subscriptions remain unchanged.
+Gemini Code Assist Standard and Enterprise subscriptions are subject to a separate [deprecation schedule](https://docs.cloud.google.com/gemini/docs/codeassist/sunset) .
 
 **How do I migrate from Gemini CLI to Antigravity CLI?**
 

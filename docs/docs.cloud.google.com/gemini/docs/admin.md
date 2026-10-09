@@ -25,7 +25,7 @@ These roles contain the permissions required to modify Gemini Code Assist subscr
 
 ## Edit a Gemini Code Assist subscription
 
-> **Important:** To purchase a new Gemini Code Assist subscription, you must [contact Google Cloud sales](https://cloud.google.com/contact) .
+> **Important:** New Gemini Code Assist subscriptions are [no longer available for purchase](https://docs.cloud.google.com/gemini/docs/codeassist/sunset) .
 
 1.  In the Google Cloud console, go to the **Admin for Gemini** page.
 
@@ -49,7 +49,7 @@ These roles contain the permissions required to modify Gemini Code Assist subscr
 
     - **Change the subscription period** - You can set the subscription to bill monthly or annually. With an annual subscription, you are given a discounted rate that is charged on a monthly basis rather than a one-time payment. If you change from an annual subscription to a monthly subscription, then the change won't take effect until the end of the annual term. Additionally, you cannot change the subscription period unless you have enabled subscription auto-renewal.
 
-    - **Enable or disable auto-renewal** - If you disable auto-renewal, the subscription expires at the end of the subscription term and all the licenses in the subscription become invalid. You cannot re-enable a subscription after it expires. Instead, you'll need to [purchase a new subscription](https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini#purchase-subscription) to re-assign those licenses. Additionally, if auto-renewal is disabled, then you can't make the following changes:
+    - **Enable or disable auto-renewal** - If you disable auto-renewal, the subscription expires at the end of the subscription term and all the licenses in the subscription become invalid. You cannot re-enable a subscription after it expires. Additionally, if auto-renewal is disabled, then you can't make the following changes:
 
       - Reduce number of licenses
       - Change from annual to monthly subscription period
