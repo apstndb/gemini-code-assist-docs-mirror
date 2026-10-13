@@ -23,7 +23,7 @@ https://docs.cloud.google.com/gemini/docs/codeassist/keyboard-shortcuts	2026-10-
 https://docs.cloud.google.com/gemini/docs/codeassist/manage-licenses	2026-10-02T06:02:45Z
 https://docs.cloud.google.com/gemini/docs/codeassist/monitor-gemini-code-assist	2026-10-02T06:02:45Z
 https://docs.cloud.google.com/gemini/docs/codeassist/network-access	2026-10-02T06:02:45Z
-https://docs.cloud.google.com/gemini/docs/codeassist/overview	2026-10-09T06:17:55Z
+https://docs.cloud.google.com/gemini/docs/codeassist/overview	2026-10-11T07:08:13Z
 https://docs.cloud.google.com/gemini/docs/codeassist/request-license	2026-09-25T07:47:27Z
 https://docs.cloud.google.com/gemini/docs/codeassist/security-privacy-compliance	2026-10-02T06:02:45Z
 https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini	2026-10-09T06:17:55Z

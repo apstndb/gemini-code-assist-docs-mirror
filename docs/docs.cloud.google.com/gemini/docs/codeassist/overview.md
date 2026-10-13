@@ -93,14 +93,13 @@ The following table shows the types of generative AI assistance that are availab
 <col style="width: 33%" />
 <col style="width: 33%" />
 </colgroup>
-<thead>
+<tbody>
 <tr class="header">
 <th>AI coding assistance</th>
 <th>Gemini Code Assist Standard</th>
 <th>Gemini Code Assist Enterprise</th>
 </tr>
-</thead>
-<tbody>
+
 <tr class="odd">
 <th><p>Code completion and generation in your IDE project in the following IDEs:</p>
 <ul>
