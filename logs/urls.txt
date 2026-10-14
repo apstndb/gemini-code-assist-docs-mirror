@@ -13,7 +13,7 @@ https://docs.cloud.google.com/gemini/docs/codeassist/code-customization	2026-10-
 https://docs.cloud.google.com/gemini/docs/codeassist/code-customization-overview	2026-10-02T06:02:34Z
 https://docs.cloud.google.com/gemini/docs/codeassist/code-overview	2026-10-02T06:02:34Z
 https://docs.cloud.google.com/gemini/docs/codeassist/configure-local-codebase-awareness	2026-09-25T07:47:27Z
-https://docs.cloud.google.com/gemini/docs/codeassist/configure-release-channels	2026-10-02T06:02:34Z
+https://docs.cloud.google.com/gemini/docs/codeassist/configure-release-channels	2026-10-12T21:17:41Z
 https://docs.cloud.google.com/gemini/docs/codeassist/create-aiexclude-file	2026-10-02T06:02:34Z
 https://docs.cloud.google.com/gemini/docs/codeassist/encrypt-data-cmek	2026-10-02T06:02:45Z
 https://docs.cloud.google.com/gemini/docs/codeassist/gemini-3	2026-10-02T06:02:45Z

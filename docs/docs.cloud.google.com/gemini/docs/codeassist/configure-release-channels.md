@@ -14,7 +14,7 @@ The following release channels are available:
 
 - **Generally Available.** The default release channel. Lets you use generally available models and features. Note that it is possible to access certain preview features without opting into the Preview channel, using alternative mechanisms of Preview sign-up. These features will be accessible within the GA channel, but are still covered under Pre-GA Offering Terms.
 
-- **Preview.** Lets you access certain preview features for Gemini Code Assist and, optionally, provide feedback and usage data to help Google improve future releases. Note that there are no distinct features in the Preview release channel.
+- **Preview.** Lets you access certain preview features for Gemini Code Assist.
 
   When you enable the Preview release channel on a project, you agree on behalf of the customer that **all** usage of Gemini Code Assist in that project is subject to the Pre-GA Offering Terms of the [Google Cloud Platform Specific Service Terms](https://cloud.google.com/terms/service-terms) . Don't use this channel for projects and resources that aren't suitable for use with pre-GA offerings.
 
