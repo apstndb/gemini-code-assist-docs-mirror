@@ -6,6 +6,8 @@ description: Describes how to set up Gemini Code Assist.
 data_source: docs.cloud.google.com
 ---
 
+> **Important:** Gemini CLI is not optimized for the latest Gemini models. For the best coding experience with Gemini models, use [Antigravity CLI](https://antigravity.google/product/antigravity-cli) .
+
 > **Important:** New Gemini Code Assist subscriptions are [no longer available for purchase](https://docs.cloud.google.com/gemini/docs/codeassist/sunset) .
 
 This page describes how to set up Gemini Code Assist Standard and Enterprise.

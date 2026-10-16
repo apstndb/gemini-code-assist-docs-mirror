@@ -6,6 +6,8 @@ description: Get AI-powered assistance from Gemini to help your development team
 data_source: docs.cloud.google.com
 ---
 
+> **Important:** Gemini CLI is not optimized for the latest Gemini models. For the best coding experience with Gemini models, use [Antigravity CLI](https://antigravity.google/product/antigravity-cli) .
+
 > **Important:** New Gemini Code Assist subscriptions are [no longer available for purchase](https://docs.cloud.google.com/gemini/docs/codeassist/sunset) .
 
 Gemini Code Assist Standard and Enterprise offer AI-powered assistance to help your development team build, deploy, and operate applications throughout the software development lifecycle.
