@@ -6,8 +6,6 @@ description: Describes how to set up Gemini Code Assist.
 data_source: docs.cloud.google.com
 ---
 
-> **Important:** Gemini CLI is not optimized for the latest Gemini models. For the best coding experience with Gemini models, use [Antigravity CLI](https://antigravity.google/product/antigravity-cli) .
-
 > **Important:** New Gemini Code Assist subscriptions are [no longer available for purchase](https://docs.cloud.google.com/gemini/docs/codeassist/sunset) .
 
 This page describes how to set up Gemini Code Assist Standard and Enterprise.
@@ -29,6 +27,8 @@ Before you can use services available to users with [Gemini Code Assist](https:/
     2.  To use Gemini Code Assist code customization, users should refer to [Configure Gemini Code Assist code customization](https://docs.cloud.google.com/gemini/docs/codeassist/code-customization) .
 
     3.  To use Gemini CLI, users should follow the [Gemini CLI installation instructions](https://geminicli.com/docs/get-started/installation/) , and then they should authenticate by [setting a Google Cloud project](https://geminicli.com/docs/get-started/authentication#set-your-google-cloud-project) .
+
+        > **Important:** Gemini CLI is not optimized for the latest Gemini models. For the best coding experience with Gemini models, use [Antigravity CLI](https://antigravity.google/product/antigravity-cli) .
 
     4.  To use Gemini in Android Studio, users should refer to [Get started with Gemini in Android Studio for businesses](https://developer.android.com/studio/gemini/get-started-businesses) .
 

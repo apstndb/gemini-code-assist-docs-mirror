@@ -6,8 +6,6 @@ description: Get AI-powered assistance from Gemini to help your development team
 data_source: docs.cloud.google.com
 ---
 
-> **Important:** Gemini CLI is not optimized for the latest Gemini models. For the best coding experience with Gemini models, use [Antigravity CLI](https://antigravity.google/product/antigravity-cli) .
-
 > **Important:** New Gemini Code Assist subscriptions are [no longer available for purchase](https://docs.cloud.google.com/gemini/docs/codeassist/sunset) .
 
 Gemini Code Assist Standard and Enterprise offer AI-powered assistance to help your development team build, deploy, and operate applications throughout the software development lifecycle.
@@ -140,7 +138,10 @@ The following table shows the types of generative AI assistance that are availab
 <td></td>
 </tr>
 <tr class="odd">
-<th><p><a href="https://docs.cloud.google.com/gemini/docs/quotas">Quota</a> for using <a href="https://docs.cloud.google.com/gemini/docs/codeassist/gemini-cli">Gemini CLI</a> .</p></th>
+<th><blockquote>
+<strong>Important:</strong> Gemini CLI is not optimized for the latest Gemini models. For the best coding experience with Gemini models, use <a href="https://antigravity.google/product/antigravity-cli">Antigravity CLI</a> .
+</blockquote>
+<p><a href="https://docs.cloud.google.com/gemini/docs/quotas">Quota</a> for using <a href="https://docs.cloud.google.com/gemini/docs/codeassist/gemini-cli">Gemini CLI</a> .</p></th>
 <td></td>
 <td></td>
 </tr>

@@ -10,6 +10,8 @@ data_source: docs.cloud.google.com
 >
 > This feature is subject to the "Pre-GA Offerings Terms" in the General Service Terms section of the [Service Specific Terms](https://docs.cloud.google.com/terms/service-terms#1) . Pre-GA features are available "as is" and might have limited support. For more information, see the [launch stage descriptions](https://cloud.google.com/products/#product-launch-stages) .
 
+> **Important:** Agent mode in VS Code uses the Gemini CLI, which is not optimized for the latest Gemini models. For the best coding experience with Gemini models, use [Antigravity CLI](https://antigravity.google/product/antigravity-cli) .
+
 This document describes agent mode in Gemini Code Assist.
 
 Agent mode is available in the VS Code and IntelliJ integrated development environments (IDEs). To start using agent mode, see [Use the Gemini Code Assist agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer) .

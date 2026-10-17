@@ -25,8 +25,6 @@ These roles contain the permissions required to modify Gemini Code Assist subscr
 
 ## Edit a Gemini Code Assist subscription
 
-> **Important:** Gemini CLI is not optimized for the latest Gemini models. For the best coding experience with Gemini models, use [Antigravity CLI](https://antigravity.google/product/antigravity-cli) .
-
 > **Important:** New Gemini Code Assist subscriptions are [no longer available for purchase](https://docs.cloud.google.com/gemini/docs/codeassist/sunset) .
 
 1.  In the Google Cloud console, go to the **Admin for Gemini** page.
