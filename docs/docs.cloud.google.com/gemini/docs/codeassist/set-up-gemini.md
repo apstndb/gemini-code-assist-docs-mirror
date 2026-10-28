@@ -6,7 +6,7 @@ description: Describes how to set up Gemini Code Assist.
 data_source: docs.cloud.google.com
 ---
 
-> **Important:** New Gemini Code Assist subscriptions are [no longer available for purchase](https://docs.cloud.google.com/gemini/docs/codeassist/sunset) .
+> **Important:** New Gemini Code Assist subscriptions are [no longer available for purchase](https://docs.cloud.google.com/gemini/docs/codeassist/sunset) , and subscriptions can't be transferred between billing accounts.
 
 This page describes how to set up Gemini Code Assist Standard and Enterprise.
 
@@ -34,11 +34,11 @@ Before you can use services available to users with [Gemini Code Assist](https:/
 
 ## Assign licenses
 
-Once a subscription is purchased for Gemini Code Assist Standard or Enterprise, you manage Gemini Code Assist license assignments in your organization using the Google Cloud console.
+You manage license assignments for Gemini Code Assist Standard or Enterprise subscriptions using the Google Cloud console.
 
 Before using a Gemini Code Assist license, users must have the Gemini for Google Cloud User role or analogous permissions on a project where the API is already enabled.
 
-By default, new subscriptions are set up for automatic license assignment. A user in your organization is automatically assigned a license when they use Gemini Code Assist within a supported IDE, provided all the following conditions are met:
+By default, subscriptions are set up for automatic license assignment. A user in your organization is automatically assigned a license when they use Gemini Code Assist within a supported IDE, provided all the following conditions are met:
 
 - The user has selected a project that is associated with the subscription's billing account.
 - The user has the `cloudaicompanion.licenses.selfAssign` IAM permission on the selected project.

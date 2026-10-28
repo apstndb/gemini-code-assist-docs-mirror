@@ -25,7 +25,7 @@ These roles contain the permissions required to modify Gemini Code Assist subscr
 
 ## Edit a Gemini Code Assist subscription
 
-> **Important:** New Gemini Code Assist subscriptions are [no longer available for purchase](https://docs.cloud.google.com/gemini/docs/codeassist/sunset) .
+> **Important:** New Gemini Code Assist subscriptions are [no longer available for purchase](https://docs.cloud.google.com/gemini/docs/codeassist/sunset) , and subscriptions can't be transferred between billing accounts.
 
 1.  In the Google Cloud console, go to the **Admin for Gemini** page.
 

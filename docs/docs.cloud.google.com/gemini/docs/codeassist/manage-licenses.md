@@ -116,8 +116,6 @@ If there are no Gemini Code Assist Standard or Enterprise license assignments or
 
 ## Automatically assign Gemini Code Assist Standard and Enterprise licenses
 
-You can enable automatic license assignment for a subscription.
-
 Automatic license assignment is only supported in VS Code, IntelliJ, and other [supported JetBrains IDEs](https://docs.cloud.google.com/gemini/docs/codeassist/supported-languages#supported_ides) .
 
 If you choose to automatically assign licenses for Gemini Code Assist Standard or Enterprise, you can't remove or add individual user licenses under that account. Users with license assignments who haven't used any Gemini Code Assist Standard or Enterprise features are automatically de-provisioned at the end of the inactivity period set by the administrator.
