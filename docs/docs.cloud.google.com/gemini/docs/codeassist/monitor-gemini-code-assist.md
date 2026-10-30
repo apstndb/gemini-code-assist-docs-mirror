@@ -14,6 +14,8 @@ Gemini Code Assist automatically collects and stores [metrics](https://docs.clou
 
 Gemini Code Assist metrics data recording is limited to user interactions with Gemini Code Assist within the IDE.
 
+Gemini Code Assist metrics, including [token metrics](https://docs.cloud.google.com/gemini/docs/codeassist/monitor-gemini-code-assist#token_and_quota_metrics) , are aggregated at the project level and don't report token counts for individual users.
+
 ## Before you begin
 
 To get the permissions that you need to view metric data by using the Google Cloud console, ask your administrator to grant you the [Monitoring Viewer](https://docs.cloud.google.com/iam/docs/roles-permissions/monitoring#monitoring.viewer) ( `roles/monitoring.viewer` ) IAM role on your project. For more information about granting roles, see [Manage access to projects, folders, and organizations](https://docs.cloud.google.com/iam/docs/granting-changing-revoking-access) .
