@@ -84,7 +84,6 @@ https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-sett
 https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings/setting-bindings/delete	2026-05-27T16:48:43Z
 https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings/setting-bindings/describe	2026-05-27T16:47:44Z
 https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings/setting-bindings/list	2026-05-27T16:46:51Z
-https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings/setting-bindings/update	2026-05-27T16:48:25Z
 https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gda-observability-settings/update	2026-05-27T16:46:21Z
 https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gemini-gcp-enablement-settings	2026-05-27T16:48:37Z
 https://docs.cloud.google.com/sdk/gcloud/reference/gemini/gemini-gcp-enablement-settings/create	2026-05-27T16:47:22Z
