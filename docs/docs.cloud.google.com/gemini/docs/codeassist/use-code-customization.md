@@ -30,49 +30,50 @@ The following table lists ways to use Gemini Code Assist code customization:
 <th>How to trigger</th>
 <th>Notes and resources</th>
 </tr>
+</thead>
+<tbody>
 <tr class="odd">
-<th><p>Natural language chat</p></th>
-<th><p>Enter a natural language prompt in Gemini Code Assist chat in the IDE.</p></th>
-<th><p>Consider the following:</p>
+<td><p>Natural language chat</p></td>
+<td><p>Enter a natural language prompt in Gemini Code Assist chat in the IDE.</p></td>
+<td><p>Consider the following:</p>
 <ul>
 <li>Chat history is not available. Avoid multi-step queries.</li>
 <li>You can ask for more details about sources, including links to the specific sources.</li>
 <li>If you highlight or select code when you send a message in chat, Gemini Code Assist uses that code to improve code customization and chat quality.</li>
 </ul>
-<p>For more information, see <a href="https://docs.cloud.google.com/gemini/docs/codeassist/chat-overview">Chat with Gemini Code Assist</a> .</p></th>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini/docs/codeassist/chat-overview">Chat with Gemini Code Assist</a> .</p></td>
 </tr>
-<tr class="header">
-<th>Generate code</th>
-<th>In the quick pick bar in your IDE, either with or without selected code, press <kbd> Command+Enter </kbd> (on macOS) or <kbd> Control+Enter </kbd> .</th>
-<th>For more information, see <a href="https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#generate_code_with_prompts">Generate code with prompts</a> .</th>
+<tr class="even">
+<td>Generate code</td>
+<td>In the quick pick bar in your IDE, either with or without selected code, press <kbd> Command+Enter </kbd> (on macOS) or <kbd> Control+Enter </kbd> .</td>
+<td>For more information, see <a href="https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#generate_code_with_prompts">Generate code with prompts</a> .</td>
 </tr>
 <tr class="odd">
-<th>Transform code</th>
-<th>In the quick pick bar in your IDE, either with or without selected code, enter <code>/fix</code> .</th>
-<th>For more information, see <a href="https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#generate_code_with_prompts">Generate code with prompts</a> .</th>
+<td>Transform code</td>
+<td>In the quick pick bar in your IDE, either with or without selected code, enter <code>/fix</code> .</td>
+<td>For more information, see <a href="https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#generate_code_with_prompts">Generate code with prompts</a> .</td>
 </tr>
-<tr class="header">
-<th>Autocomplete</th>
-<th>Code customization is automatically triggered and provides suggestions based on what you write.</th>
-<th><p>Consider the following:</p>
+<tr class="even">
+<td>Autocomplete</td>
+<td>Code customization is automatically triggered and provides suggestions based on what you write.</td>
+<td><p>Consider the following:</p>
 <ul>
 <li>Code completion needs a certain level of confidence to propose a suggestion. Ensure that a substantial amount of code is available so that relevant snippets are retrieved.</li>
 <li>Code completion checks if you have required libraries in order to use certain elements of the function.</li>
 </ul>
-<p>For more information, see <a href="https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#get_code_completions">Get code completions</a> .</p></th>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#get_code_completions">Get code completions</a> .</p></td>
 </tr>
 <tr class="odd">
-<th>Remote repository context</th>
-<th><ol>
+<td>Remote repository context</td>
+<td><ol>
 <li>Start your prompt with the <kbd> @ </kbd> symbol. A list of available remote repositories that are indexed appears.</li>
 <li>Select the repository you want to use for context from the list. You can also start typing the repository name to filter the list.</li>
 <li>After selecting the repository, write the rest of your prompt.</li>
-</ol></th>
-<th><p>Remote repository context is useful when you are working on a task that is mostly related to a specific set of microservices, libraries, or modules.</p>
-<p>For more information, see <a href="https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#get_more_relevant_suggestions_with_remote_repository_context">Get more relevant suggestions with remote repository context</a> .</p></th>
+</ol></td>
+<td><p>Remote repository context is useful when you are working on a task that is mostly related to a specific set of microservices, libraries, or modules.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#get_more_relevant_suggestions_with_remote_repository_context">Get more relevant suggestions with remote repository context</a> .</p></td>
 </tr>
-</thead>
-
+</tbody>
 </table>
 
 ## Use cases and prompt examples
@@ -89,9 +90,11 @@ The following table provides guidance and examples about using code customizatio
 <th>Use case</th>
 <th>Things worth trying</th>
 </tr>
+</thead>
+<tbody>
 <tr class="odd">
-<th>Writing new code</th>
-<th><p>Try the following to generate code in your IDE or Gemini Code Assist chat:</p>
+<td>Writing new code</td>
+<td><p>Try the following to generate code in your IDE or Gemini Code Assist chat:</p>
 <ul>
 <li>Generate code that would use terms which are already mentioned in your codebase.</li>
 <li>Paste in your code, such as a functional signature or code with <code>TODO</code> comments, and then ask Gemini Code Assist to fill in or replace <code>TODO</code> comments with code. Add comments with explanation from context.</li>
@@ -106,62 +109,62 @@ The following table provides guidance and examples about using code customizatio
 <li>"Try the <code>/fix</code> command to adjust the generated code—for example, syntax errors."</li>
 <li>"Add missing imports."</li>
 <li>"Try <code>/fix</code> on chat-generated code."</li>
-</ul></th>
+</ul></td>
 </tr>
-<tr class="header">
-<th>Cleaning, simplifying, and refactoring code</th>
-<th><p>Try the following prompts in Gemini Code Assist chat:</p>
+<tr class="even">
+<td>Cleaning, simplifying, and refactoring code</td>
+<td><p>Try the following prompts in Gemini Code Assist chat:</p>
 <ul>
 <li>"Can you merge <var translate="no">IMPORTS_VARIABLES_OR_NOTE_EXPORTED_FUNCTIONS</var> in this file?"</li>
 <li>"How would you simplify the <var translate="no">FUNCTION_NAME</var> function?"</li>
 <li>"Can you merge <var translate="no">FUNCTION_NAME_1</var> and <var translate="no">FUNCTION_NAME_2</var> into one function?"</li>
 <li>"Could you inline some variables in <var translate="no">FUNCTION_NAME</var> ?"</li>
 <li>"Could you simplify variable naming in the function <var translate="no">FUNCTION_NAME</var> ?"</li>
-</ul></th>
+</ul></td>
 </tr>
 <tr class="odd">
-<th>Readability</th>
-<th><p>Try the following prompts in Gemini Code Assist chat:</p>
+<td>Readability</td>
+<td><p>Try the following prompts in Gemini Code Assist chat:</p>
 <ul>
 <li>"Write the function <var translate="no">FUNCTION_NAME</var> in fewer lines of code, if possible."</li>
 <li>"Add comments to the function <var translate="no">FUNCTION_NAME</var> ."</li>
 <li>"Remove unnecessary whitespaces in the function <var translate="no">FUNCTION_NAME</var> ."</li>
 <li>"Format the function <var translate="no">FUNCTION_NAME</var> in a similar way as the rest of the code."</li>
-</ul></th>
+</ul></td>
 </tr>
-<tr class="header">
-<th>Code review</th>
-<th><p>Try the following prompts in Gemini Code Assist chat:</p>
+<tr class="even">
+<td>Code review</td>
+<td><p>Try the following prompts in Gemini Code Assist chat:</p>
 <ul>
 <li>"Split the code in parts and explain each part using our codebase."</li>
 <li>"Are there variables or keywords that could be shorter and more self-explanatory?"</li>
 <li>"Can you give me useful code from the <var translate="no">REPOSITORY_NAME_PACKAGE_MODULE</var> context for this code?"</li>
 <li>"What do you think about the function <var translate="no">FUNCTION_NAME</var> ?"</li>
-</ul></th>
+</ul></td>
 </tr>
 <tr class="odd">
-<th>Debugging</th>
-<th><p>Try the following prompts in Gemini Code Assist chat:</p>
+<td>Debugging</td>
+<td><p>Try the following prompts in Gemini Code Assist chat:</p>
 <ul>
 <li>"I am getting an error when I try to do X/add Y. Why?"</li>
 <li>"Can you spot an error in the function <var translate="no">FUNCTION_NAME</var> ?"</li>
 <li>"How would you fix the function <var translate="no">FUNCTION_NAME</var> given this error message?"</li>
-</ul></th>
+</ul></td>
 </tr>
-<tr class="header">
-<th>Learning and onboarding</th>
-<th><p>Try the following prompts in Gemini Code Assist chat:</p>
+<tr class="even">
+<td>Learning and onboarding</td>
+<td><p>Try the following prompts in Gemini Code Assist chat:</p>
 <ul>
 <li>"Split this code in parts and explain each of them using our codebase."</li>
 <li>"Show how to call function <var translate="no">FUNCTION_NAME</var> ?"</li>
 <li>"Show how to run the main function in the <var translate="no">ENVIRONMENT_NAME</var> environment?"</li>
 <li>"What is the key technical improvement we can do to make this code more performant?"</li>
 <li>"Show me the implementation of <var translate="no">FUNCTION_OR_CLASS_NAME</var> to achieve better results and add what that specific element is"—for example, "Show me the implementation of function foo where foo is the name of the function."</li>
-</ul></th>
+</ul></td>
 </tr>
 <tr class="odd">
-<th>Migration</th>
-<th><p>Try the following prompts in Gemini Code Assist chat:</p>
+<td>Migration</td>
+<td><p>Try the following prompts in Gemini Code Assist chat:</p>
 <ul>
 <li>"Give me a strategy for how I can migrate <var translate="no">FILE_NAME</var> from <var translate="no">LANGUAGE_1</var> to <var translate="no">LANGUAGE_2</var> "—for example, from Go to Python.</li>
 <li>"Given the function <var translate="no">FUNCTION_NAME</var> in repository <var translate="no">REPOSITORY_NAME</var> , find me an equivalent function in language <var translate="no">LANGUAGE_NAME</var> that I can use."</li>
@@ -179,28 +182,27 @@ The following table provides guidance and examples about using code customizatio
 <li>"How would you test this code if that migration is correct?"</li>
 </ul></li>
 </ul></li>
-</ol></th>
+</ol></td>
 </tr>
-<tr class="header">
-<th>Generating documentation</th>
-<th><p>Try the following prompts in Gemini Code Assist chat:</p>
+<tr class="even">
+<td>Generating documentation</td>
+<td><p>Try the following prompts in Gemini Code Assist chat:</p>
 <ul>
 <li>"Summarize the code in package or folder <var translate="no">X</var> and provide documentation for the top five important methods."</li>
 <li>"Generate documentation for <var translate="no">FUNCTION_OR_CLASS_NAME</var> ."</li>
 <li>"Shorten the documentation while preserving the key information."</li>
-</ul></th>
+</ul></td>
 </tr>
 <tr class="odd">
-<th>Unit test generation</th>
-<th><p>Try the following prompts in Gemini Code Assist chat:</p>
+<td>Unit test generation</td>
+<td><p>Try the following prompts in Gemini Code Assist chat:</p>
 <ul>
 <li>"Generate unit tests for <var translate="no">FILENAME</var> ."</li>
 <li>"Add the most relevant test cases for the <var translate="no">FUNCTION_NAME</var> function."</li>
 <li>"Remove test cases that you think don't bring much value."</li>
-</ul></th>
+</ul></td>
 </tr>
-</thead>
-
+</tbody>
 </table>
 
 ## Best practices
