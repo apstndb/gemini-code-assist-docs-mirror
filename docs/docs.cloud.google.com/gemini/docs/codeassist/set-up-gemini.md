@@ -140,7 +140,7 @@ This section describes the steps required to grant the Gemini for Google Cloud U
 
 2.  Click **Grant access** , and then enter the [principal](https://docs.cloud.google.com/iam/docs/overview#concepts_related_identity) name for which you want to give access to Gemini.
 
-3.  In the **Grant access** pane, click add **Add another role** .
+3.  In the **Grant access** pane, click **Add another role** .
 
 4.  In **Assign roles** , select **Gemini for Google Cloud User** .
 

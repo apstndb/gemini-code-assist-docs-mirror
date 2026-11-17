@@ -171,7 +171,7 @@ Before using the following sample queries, you must obtain the fully qualified p
 
 2.  In the resources list, locate the dataset named `code_assist_bq` . This data is the [sink destination](https://docs.cloud.google.com/gemini/docs/codeassist/generate-metrics#sink_destination) .
 
-3.  Select the responses table from beneath the `code_assist_bq_dataset` , click the more_vert icon, and then click **Copy ID** to generate the dataset ID. Make note of it so that you can use it in the following sections as the ` GENERATED_BIGQUERY_TABLE ` variable.
+3.  Select the responses table from beneath the `code_assist_bq_dataset` , click the icon, and then click **Copy ID** to generate the dataset ID. Make note of it so that you can use it in the following sections as the ` GENERATED_BIGQUERY_TABLE ` variable.
 
 #### List individual users by day
 

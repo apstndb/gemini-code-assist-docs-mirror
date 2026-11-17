@@ -51,9 +51,9 @@ To switch to agent mode:
 
 Gemini gives you a response to your prompt, or requests permission to use a tool.
 
-To stop the agent, click stop **Stop** .
+To stop the agent, click **Stop** .
 
-To use the standard Gemini Code Assist chat, click add **New chat** to create a new chat.
+To use the standard Gemini Code Assist chat, click **New chat** to create a new chat.
 
 ### IntelliJ
 
